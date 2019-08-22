@@ -153,52 +153,64 @@ int main(void)
     unsigned int shader = CreateShader(source.vertexSource, source.fragmentSource);
 
     float vertices[] = {
-               0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
-              -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
-               0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
+                0.5f,  0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+                0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+               -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+               -0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f
     };
 
-//    unsigned int indices[] = {
-//            0, 1, 3,
-//            1, 2, 3
-//    };
+    unsigned int indices[] = {
+            0, 1, 3,
+            1, 2, 3
+    };
 
-    unsigned int vbo;
     float texCoords[] = {
             0.0f, 0.0f,
             1.0f, 0.0f,
             0.5f, 1.0f
     };
 
+    unsigned int texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
+            GL_RGB, GL_UNSIGNED_BYTE, data);
+    stbi_image_free(data);
 
     unsigned int vao;
+    unsigned int vbo;
+    unsigned int ebo;
 
     glGenVertexArrays(1, &vao);
     glGenBuffers(1, &vbo);
+    glGenBuffers(1, &ebo);
     glBindVertexArray(vao);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float),
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
             (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float),
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
             (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
+                          (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
 
-//    unsigned int ebo;
-//    glGenBuffers(1, &ebo);
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
 
 //    glBindBuffer(GL_ARRAY_BUFFER, 0);
 //    glBindVertexArray(0);
-
 //    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
-    // Позволяет ренднрить только линии
+//     Позволяет ренднрить только линии
 //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
 
     // Узнем максимальное уоличество атрибутов в шейдере
     int nrAttributes;
@@ -223,9 +235,9 @@ int main(void)
 //        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 
         glBindVertexArray(vao);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+//        glDrawArrays(GL_TRIANGLES, 0, 3);
 //        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-//        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(unsigned int), GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(unsigned int), GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
 
         /* Swap front and back buffers */
