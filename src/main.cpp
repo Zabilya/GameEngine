@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 #include <tgmath.h>
+#include "stb_image.h"
 
 using namespace std;
 
@@ -107,6 +108,14 @@ static unsigned int CreateShader(const string& vertexShader, const string& fragm
 
 int main(void)
 {
+    int containerWidth, containerHeight, nrChannels;
+    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
+            &containerHeight, &nrChannels, 0);
+    if (!data || data == NULL){
+        cout << "ERROR WHEN LOAD LIBRARY" << endl;
+        return 10;
+    }
+
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -139,7 +148,8 @@ int main(void)
 
     cout << "Version is = " << glGetString(GL_VERSION) << endl;
 
-    ShaderProgramSource source = ParseShader("/Users/out-zabolotny-iy/CLionProjects/GameEngine/res/shaders/Basic.shader");
+    ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
+
     unsigned int shader = CreateShader(source.vertexSource, source.fragmentSource);
 
     float vertices[] = {

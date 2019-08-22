@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/main.cpp.o"
+  "CMakeFiles/engine.dir/src/stb_image.cpp.o"
   "engine.pdb"
   "engine"
 )

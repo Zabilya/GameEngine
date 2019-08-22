@@ -87,6 +87,12 @@
 		<Unit filename="/Users/out-zabolotny-iy/CLionProjects/GameEngine/src/main.cpp">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/out-zabolotny-iy/CLionProjects/GameEngine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

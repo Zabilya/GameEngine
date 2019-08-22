@@ -41,7 +41,7 @@ find_library(COCOA_LIBRARY Cocoa REQUIRED)
 find_library(IOKIT_LIBRARY IOKit REQUIRED)
 find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 
-set(SOURCE_FILES src/main.cpp)
+set(SOURCE_FILES src/main.cpp src/stb_image.cpp)
 add_executable(engine ${SOURCE_FILES})
 
 target_link_libraries (engine
