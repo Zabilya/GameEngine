@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/out-zabolotny-iy/CLionProjects/GameEngine
+CMAKE_SOURCE_DIR = /Users/zabilya/Documents/clion_projects/GameEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/engine.dir/depend.make
@@ -59,45 +59,90 @@ include CMakeFiles/engine.dir/flags.make
 
 CMakeFiles/engine.dir/src/main.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/main.cpp.o -c /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/main.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp
 
 CMakeFiles/engine.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/main.cpp > CMakeFiles/engine.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp > CMakeFiles/engine.dir/src/main.cpp.i
 
 CMakeFiles/engine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/main.cpp -o CMakeFiles/engine.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp -o CMakeFiles/engine.dir/src/main.cpp.s
 
-CMakeFiles/engine.dir/src/stb_image.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/stb_image.cpp.o: ../src/stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/src/stb_image.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/stb_image.cpp.o -c /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.cpp
+CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o: ../librarys/stb_image/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp
 
-CMakeFiles/engine.dir/src/stb_image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/stb_image.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.cpp > CMakeFiles/engine.dir/src/stb_image.cpp.i
+CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp > CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i
 
-CMakeFiles/engine.dir/src/stb_image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/stb_image.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.cpp -o CMakeFiles/engine.dir/src/stb_image.cpp.s
+CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp -o CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s
+
+CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: ../src/shader_parser/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp
+
+CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp > CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i
+
+CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp -o CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s
+
+CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o: ../src/key_handler/keyHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp
+
+CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp > CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.i
+
+CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp -o CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.s
+
+CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o: ../src/window_manager/windowManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp
+
+CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp > CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.i
+
+CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp -o CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/main.cpp.o" \
-"CMakeFiles/engine.dir/src/stb_image.cpp.o"
+"CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o" \
+"CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o" \
+"CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o" \
+"CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 engine: CMakeFiles/engine.dir/src/main.cpp.o
-engine: CMakeFiles/engine.dir/src/stb_image.cpp.o
+engine: CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o
+engine: CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
+engine: CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o
+engine: CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 engine: /usr/local/lib/libGLEW.dylib
 engine: /usr/local/lib/libglfw.3.3.dylib
 engine: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -110,6 +155,6 @@ CMakeFiles/engine.dir/clean:
 .PHONY : CMakeFiles/engine.dir/clean
 
 CMakeFiles/engine.dir/depend:
-	cd /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/out-zabolotny-iy/CLionProjects/GameEngine /Users/out-zabolotny-iy/CLionProjects/GameEngine /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zabilya/Documents/clion_projects/GameEngine /Users/zabilya/Documents/clion_projects/GameEngine /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/engine.dir/depend
 

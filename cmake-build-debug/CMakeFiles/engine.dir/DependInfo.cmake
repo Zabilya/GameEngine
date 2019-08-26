@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/out-zabolotny-iy/CLionProjects/GameEngine/src/main.cpp" "/Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
-  "/Users/out-zabolotny-iy/CLionProjects/GameEngine/src/stb_image.cpp" "/Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/stb_image.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

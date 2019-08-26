@@ -41,7 +41,7 @@ find_library(COCOA_LIBRARY Cocoa REQUIRED)
 find_library(IOKIT_LIBRARY IOKit REQUIRED)
 find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 
-set(SOURCE_FILES src/main.cpp src/stb_image.cpp)
+set(SOURCE_FILES src/main.cpp librarys/stb_image/stb_image.cpp src/shader_parser/Shader.cpp src/shader_parser/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp)
 add_executable(engine ${SOURCE_FILES})
 
 target_link_libraries (engine

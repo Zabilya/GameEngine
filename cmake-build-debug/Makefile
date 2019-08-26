@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/out-zabolotny-iy/CLionProjects/GameEngine
+CMAKE_SOURCE_DIR = /Users/zabilya/Documents/clion_projects/GameEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-zabolotny-iy/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,60 @@ engine/fast:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
+librarys/stb_image/stb_image.o: librarys/stb_image/stb_image.cpp.o
+
+.PHONY : librarys/stb_image/stb_image.o
+
+# target to build an object file
+librarys/stb_image/stb_image.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o
+.PHONY : librarys/stb_image/stb_image.cpp.o
+
+librarys/stb_image/stb_image.i: librarys/stb_image/stb_image.cpp.i
+
+.PHONY : librarys/stb_image/stb_image.i
+
+# target to preprocess a source file
+librarys/stb_image/stb_image.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i
+.PHONY : librarys/stb_image/stb_image.cpp.i
+
+librarys/stb_image/stb_image.s: librarys/stb_image/stb_image.cpp.s
+
+.PHONY : librarys/stb_image/stb_image.s
+
+# target to generate assembly for a file
+librarys/stb_image/stb_image.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s
+.PHONY : librarys/stb_image/stb_image.cpp.s
+
+src/key_handler/keyHandler.o: src/key_handler/keyHandler.cpp.o
+
+.PHONY : src/key_handler/keyHandler.o
+
+# target to build an object file
+src/key_handler/keyHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o
+.PHONY : src/key_handler/keyHandler.cpp.o
+
+src/key_handler/keyHandler.i: src/key_handler/keyHandler.cpp.i
+
+.PHONY : src/key_handler/keyHandler.i
+
+# target to preprocess a source file
+src/key_handler/keyHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.i
+.PHONY : src/key_handler/keyHandler.cpp.i
+
+src/key_handler/keyHandler.s: src/key_handler/keyHandler.cpp.s
+
+.PHONY : src/key_handler/keyHandler.s
+
+# target to generate assembly for a file
+src/key_handler/keyHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.s
+.PHONY : src/key_handler/keyHandler.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -150,32 +204,59 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/stb_image.o: src/stb_image.cpp.o
+src/shader_parser/Shader.o: src/shader_parser/Shader.cpp.o
 
-.PHONY : src/stb_image.o
+.PHONY : src/shader_parser/Shader.o
 
 # target to build an object file
-src/stb_image.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.o
-.PHONY : src/stb_image.cpp.o
+src/shader_parser/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
+.PHONY : src/shader_parser/Shader.cpp.o
 
-src/stb_image.i: src/stb_image.cpp.i
+src/shader_parser/Shader.i: src/shader_parser/Shader.cpp.i
 
-.PHONY : src/stb_image.i
+.PHONY : src/shader_parser/Shader.i
 
 # target to preprocess a source file
-src/stb_image.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.i
-.PHONY : src/stb_image.cpp.i
+src/shader_parser/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i
+.PHONY : src/shader_parser/Shader.cpp.i
 
-src/stb_image.s: src/stb_image.cpp.s
+src/shader_parser/Shader.s: src/shader_parser/Shader.cpp.s
 
-.PHONY : src/stb_image.s
+.PHONY : src/shader_parser/Shader.s
 
 # target to generate assembly for a file
-src/stb_image.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/stb_image.cpp.s
-.PHONY : src/stb_image.cpp.s
+src/shader_parser/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s
+.PHONY : src/shader_parser/Shader.cpp.s
+
+src/window_manager/windowManager.o: src/window_manager/windowManager.cpp.o
+
+.PHONY : src/window_manager/windowManager.o
+
+# target to build an object file
+src/window_manager/windowManager.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o
+.PHONY : src/window_manager/windowManager.cpp.o
+
+src/window_manager/windowManager.i: src/window_manager/windowManager.cpp.i
+
+.PHONY : src/window_manager/windowManager.i
+
+# target to preprocess a source file
+src/window_manager/windowManager.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.i
+.PHONY : src/window_manager/windowManager.cpp.i
+
+src/window_manager/windowManager.s: src/window_manager/windowManager.cpp.s
+
+.PHONY : src/window_manager/windowManager.s
+
+# target to generate assembly for a file
+src/window_manager/windowManager.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.s
+.PHONY : src/window_manager/windowManager.cpp.s
 
 # Help Target
 help:
@@ -186,12 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... engine"
+	@echo "... librarys/stb_image/stb_image.o"
+	@echo "... librarys/stb_image/stb_image.i"
+	@echo "... librarys/stb_image/stb_image.s"
+	@echo "... src/key_handler/keyHandler.o"
+	@echo "... src/key_handler/keyHandler.i"
+	@echo "... src/key_handler/keyHandler.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/stb_image.o"
-	@echo "... src/stb_image.i"
-	@echo "... src/stb_image.s"
+	@echo "... src/shader_parser/Shader.o"
+	@echo "... src/shader_parser/Shader.i"
+	@echo "... src/shader_parser/Shader.s"
+	@echo "... src/window_manager/windowManager.o"
+	@echo "... src/window_manager/windowManager.i"
+	@echo "... src/window_manager/windowManager.s"
 .PHONY : help
 
 

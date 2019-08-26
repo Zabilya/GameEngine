@@ -1,121 +1,18 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include <fstream>
 #include <string>
-#include <sstream>
 #include <tgmath.h>
-#include "stb_image.h"
+#include "../librarys/stb_image/stb_image.h"
+
+#include "shader_parser/Shader.h"
+#include "key_handler/keyHandler.h"
+#include "window_manager/windowManager.h"
 
 using namespace std;
 
-void frameBufferSizeCallback(GLFWwindow* window, int width, int height)
-{
-    glViewport(0, 0, width, height);
-    cout << "ViewPort size is: " << width << " " << height << endl;
-}
-
-void processInput(GLFWwindow *window)
-{
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, true);
-}
-
-struct ShaderProgramSource
-{
-    string vertexSource;
-    string fragmentSource;
-};
-
-static ShaderProgramSource ParseShader(const string& filePath)
-{
-    ifstream stream(filePath);
-
-    enum class ShaderType
-    {
-        NONE = -1, VERTEX = 0, FRAGMENT = 1
-    };
-
-    string line;
-    stringstream ss[2];
-    ShaderType type = ShaderType::NONE;
-    while (getline(stream, line))
-    {
-        if (line.find("#shader") != string::npos)
-        {
-            if (line.find("vertex") != string::npos)
-            {
-                type = ShaderType::VERTEX;
-            }
-            else if (line.find("fragment") != string::npos)
-            {
-                type = ShaderType::FRAGMENT;
-            }
-        }
-        else
-        {
-            ss[(unsigned int)(type)] << line << '\n';
-        }
-    }
-
-    return { ss[0].str(), ss[1].str() };
-}
-
-static unsigned int CompileShader(unsigned int type, const string& source)
-{
-    unsigned int id = glCreateShader(type);
-    const char* src = source.c_str();
-    glShaderSource(id, 1, &src, nullptr);
-    glCompileShader(id);
-
-    // error handling
-    int result;
-    glGetShaderiv(id, GL_COMPILE_STATUS, &result);
-    if (result == GL_FALSE)
-    {
-        int length;
-        glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length);
-        char* message = (char*)alloca(length * sizeof(char));
-        glGetShaderInfoLog(id, length, &length, message);
-        cout << "Failed to compile " <<
-             (type == GL_VERTEX_SHADER ? "vertex" : "fragment")
-             << " shader" << endl;
-        cout << message << endl;
-        glDeleteShader(id);
-
-        return 0;
-    }
-
-    return id;
-}
-
-static unsigned int CreateShader(const string& vertexShader, const string& fragmentShader)
-{
-    unsigned int program = glCreateProgram();
-    unsigned int vs = CompileShader(GL_VERTEX_SHADER, vertexShader);
-    unsigned int fs = CompileShader(GL_FRAGMENT_SHADER, fragmentShader);
-
-    glAttachShader(program, vs);
-    glAttachShader(program, fs);
-    glLinkProgram(program);
-    glValidateProgram(program);
-
-    glDeleteShader(vs);
-    glDeleteShader(fs);
-
-    return program;
-}
-
 int main(void)
 {
-    int containerWidth, containerHeight, nrChannels;
-    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
-            &containerHeight, &nrChannels, 0);
-    if (!data || data == NULL){
-        cout << "ERROR WHEN LOAD LIBRARY" << endl;
-        return 10;
-    }
-
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -148,15 +45,13 @@ int main(void)
 
     cout << "Version is = " << glGetString(GL_VERSION) << endl;
 
-    ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
-
-    unsigned int shader = CreateShader(source.vertexSource, source.fragmentSource);
+    Shader shader("../res/shaders/Basic.shader");
 
     float vertices[] = {
-                0.5f,  0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
-                0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+                0.5f,  0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 2.0f, 2.0f,
+                0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 2.0f, 0.0f,
                -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-               -0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f
+               -0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 2.0f
     };
 
     unsigned int indices[] = {
@@ -170,15 +65,40 @@ int main(void)
             0.5f, 1.0f
     };
 
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
+    int containerWidth, containerHeight, nrChannels;
+    unsigned int texture1;
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
-            GL_RGB, GL_UNSIGNED_BYTE, data);
+    stbi_set_flip_vertically_on_load(true);
+    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
+                                    &containerHeight, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
+                     GL_RGB, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    stbi_image_free(data);
+
+    unsigned int texture2;
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    data = stbi_load("../res/textures/awesomeface.png", &containerWidth, &containerHeight,
+                     &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, containerWidth, containerHeight, 0,
+                     GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
     stbi_image_free(data);
 
     unsigned int vao;
@@ -219,7 +139,9 @@ int main(void)
 
     /* Loop until the user closes the window */
 
-    glUseProgram(shader);
+    shader.use();
+    shader.setInt("texture1", 0);
+    shader.setInt("texture2", 1);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -234,6 +156,10 @@ int main(void)
 //        int vertexColorLocation = glGetUniformLocation(shader, "ourColor");
 //        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, texture2);
         glBindVertexArray(vao);
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
 //        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
