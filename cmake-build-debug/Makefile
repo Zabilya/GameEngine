@@ -123,32 +123,32 @@ engine/fast:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
-librarys/stb_image/stb_image.o: librarys/stb_image/stb_image.cpp.o
+dependencies/stb_image/stb_image.o: dependencies/stb_image/stb_image.cpp.o
 
-.PHONY : librarys/stb_image/stb_image.o
+.PHONY : dependencies/stb_image/stb_image.o
 
 # target to build an object file
-librarys/stb_image/stb_image.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o
-.PHONY : librarys/stb_image/stb_image.cpp.o
+dependencies/stb_image/stb_image.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o
+.PHONY : dependencies/stb_image/stb_image.cpp.o
 
-librarys/stb_image/stb_image.i: librarys/stb_image/stb_image.cpp.i
+dependencies/stb_image/stb_image.i: dependencies/stb_image/stb_image.cpp.i
 
-.PHONY : librarys/stb_image/stb_image.i
+.PHONY : dependencies/stb_image/stb_image.i
 
 # target to preprocess a source file
-librarys/stb_image/stb_image.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i
-.PHONY : librarys/stb_image/stb_image.cpp.i
+dependencies/stb_image/stb_image.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.i
+.PHONY : dependencies/stb_image/stb_image.cpp.i
 
-librarys/stb_image/stb_image.s: librarys/stb_image/stb_image.cpp.s
+dependencies/stb_image/stb_image.s: dependencies/stb_image/stb_image.cpp.s
 
-.PHONY : librarys/stb_image/stb_image.s
+.PHONY : dependencies/stb_image/stb_image.s
 
 # target to generate assembly for a file
-librarys/stb_image/stb_image.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s
-.PHONY : librarys/stb_image/stb_image.cpp.s
+dependencies/stb_image/stb_image.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s
+.PHONY : dependencies/stb_image/stb_image.cpp.s
 
 src/key_handler/keyHandler.o: src/key_handler/keyHandler.cpp.o
 
@@ -267,9 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... engine"
-	@echo "... librarys/stb_image/stb_image.o"
-	@echo "... librarys/stb_image/stb_image.i"
-	@echo "... librarys/stb_image/stb_image.s"
+	@echo "... dependencies/stb_image/stb_image.o"
+	@echo "... dependencies/stb_image/stb_image.i"
+	@echo "... dependencies/stb_image/stb_image.s"
 	@echo "... src/key_handler/keyHandler.o"
 	@echo "... src/key_handler/keyHandler.i"
 	@echo "... src/key_handler/keyHandler.s"

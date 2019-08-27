@@ -70,18 +70,18 @@ CMakeFiles/engine.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp -o CMakeFiles/engine.dir/src/main.cpp.s
 
-CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o: ../librarys/stb_image/stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp
+CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o: ../dependencies/stb_image/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp
 
-CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp > CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.i
+CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp > CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.i
 
-CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp -o CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.s
+CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp -o CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s
 
 CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: ../src/shader_parser/Shader.cpp
@@ -125,7 +125,7 @@ CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.s: cmake_force
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/main.cpp.o" \
-"CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o" \
+"CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o" \
 "CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o" \
 "CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o" \
 "CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
@@ -134,7 +134,7 @@ engine_OBJECTS = \
 engine_EXTERNAL_OBJECTS =
 
 engine: CMakeFiles/engine.dir/src/main.cpp.o
-engine: CMakeFiles/engine.dir/librarys/stb_image/stb_image.cpp.o
+engine: CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o
 engine: CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
 engine: CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o
 engine: CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o

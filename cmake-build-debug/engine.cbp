@@ -84,10 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.cpp">
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/librarys/stb_image/stb_image.h">
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp">

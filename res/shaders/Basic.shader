@@ -8,9 +8,11 @@ layout (location = 2) in vec2 textCoord;
 out vec3 vertexColor;
 out vec2 texCoord;
 
+uniform mat4 transform;
+
 void main()
 {
-	gl_Position = vec4(position, 1.0);
+	gl_Position = transform * vec4(position, 1.0);
 	vertexColor = color;
 	texCoord = textCoord;
 }
@@ -28,5 +30,5 @@ out vec4 fragColor;
 
 void main()
 {
-	fragColor = mix(texture(texture1, texCoord), texture(texture2, vec2(1.0 - texCoord.x, texCoord.y)), 0.2);
+	fragColor = mix(texture(texture1, texCoord), texture(texture2, texCoord), 0.2);
 }

@@ -3,7 +3,10 @@
 #include <iostream>
 #include <string>
 #include <tgmath.h>
-#include "../librarys/stb_image/stb_image.h"
+#include "../dependencies/stb_image/stb_image.h"
+#include "../dependencies/glm/glm.hpp"
+#include "../dependencies/glm/gtc/matrix_transform.hpp"
+#include "../dependencies/glm/gtc/type_ptr.hpp"
 
 #include "shader_parser/Shader.h"
 #include "key_handler/keyHandler.h"
@@ -48,10 +51,10 @@ int main(void)
     Shader shader("../res/shaders/Basic.shader");
 
     float vertices[] = {
-                0.5f,  0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 2.0f, 2.0f,
-                0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 2.0f, 0.0f,
+                0.5f,  0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+                0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
                -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-               -0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 2.0f
+               -0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f
     };
 
     unsigned int indices[] = {
@@ -65,12 +68,14 @@ int main(void)
             0.5f, 1.0f
     };
 
+//    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+
     int containerWidth, containerHeight, nrChannels;
     unsigned int texture1;
     glGenTextures(1, &texture1);
     glBindTexture(GL_TEXTURE_2D, texture1);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     stbi_set_flip_vertically_on_load(true);
@@ -155,6 +160,12 @@ int main(void)
 //        float greenValue = sin(timeValue) / 2.0f + 0.5f;
 //        int vertexColorLocation = glGetUniformLocation(shader, "ourColor");
 //        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
+
+        glm::mat4 trans = glm::mat4(1.0f);
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+        unsigned int transformLoc = glGetUniformLocation(shader.getShaderId(), "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture1);
