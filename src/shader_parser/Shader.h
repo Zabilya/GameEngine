@@ -13,6 +13,9 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "../../dependencies/glm/glm.hpp"
+#include "../../dependencies/glm/gtc/matrix_transform.hpp"
+#include "../../dependencies/glm/gtc/type_ptr.hpp"
 
 using namespace std;
 
@@ -40,6 +43,8 @@ public:
     void setInt(const string &name, int value) const;
 
     void setFloat(const string &name, float value) const;
+
+    void setMat4(const string &name, glm::mat4 value);
 
     const string &getVertexSource() const;
 

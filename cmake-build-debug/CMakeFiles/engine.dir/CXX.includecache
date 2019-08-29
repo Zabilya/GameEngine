@@ -1477,6 +1477,12 @@ sstream
 -
 string
 -
+../../dependencies/glm/glm.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+../../dependencies/glm/gtc/matrix_transform.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+../../dependencies/glm/gtc/type_ptr.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
 
 /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.h
 GLFW/glfw3.h

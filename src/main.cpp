@@ -19,6 +19,9 @@ int main(void)
     GLFWwindow* window;
     float screenWidth = 640.0f;
     float screenHeight = 480.0f;
+    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+    glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+    glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 
     /* Initialize the library */
     if (!glfwInit())
@@ -107,7 +110,18 @@ int main(void)
             0.5f, 1.0f
     };
 
-//    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+    glm::vec3 cubePositions[] = {
+            glm::vec3( 0.0f,  0.0f,  0.0f),
+            glm::vec3( 2.0f,  5.0f, -15.0f),
+            glm::vec3(-1.5f, -2.2f, -2.5f),
+            glm::vec3(-3.8f, -2.0f, -12.3f),
+            glm::vec3( 2.4f, -0.4f, -3.5f),
+            glm::vec3(-1.7f,  3.0f, -7.5f),
+            glm::vec3( 1.3f, -2.0f, -2.5f),
+            glm::vec3( 1.5f,  2.0f, -2.5f),
+            glm::vec3( 1.5f,  0.2f, -1.5f),
+            glm::vec3(-1.3f,  1.0f, -1.5f)
+    };
 
     int containerWidth, containerHeight, nrChannels;
     unsigned int texture1;
@@ -171,6 +185,14 @@ int main(void)
 //     Позволяет ренднрить только линии
 //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
+//    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+//    glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+//    glm::vec3 cameraDirection = glm::normalize(cameraPos - cameraTarget);
+//    glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
+//    glm::vec3 cameraRight = glm::normalize(glm::cross(up, cameraDirection));
+//    glm::vec3 cameraUp = glm::cross(cameraDirection, cameraRight);
+//
+//    glm::mat4 view = glm::lookAt(cameraPos, cameraDirection, up);
 
     // Узнем максимальное уоличество атрибутов в шейдере
     int nrAttributes;
@@ -199,18 +221,17 @@ int main(void)
 //        int vertexColorLocation = glGetUniformLocation(shader, "ourColor");
 //        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
 
-        glm::mat4 model = glm::mat4(1.0f);
-        model = glm::rotate(model, glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         glm::mat4 view = glm::mat4(1.0f);
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+
         glm::mat4 projection = glm::mat4(1.0f);
         projection = glm::perspective(glm::radians(45.0f), screenWidth/screenHeight, 0.1f, 100.0f);
 
         //rotation
-        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
-
-        GLint modelLoc = glGetUniformLocation(shader.getShaderId(), "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+//        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
+//
+//        GLint modelLoc = glGetUniformLocation(shader.getShaderId(), "model");
+//        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         GLint viewLoc = glGetUniformLocation(shader.getShaderId(), "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
         GLint projectionLoc = glGetUniformLocation(shader.getShaderId(), "projection");
@@ -221,7 +242,19 @@ int main(void)
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
         glBindVertexArray(vao);
-        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
+
+        for (unsigned int i = 0; i < 10; i++) {
+            glm::mat4 model = glm::mat4(1.0f);
+            model = glm::translate(model, cubePositions[i]);
+            float angle = 20.0f * i;
+            model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
+            shader.setMat4("model", model);
+
+            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
+        }
+
+//        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
 //        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 //        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(unsigned int), GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
