@@ -150,6 +150,33 @@ dependencies/stb_image/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s
 .PHONY : dependencies/stb_image/stb_image.cpp.s
 
+src/camera/Camera.o: src/camera/Camera.cpp.o
+
+.PHONY : src/camera/Camera.o
+
+# target to build an object file
+src/camera/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/camera/Camera.cpp.o
+.PHONY : src/camera/Camera.cpp.o
+
+src/camera/Camera.i: src/camera/Camera.cpp.i
+
+.PHONY : src/camera/Camera.i
+
+# target to preprocess a source file
+src/camera/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/camera/Camera.cpp.i
+.PHONY : src/camera/Camera.cpp.i
+
+src/camera/Camera.s: src/camera/Camera.cpp.s
+
+.PHONY : src/camera/Camera.s
+
+# target to generate assembly for a file
+src/camera/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/camera/Camera.cpp.s
+.PHONY : src/camera/Camera.cpp.s
+
 src/key_handler/keyHandler.o: src/key_handler/keyHandler.cpp.o
 
 .PHONY : src/key_handler/keyHandler.o
@@ -270,6 +297,9 @@ help:
 	@echo "... dependencies/stb_image/stb_image.o"
 	@echo "... dependencies/stb_image/stb_image.i"
 	@echo "... dependencies/stb_image/stb_image.s"
+	@echo "... src/camera/Camera.o"
+	@echo "... src/camera/Camera.i"
+	@echo "... src/camera/Camera.s"
 	@echo "... src/key_handler/keyHandler.o"
 	@echo "... src/key_handler/keyHandler.i"
 	@echo "... src/key_handler/keyHandler.s"

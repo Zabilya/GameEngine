@@ -1434,9 +1434,25 @@ intrin.h
 arm_neon.h
 -
 
+/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
+../../dependencies/glm/glm.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+../../dependencies/glm/gtc/matrix_transform.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+vector
+-
+
 /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
 GLFW/glfw3.h
 -
+../../dependencies/glm/glm.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+../../dependencies/glm/gtc/matrix_transform.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+../../dependencies/glm/gtc/type_ptr.hpp
+/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+../Camera/Camera.h
+/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
 
 /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp
 GL/glew.h
@@ -1463,6 +1479,8 @@ key_handler/keyHandler.h
 /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
 window_manager/windowManager.h
 /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.h
+Camera/Camera.h
+/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
 
 /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h
 GL/glew.h

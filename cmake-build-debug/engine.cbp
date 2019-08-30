@@ -90,6 +90,12 @@
 		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/camera/Camera.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/camera/Camera.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp">
 			<Option target="engine"/>
 		</Unit>
