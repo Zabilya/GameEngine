@@ -83,18 +83,18 @@ CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp -o CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.s
 
-CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o: ../src/shader_parser/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp
+CMakeFiles/engine.dir/src/shader/Shader.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/shader/Shader.cpp.o: ../src/shader/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/shader/Shader.cpp.o -c /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp
 
-CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp > CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i
+CMakeFiles/engine.dir/src/shader/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/shader/Shader.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp > CMakeFiles/engine.dir/src/shader/Shader.cpp.i
 
-CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp -o CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s
+CMakeFiles/engine.dir/src/shader/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/shader/Shader.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp -o CMakeFiles/engine.dir/src/shader/Shader.cpp.s
 
 CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o: ../src/key_handler/keyHandler.cpp
@@ -139,7 +139,7 @@ CMakeFiles/engine.dir/src/camera/Camera.cpp.s: cmake_force
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/main.cpp.o" \
 "CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o" \
-"CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o" \
+"CMakeFiles/engine.dir/src/shader/Shader.cpp.o" \
 "CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o" \
 "CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o" \
 "CMakeFiles/engine.dir/src/camera/Camera.cpp.o"
@@ -149,7 +149,7 @@ engine_EXTERNAL_OBJECTS =
 
 engine: CMakeFiles/engine.dir/src/main.cpp.o
 engine: CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o
-engine: CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
+engine: CMakeFiles/engine.dir/src/shader/Shader.cpp.o
 engine: CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o
 engine: CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o
 engine: CMakeFiles/engine.dir/src/camera/Camera.cpp.o

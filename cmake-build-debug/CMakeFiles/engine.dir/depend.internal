@@ -584,11 +584,11 @@ CMakeFiles/engine.dir/src/main.cpp.o
  /Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
  /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
  /Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp
- /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h
+ /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
  /Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
-CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
+CMakeFiles/engine.dir/src/shader/Shader.cpp.o
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/setup.hpp
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.inl
@@ -790,8 +790,8 @@ CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
  /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
- /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp
- /Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h
+ /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp
+ /Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
 CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o

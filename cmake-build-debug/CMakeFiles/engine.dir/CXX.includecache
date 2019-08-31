@@ -1473,8 +1473,8 @@ tgmath.h
 /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../dependencies/glm/gtc/type_ptr.hpp
 /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
-shader_parser/Shader.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h
+shader/Shader.h
+/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
 key_handler/keyHandler.h
 /Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
 window_manager/windowManager.h
@@ -1482,7 +1482,7 @@ window_manager/windowManager.h
 Camera/Camera.h
 /Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h
+/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
 GL/glew.h
 -
 iostream

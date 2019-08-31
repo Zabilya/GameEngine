@@ -8,7 +8,7 @@
 #include "../dependencies/glm/gtc/matrix_transform.hpp"
 #include "../dependencies/glm/gtc/type_ptr.hpp"
 
-#include "shader_parser/Shader.h"
+#include "shader/Shader.h"
 #include "key_handler/keyHandler.h"
 #include "window_manager/windowManager.h"
 #include "Camera/Camera.h"
@@ -31,6 +31,9 @@ bool firstMouse = true; // первая ли это итерация игров�
 // timing
 float deltaTime = 0.0f;	// time between current frame and last frame
 float lastFrame = 0.0f;
+
+// light
+glm::vec3 lightPos = glm::vec3(1.2f, 1.0f, 2.0f);
 
 int main(void)
 {
@@ -75,6 +78,7 @@ int main(void)
     glEnable(GL_DEPTH_TEST);
 
     Shader shader("../res/shaders/Basic.shader");
+    Shader lampShader("../res/shaders/Lamp.shader");
 
     float vertices[] = {
             -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
@@ -138,69 +142,71 @@ int main(void)
             1, 2, 3
     };
 
-    float texCoords[] = {
-            0.0f, 0.0f,
-            1.0f, 0.0f,
-            0.5f, 1.0f
-    };
+//    int containerWidth, containerHeight, nrChannels;
+//    unsigned int texture1;
+//    glGenTextures(1, &texture1);
+//    glBindTexture(GL_TEXTURE_2D, texture1);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+//    stbi_set_flip_vertically_on_load(true);
+//    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
+//                                    &containerHeight, &nrChannels, 0);
+//    if (data)
+//    {
+//        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
+//                     GL_RGB, GL_UNSIGNED_BYTE, data);
+//        glGenerateMipmap(GL_TEXTURE_2D);
+//    }
+//    stbi_image_free(data);
 
-    int containerWidth, containerHeight, nrChannels;
-    unsigned int texture1;
-    glGenTextures(1, &texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    stbi_set_flip_vertically_on_load(true);
-    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
-                                    &containerHeight, &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
-                     GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    stbi_image_free(data);
-
-    unsigned int texture2;
-    glGenTextures(1, &texture2);
-    glBindTexture(GL_TEXTURE_2D, texture2);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    data = stbi_load("../res/textures/awesomeface.png", &containerWidth, &containerHeight,
-                     &nrChannels, 0);
-    if (data)
-    {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, containerWidth, containerHeight, 0,
-                     GL_RGBA, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    }
-    stbi_image_free(data);
+//    unsigned int texture2;
+//    glGenTextures(1, &texture2);
+//    glBindTexture(GL_TEXTURE_2D, texture2);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+//    data = stbi_load("../res/textures/awesomeface.png", &containerWidth, &containerHeight,
+//                     &nrChannels, 0);
+//    if (data)
+//    {
+//        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, containerWidth, containerHeight, 0,
+//                     GL_RGBA, GL_UNSIGNED_BYTE, data);
+//        glGenerateMipmap(GL_TEXTURE_2D);
+//    }
+//    stbi_image_free(data);
 
     unsigned int vao;
     unsigned int vbo;
-    unsigned int ebo;
+//    unsigned int ebo;
 
     glGenVertexArrays(1, &vao);
     glGenBuffers(1, &vbo);
-    glGenBuffers(1, &ebo);
+//    glGenBuffers(1, &ebo);
     glBindVertexArray(vao);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
+//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
             (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
-                          (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+//    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
+//                          (void*)(3 * sizeof(float)));
+//    glEnableVertexAttribArray(2);
 
 //     Позволяет ренднрить только линии
 //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+    unsigned int lightVao;
+    glGenVertexArrays(1, &lightVao);
+    glBindVertexArray(lightVao);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
+                         (void*)0);
+    glEnableVertexAttribArray(0);
 
     // Узнем максимальное уоличество атрибутов в шейдере
     int nrAttributes;
@@ -210,8 +216,11 @@ int main(void)
     /* Loop until the user closes the window */
 
     shader.use();
-    shader.setInt("texture1", 0);
-    shader.setInt("texture2", 1);
+//    shader.setInt("texture1", 0);
+//    shader.setInt("texture2", 1);
+    shader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
+    shader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
+    lampShader.use();
 
     while (!glfwWindowShouldClose(window))
     {
@@ -226,10 +235,10 @@ int main(void)
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // bind textures on corresponding texture units
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture1);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture2);
+//        glActiveTexture(GL_TEXTURE0);
+//        glBindTexture(GL_TEXTURE_2D, texture1);
+//        glActiveTexture(GL_TEXTURE1);
+//        glBindTexture(GL_TEXTURE_2D, texture2);
 
         shader.use();
 
@@ -248,18 +257,32 @@ int main(void)
 //        GLint viewLoc = glGetUniformLocation(shader.getShaderId(), "view");
 //        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::rotate(model, 0.0f, glm::vec3(1.0f, 0.3f, 0.5f));
+        shader.setMat4("model", model);
+
         glBindVertexArray(vao);
+        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
 
-        for (unsigned int i = 0; i < 10; i++) {
-            glm::mat4 model = glm::mat4(1.0f);
-            model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
-            shader.setMat4("model", model);
+        lampShader.use();
 
-            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
-        }
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.2f));
+        lampShader.setMat4("model", model);
+        lampShader.setMat4("view", view);
+        lampShader.setMat4("projection", projection);
+        glBindVertexArray(lightVao);
+        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
+
+//        for (unsigned int i = 0; i < 10; i++) {
+//            glm::mat4 model = glm::mat4(1.0f);
+//            model = glm::translate(model, cubePositions[i]);
+//            float angle = 20.0f * i;
+//            model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+//            shader.setMat4("model", model);
+//            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
+//        }
 
 //        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
 //        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);

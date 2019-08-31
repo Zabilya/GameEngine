@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zabilya/Documents/clion_projects/GameEngine/src/camera/Camera.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/camera/Camera.cpp.o"
   "/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
   "/Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o"
+  "/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
   "/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

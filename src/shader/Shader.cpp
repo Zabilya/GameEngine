@@ -96,6 +96,10 @@ void Shader::setMat4(const string &name, glm::mat4 value) {
     glUniformMatrix4fv(glGetUniformLocation(id, name.c_str()), 1, GL_FALSE, glm::value_ptr(value));
 }
 
+void Shader::setVec3(const string &name, float x, float y, float z) {
+    glUniform3f(glGetUniformLocation(id, name.c_str()), x, y, z);
+}
+
 const string &Shader::getVertexSource() const {
     return vertexSource;
 }

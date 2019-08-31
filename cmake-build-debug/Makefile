@@ -231,32 +231,32 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/shader_parser/Shader.o: src/shader_parser/Shader.cpp.o
+src/shader/Shader.o: src/shader/Shader.cpp.o
 
-.PHONY : src/shader_parser/Shader.o
+.PHONY : src/shader/Shader.o
 
 # target to build an object file
-src/shader_parser/Shader.cpp.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o
-.PHONY : src/shader_parser/Shader.cpp.o
+src/shader/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader/Shader.cpp.o
+.PHONY : src/shader/Shader.cpp.o
 
-src/shader_parser/Shader.i: src/shader_parser/Shader.cpp.i
+src/shader/Shader.i: src/shader/Shader.cpp.i
 
-.PHONY : src/shader_parser/Shader.i
+.PHONY : src/shader/Shader.i
 
 # target to preprocess a source file
-src/shader_parser/Shader.cpp.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.i
-.PHONY : src/shader_parser/Shader.cpp.i
+src/shader/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader/Shader.cpp.i
+.PHONY : src/shader/Shader.cpp.i
 
-src/shader_parser/Shader.s: src/shader_parser/Shader.cpp.s
+src/shader/Shader.s: src/shader/Shader.cpp.s
 
-.PHONY : src/shader_parser/Shader.s
+.PHONY : src/shader/Shader.s
 
 # target to generate assembly for a file
-src/shader_parser/Shader.cpp.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.s
-.PHONY : src/shader_parser/Shader.cpp.s
+src/shader/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader/Shader.cpp.s
+.PHONY : src/shader/Shader.cpp.s
 
 src/window_manager/windowManager.o: src/window_manager/windowManager.cpp.o
 
@@ -306,9 +306,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/shader_parser/Shader.o"
-	@echo "... src/shader_parser/Shader.i"
-	@echo "... src/shader_parser/Shader.s"
+	@echo "... src/shader/Shader.o"
+	@echo "... src/shader/Shader.i"
+	@echo "... src/shader/Shader.s"
 	@echo "... src/window_manager/windowManager.o"
 	@echo "... src/window_manager/windowManager.i"
 	@echo "... src/window_manager/windowManager.s"

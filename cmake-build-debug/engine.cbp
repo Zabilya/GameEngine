@@ -105,10 +105,10 @@
 		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.cpp">
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp">
 			<Option target="engine"/>
 		</Unit>
-		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/shader_parser/Shader.h">
+		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp">

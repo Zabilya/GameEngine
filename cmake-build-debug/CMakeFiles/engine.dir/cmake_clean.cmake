@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/main.cpp.o"
   "CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o"
-  "CMakeFiles/engine.dir/src/shader_parser/Shader.cpp.o"
+  "CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
   "CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
   "CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   "CMakeFiles/engine.dir/src/camera/Camera.cpp.o"

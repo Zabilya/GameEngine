@@ -46,6 +46,8 @@ public:
 
     void setMat4(const string &name, glm::mat4 value);
 
+    void setVec3(const string &name, float x, float y, float z);
+
     const string &getVertexSource() const;
 
     const string &getFragmentSource() const;
