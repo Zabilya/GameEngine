@@ -6,461 +6,461 @@
 
 #IncludeRegexTransform: 
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/setup.hpp
 cassert
 -
 cstddef
 -
 ../simd/platform.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./simd/platform.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./simd/platform.h
 cstdint
 -
 type_traits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 limits
 -
 cstddef
 -
 type_mat2x2.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.inl
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./matrix.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 limits
 -
 cstddef
 -
 type_mat2x3.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 limits
 -
 cstddef
 -
 type_mat2x4.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 limits
 -
 cstddef
 -
 type_mat3x2.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 limits
 -
 cstddef
 -
 type_mat3x4.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 limits
 -
 cstddef
 -
 type_mat4x2.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 limits
 -
 cstddef
 -
 type_mat4x3.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/qualifier.hpp
 _swizzle.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/_swizzle.hpp
 _swizzle_func.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/_swizzle_func.hpp
 cstddef
 -
 type_vec2.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x2.hpp
 ../detail/type_mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x2_precision.hpp
 ../detail/type_mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x3.hpp
 ../detail/type_mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x3_precision.hpp
 ../detail/type_mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x4.hpp
 ../detail/type_mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x4_precision.hpp
 ../detail/type_mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x2.hpp
 ../detail/type_mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x2_precision.hpp
 ../detail/type_mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x3.hpp
 ../detail/type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x3_precision.hpp
 ../detail/type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x4.hpp
 ../detail/type_mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x4_precision.hpp
 ../detail/type_mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x2.hpp
 ../detail/type_mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x2_precision.hpp
 ../detail/type_mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x3.hpp
 ../detail/type_mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x3_precision.hpp
 ../detail/type_mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x4.hpp
 ../detail/type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x4_precision.hpp
 ../detail/type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x2.hpp
 ../detail/type_mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x2_precision.hpp
 ../detail/type_mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x3.hpp
 ../detail/type_mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x3_precision.hpp
 ../detail/type_mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x4.hpp
 ../detail/type_mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x4_precision.hpp
 ../detail/type_mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x2.hpp
 ../detail/type_mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x2_precision.hpp
 ../detail/type_mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x3.hpp
 ../detail/type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x3_precision.hpp
 ../detail/type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x4.hpp
 ../detail/type_mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x4_precision.hpp
 ../detail/type_mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat3x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x2.hpp
 ../detail/type_mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x2_precision.hpp
 ../detail/type_mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat2x2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x3.hpp
 ../detail/type_mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x3_precision.hpp
 ../detail/type_mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x4.hpp
 ../detail/type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x4_precision.hpp
 ../detail/type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_mat4x4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool2.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool2_precision.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool3.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool3_precision.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool4.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool4_precision.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double2.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double2_precision.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double3.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double3_precision.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double4.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double4_precision.hpp
 ../detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/setup.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float2.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float2_precision.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float3.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float3_precision.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float4.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float4_precision.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int2.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int2_precision.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int3.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int3_precision.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int4.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int4_precision.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint2_precision.hpp
 ../detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec2.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint3.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint3_precision.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec3.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint4.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint4_precision.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./detail/type_vec4.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 detail/_fixes.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_fixes.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_fixes.hpp
 detail/func_common.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_common.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_common.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/./setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/./setup.hpp
 limits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_fixes.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_fixes.hpp
 cmath
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_vectorize.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_vectorize.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/compute_common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/compute_common.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 limits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 limits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_common.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_common.inl
 ../vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 compute_common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/compute_common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/compute_common.hpp
 type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec2.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 _vectorize.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_vectorize.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_vectorize.hpp
 limits
 -
 func_common_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_common_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_common_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_common_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_common_simd.inl
 ../simd/common.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/common.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/common.h
 immintrin.h
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_exponential.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_exponential.inl
 ../vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 _vectorize.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_vectorize.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_vectorize.hpp
 limits
 -
 cmath
@@ -468,465 +468,465 @@ cmath
 cassert
 -
 func_exponential_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_exponential_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_exponential_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_exponential_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_exponential_simd.inl
 ../simd/exponential.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/exponential.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/exponential.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_geometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_geometric.inl
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 func_geometric_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_geometric_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_geometric_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_geometric_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_geometric_simd.inl
 ../simd/geometric.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/geometric.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/geometric.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_integer.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_integer.inl
 _vectorize.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_vectorize.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_vectorize.hpp
 intrin.h
 -
 limits
 -
 func_integer_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_integer_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_integer_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_integer_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_integer_simd.inl
 ../simd/integer.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/integer.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/integer.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_matrix.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_matrix.inl
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 limits
 -
 func_matrix_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_matrix_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_matrix_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_matrix_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_matrix_simd.inl
 type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../simd/matrix.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/matrix.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/matrix.h
 cstring
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_packing.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_packing.inl
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 type_half.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_half.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_half.hpp
 func_packing_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_packing_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_packing_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_packing_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_packing_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_trigonometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_trigonometric.inl
 _vectorize.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_vectorize.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_vectorize.hpp
 cmath
 -
 limits
 -
 func_trigonometric_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_trigonometric_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_trigonometric_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_trigonometric_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_trigonometric_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_vector_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_vector_relational.inl
 func_vector_relational_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_vector_relational_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_vector_relational_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_vector_relational_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_vector_relational_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 cassert
 -
 cstddef
 -
 ../simd/platform.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/platform.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/platform.h
 cstdint
 -
 type_traits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_float.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_float.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_half.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_half.hpp
 setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 type_half.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_half.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_half.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_half.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_half.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 limits
 -
 cstddef
 -
 type_mat3x3.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat3x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat3x3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat3x3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat3x3.inl
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 limits
 -
 cstddef
 -
 type_mat4x4.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.inl
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 type_mat4x4_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.hpp
 type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
 type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
 type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 ../ext/vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.hpp
 ../ext/quaternion_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
 ../gtc/constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.hpp
 ../gtc/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 type_quat.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.inl
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 ../ext/quaternion_geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
 limits
 -
 type_quat_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 _swizzle.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle.hpp
 _swizzle_func.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
 cstddef
 -
 type_vec1.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.inl
 ./compute_vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec2.hpp
 qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 _swizzle.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle.hpp
 _swizzle_func.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
 cstddef
 -
 type_vec2.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec2.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec2.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec2.inl
 ./compute_vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/./compute_vector_relational.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 _swizzle.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle.hpp
 _swizzle_func.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
 cstddef
 -
 type_vec3.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.inl
 compute_vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 _swizzle.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle.hpp
 _swizzle_func.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_swizzle_func.hpp
 cstddef
 -
 type_vec4.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.inl
 compute_vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/compute_vector_relational.hpp
 type_vec4_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 detail/type_vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec2.hpp
 detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 cmath
 -
 detail/func_exponential.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_exponential.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_exponential.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_clip_space.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_clip_space.hpp
 scalar_constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 matrix_clip_space.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_clip_space.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_clip_space.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_clip_space.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_clip_space.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_projection.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_projection.hpp
 ../gtc/constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 matrix_projection.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_projection.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_projection.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_projection.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_projection.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_transform.hpp
 ../gtc/constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 matrix_transform.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_transform.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_transform.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common.hpp
 scalar_constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.hpp
 quaternion_geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 limits
 -
 quaternion_common.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common.inl
 quaternion_common_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_double.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_double.hpp
 ../detail/type_quat.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_double_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_double_precision.hpp
 ../detail/type_quat.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_float.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_float.hpp
 ../detail/type_quat.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_float_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_float_precision.hpp
 ../detail/type_quat.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_quat.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_quat.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.hpp
 quaternion_geometric.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
 ../vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 quaternion_relational.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_relational.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_relational.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_transform.hpp
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 quaternion_transform.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_transform.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_transform.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_transform.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_transform.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_trigonometric.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 scalar_constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.hpp
 vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.hpp
 limits
 -
 quaternion_trigonometric.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_trigonometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_trigonometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_trigonometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_trigonometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.hpp
 ../detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 scalar_constants.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.inl
 limits
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_bool1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_bool1.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_bool1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_bool1_precision.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_double1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_double1.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_double1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_double1_precision.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_float1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_float1.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_float1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_float1_precision.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_int1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_int1.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_int1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_int1_precision.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.hpp
 ../detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 vector_relational.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.inl
 ../vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 ../detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 ../detail/type_float.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_float.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_float.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_uint1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_uint1.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_uint1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_uint1_precision.hpp
 ../detail/type_vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec1.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/fwd.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/fwd.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 detail/func_geometric.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_geometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_geometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/glm.hpp
 detail/_fixes.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/_fixes.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/_fixes.hpp
 detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 cmath
 -
 climits
@@ -938,369 +938,369 @@ limits
 cassert
 -
 fwd.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/fwd.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/fwd.hpp
 vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec2.hpp
 vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec3.hpp
 vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec4.hpp
 mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x2.hpp
 mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x3.hpp
 mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x4.hpp
 mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x2.hpp
 mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x3.hpp
 mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x4.hpp
 mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x2.hpp
 mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x3.hpp
 mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x4.hpp
 trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 packing.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/packing.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/packing.hpp
 geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 integer.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/integer.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/integer.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.hpp
 ../ext/scalar_constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/scalar_constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/scalar_constants.hpp
 constants.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/epsilon.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/epsilon.hpp
 ../detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 ../detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 epsilon.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/epsilon.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/epsilon.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/epsilon.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/epsilon.inl
 ../vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 ../common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x4.hpp
 ../vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec2.hpp
 ../vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec3.hpp
 ../vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec4.hpp
 ../ext/matrix_projection.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_projection.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_projection.hpp
 ../ext/matrix_clip_space.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_clip_space.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_clip_space.hpp
 ../ext/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/matrix_transform.hpp
 matrix_transform.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.inl
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../matrix.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion.hpp
 constants.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/constants.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/constants.hpp
 matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../ext/vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_relational.hpp
 ../ext/quaternion_common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_common.hpp
 ../ext/quaternion_float.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_float.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_float.hpp
 ../ext/quaternion_float_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_float_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_float_precision.hpp
 ../ext/quaternion_double.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_double.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_double.hpp
 ../ext/quaternion_double_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_double_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_double_precision.hpp
 ../ext/quaternion_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_relational.hpp
 ../ext/quaternion_geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_geometric.hpp
 ../ext/quaternion_trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_trigonometric.hpp
 ../ext/quaternion_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/quaternion_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/quaternion_transform.hpp
 ../detail/type_mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat3x3.hpp
 ../detail/type_mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_mat4x4.hpp
 ../detail/type_vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec3.hpp
 ../detail/type_vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/type_vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/type_vec4.hpp
 quaternion.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion.inl
 ../trigonometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 ../geometric.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/geometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/geometric.hpp
 ../exponential.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/exponential.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/exponential.hpp
 epsilon.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/epsilon.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/epsilon.hpp
 limits
 -
 quaternion_simd.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion_simd.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion_simd.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
 quaternion.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/quaternion.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/quaternion.hpp
 vec1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/vec1.hpp
 ../vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec2.hpp
 ../vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec3.hpp
 ../vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec4.hpp
 ../mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x2.hpp
 ../mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x3.hpp
 ../mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x4.hpp
 ../mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x2.hpp
 ../mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x3.hpp
 ../mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x4.hpp
 ../mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x2.hpp
 ../mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x3.hpp
 ../mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x4.hpp
 cstring
 -
 type_ptr.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.inl
 cstring
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/vec1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/vec1.hpp
 ../ext/vector_bool1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_bool1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_bool1.hpp
 ../ext/vector_bool1_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_bool1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_bool1_precision.hpp
 ../ext/vector_float1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_float1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_float1.hpp
 ../ext/vector_float1_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_float1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_float1_precision.hpp
 ../ext/vector_double1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_double1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_double1.hpp
 ../ext/vector_double1_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_double1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_double1_precision.hpp
 ../ext/vector_int1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_int1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_int1.hpp
 ../ext/vector_int1_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_int1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_int1_precision.hpp
 ../ext/vector_uint1.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_uint1.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_uint1.hpp
 ../ext/vector_uint1_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/ext/vector_uint1_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/ext/vector_uint1_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/integer.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/integer.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 common.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/common.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/common.hpp
 vector_relational.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 detail/func_integer.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_integer.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_integer.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x2.hpp
 ./ext/matrix_double2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x2.hpp
 ./ext/matrix_double2x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x2_precision.hpp
 ./ext/matrix_float2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x2.hpp
 ./ext/matrix_float2x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x2_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x3.hpp
 ./ext/matrix_double2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x3.hpp
 ./ext/matrix_double2x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x3_precision.hpp
 ./ext/matrix_float2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x3.hpp
 ./ext/matrix_float2x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x3_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x4.hpp
 ./ext/matrix_double2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x4.hpp
 ./ext/matrix_double2x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double2x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double2x4_precision.hpp
 ./ext/matrix_float2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x4.hpp
 ./ext/matrix_float2x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float2x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float2x4_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x2.hpp
 ./ext/matrix_double3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x2.hpp
 ./ext/matrix_double3x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x2_precision.hpp
 ./ext/matrix_float3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x2.hpp
 ./ext/matrix_float3x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x2_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x3.hpp
 ./ext/matrix_double3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x3.hpp
 ./ext/matrix_double3x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x3_precision.hpp
 ./ext/matrix_float3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x3.hpp
 ./ext/matrix_float3x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x3_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x4.hpp
 ./ext/matrix_double3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x4.hpp
 ./ext/matrix_double3x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double3x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double3x4_precision.hpp
 ./ext/matrix_float3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x4.hpp
 ./ext/matrix_float3x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float3x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float3x4_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x2.hpp
 ./ext/matrix_double4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x2.hpp
 ./ext/matrix_double4x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x2_precision.hpp
 ./ext/matrix_float4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x2.hpp
 ./ext/matrix_float4x2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x2_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x3.hpp
 ./ext/matrix_double4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x3.hpp
 ./ext/matrix_double4x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x3_precision.hpp
 ./ext/matrix_float4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x3.hpp
 ./ext/matrix_float4x3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x3_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x4.hpp
 ./ext/matrix_double4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x4.hpp
 ./ext/matrix_double4x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_double4x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_double4x4_precision.hpp
 ./ext/matrix_float4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x4.hpp
 ./ext/matrix_float4x4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/matrix_float4x4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/matrix_float4x4_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/matrix.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/matrix.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 vec2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec2.hpp
 vec3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec3.hpp
 vec4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec4.hpp
 mat2x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x2.hpp
 mat2x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x3.hpp
 mat2x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat2x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat2x4.hpp
 mat3x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x2.hpp
 mat3x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x3.hpp
 mat3x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat3x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat3x4.hpp
 mat4x2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x2.hpp
 mat4x3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x3.hpp
 mat4x4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/mat4x4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/mat4x4.hpp
 detail/func_matrix.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_matrix.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_matrix.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/packing.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/packing.hpp
 ./ext/vector_uint2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
 ./ext/vector_float2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float2.hpp
 ./ext/vector_float4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float4.hpp
 detail/func_packing.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_packing.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_packing.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/common.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/common.h
 platform.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/platform.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/platform.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/exponential.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/exponential.h
 platform.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/platform.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/platform.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/geometric.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/geometric.h
 common.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/common.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/common.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/integer.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/integer.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/matrix.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/matrix.h
 geometric.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/geometric.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/geometric.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/simd/platform.h
+/Users/u17776048/Documents/GameEngine/dependencies/glm/simd/platform.h
 cuda.h
 -
 immintrin.h
@@ -1320,91 +1320,91 @@ pmmintrin.h
 emmintrin.h
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/trigonometric.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/trigonometric.hpp
 detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 detail/func_trigonometric.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_trigonometric.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_trigonometric.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec2.hpp
 ./ext/vector_bool2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool2.hpp
 ./ext/vector_bool2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool2_precision.hpp
 ./ext/vector_float2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float2.hpp
 ./ext/vector_float2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float2_precision.hpp
 ./ext/vector_double2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double2.hpp
 ./ext/vector_double2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double2_precision.hpp
 ./ext/vector_int2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int2.hpp
 ./ext/vector_int2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int2_precision.hpp
 ./ext/vector_uint2.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint2.hpp
 ./ext/vector_uint2_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint2_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint2_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec3.hpp
 ./ext/vector_bool3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool3.hpp
 ./ext/vector_bool3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool3_precision.hpp
 ./ext/vector_float3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float3.hpp
 ./ext/vector_float3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float3_precision.hpp
 ./ext/vector_double3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double3.hpp
 ./ext/vector_double3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double3_precision.hpp
 ./ext/vector_int3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int3.hpp
 ./ext/vector_int3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int3_precision.hpp
 ./ext/vector_uint3.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint3.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint3.hpp
 ./ext/vector_uint3_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint3_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint3_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vec4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vec4.hpp
 ./ext/vector_bool4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool4.hpp
 ./ext/vector_bool4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_bool4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_bool4_precision.hpp
 ./ext/vector_float4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float4.hpp
 ./ext/vector_float4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_float4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_float4_precision.hpp
 ./ext/vector_double4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double4.hpp
 ./ext/vector_double4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_double4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_double4_precision.hpp
 ./ext/vector_int4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int4.hpp
 ./ext/vector_int4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_int4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_int4_precision.hpp
 ./ext/vector_uint4.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint4.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint4.hpp
 ./ext/vector_uint4_precision.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/./ext/vector_uint4_precision.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/./ext/vector_uint4_precision.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/vector_relational.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/vector_relational.hpp
 detail/qualifier.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/qualifier.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/qualifier.hpp
 detail/setup.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/setup.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/setup.hpp
 detail/func_vector_relational.inl
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/detail/func_vector_relational.inl
+/Users/u17776048/Documents/GameEngine/dependencies/glm/detail/func_vector_relational.inl
 
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.h
+/Users/u17776048/Documents/GameEngine/dependencies/stb_image/stb_image.h
 stb_image.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.h
+/Users/u17776048/Documents/GameEngine/dependencies/stb_image/stb_image.h
 stdio.h
 -
 stdlib.h
@@ -1434,27 +1434,27 @@ intrin.h
 arm_neon.h
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
+/Users/u17776048/Documents/GameEngine/src/Camera/Camera.h
 ../../dependencies/glm/glm.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/glm.hpp
 ../../dependencies/glm/gtc/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 vector
 -
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
+/Users/u17776048/Documents/GameEngine/src/key_handler/keyHandler.h
 GLFW/glfw3.h
 -
 ../../dependencies/glm/glm.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/glm.hpp
 ../../dependencies/glm/gtc/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../../dependencies/glm/gtc/type_ptr.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
 ../Camera/Camera.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
+/Users/u17776048/Documents/GameEngine/src/Camera/Camera.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp
+/Users/u17776048/Documents/GameEngine/src/main.cpp
 GL/glew.h
 -
 GLFW/glfw3.h
@@ -1466,23 +1466,23 @@ string
 tgmath.h
 -
 ../dependencies/stb_image/stb_image.h
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.h
+/Users/u17776048/Documents/GameEngine/dependencies/stb_image/stb_image.h
 ../dependencies/glm/glm.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/glm.hpp
 ../dependencies/glm/gtc/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../dependencies/glm/gtc/type_ptr.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
 shader/Shader.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
+/Users/u17776048/Documents/GameEngine/src/shader/Shader.h
 key_handler/keyHandler.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.h
+/Users/u17776048/Documents/GameEngine/src/key_handler/keyHandler.h
 window_manager/windowManager.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.h
+/Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.h
 Camera/Camera.h
-/Users/zabilya/Documents/clion_projects/GameEngine/src/Camera/Camera.h
+/Users/u17776048/Documents/GameEngine/src/Camera/Camera.h
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.h
+/Users/u17776048/Documents/GameEngine/src/shader/Shader.h
 GL/glew.h
 -
 iostream
@@ -1496,13 +1496,13 @@ sstream
 string
 -
 ../../dependencies/glm/glm.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/glm.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/glm.hpp
 ../../dependencies/glm/gtc/matrix_transform.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../../dependencies/glm/gtc/type_ptr.hpp
-/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+/Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
 
-/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.h
+/Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.h
 GLFW/glfw3.h
 -
 iostream

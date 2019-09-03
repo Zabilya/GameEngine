@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zabilya/Documents/clion_projects/GameEngine/dependencies/stb_image/stb_image.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/camera/Camera.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/camera/Camera.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/key_handler/keyHandler.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/main.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/shader/Shader.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
-  "/Users/zabilya/Documents/clion_projects/GameEngine/src/window_manager/windowManager.cpp" "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/dependencies/stb_image/stb_image.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/dependencies/stb_image/stb_image.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/camera/Camera.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/camera/Camera.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/key_handler/keyHandler.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/main.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/shader/Shader.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
