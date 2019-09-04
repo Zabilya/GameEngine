@@ -32,4 +32,8 @@
 *.app
 
 .idea*
-cmake*
+*cmake*
+/cmake*
+/cmake-build-debug
+
+*~*

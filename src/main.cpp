@@ -221,8 +221,6 @@ int main(void)
     shader.use();
 //    shader.setInt("texture1", 0);
 //    shader.setInt("texture2", 1);
-    shader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-    shader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
     lampShader.use();
 
     while (!glfwWindowShouldClose(window))
@@ -248,7 +246,7 @@ int main(void)
         glm::mat4 view = camera.getViewMatrix();
         shader.setMat4("view", view);
 
-        glm::mat4 projection = glm::perspective(glm::radians(45.0f), screenWidth/screenHeight,
+        glm::mat4 projection = glm::perspective(glm::radians(camera.zoom), screenWidth/screenHeight,
                 0.1f, 100.0f);
         shader.setMat4("projection", projection);
 
@@ -264,7 +262,17 @@ int main(void)
         model = glm::rotate(model, 0.0f, glm::vec3(1.0f, 0.3f, 0.5f));
         shader.setMat4("model", model);
 
-        shader.setVec3("lightPos", lightPos.x, lightPos.y, lightPos.z);
+        shader.setVec3("viewPos", camera.position.x, camera.position.y, camera.position.z);
+
+        shader.setVec3("material.ambient",  1.0f, 0.5f, 0.31f);
+        shader.setVec3("material.diffuse",  1.0f, 0.5f, 0.31f);
+        shader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
+        shader.setFloat("material.shininess", 32.0f);
+
+        shader.setVec3("light.position", lightPos.x, lightPos.y, lightPos.z);
+        shader.setVec3("light.ambient",  0.2f, 0.2f, 0.2f);
+        shader.setVec3("light.diffuse",  0.5f, 0.5f, 0.5f); // darken the light a bit to fit the scene
+        shader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
         glBindVertexArray(vao);
         glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices) / sizeof(unsigned int));
