@@ -3,9 +3,9 @@
 
 layout (location = 0) in vec3 position;
 layout (location = 1) in vec3 aNormal;
-// layout (location = 2) in vec2 textCoord;
+layout (location = 2) in vec2 textCoord;
 
-// out vec2 texCoord;
+out vec2 texCoord;
 out vec3 normal;
 out vec3 fragPos;
 
@@ -19,7 +19,7 @@ void main()
 	gl_Position = projection * view * model * vec4(position, 1.0);
 	normal = mat3(transpose(inverse(model))) * aNormal;
 	fragPos = vec3(model * vec4(position, 1.0));
-// 	texCoord = vec2(textCoord.x, textCoord.y);
+	texCoord = textCoord;
 }
 
 #shader fragment
@@ -27,16 +27,15 @@ void main()
 
 struct Material
 {
-    vec3 ambient;
-    vec3 diffuse;
-    vec3 specular;
+    sampler2D diffuse;
+    sampler2D specular;
     float shininess;
 };
 
 struct Light
 {
-    vec3 position;
     vec3 ambient;
+    vec3 position;
     vec3 diffuse;
     vec3 specular;
 };
@@ -44,6 +43,7 @@ struct Light
 // uniform sampler2D texture1;
 // uniform sampler2D texture2;
 
+in vec2 texCoord;
 in vec3 normal;
 in vec3 fragPos;
 
@@ -56,19 +56,19 @@ out vec4 color;
 void main()
 {
     // ambient
-    vec3 ambient = material.ambient * light.ambient;
+    vec3 ambient = light.ambient * vec3(texture(material.diffuse, texCoord));
 
     // diffuse
     vec3 norm = normalize(normal);
     vec3 lightDir = normalize(light.position - fragPos);
     float diff = max(dot(norm, lightDir), 0.0);
-    vec3 diffuse = light.diffuse * (diff * material.diffuse);
+    vec3 diffuse = light.diffuse * diff * vec3(texture(material.diffuse, texCoord));
 
     // specular
     vec3 viewDir = normalize(viewPos - fragPos);
     vec3 reflectDir = reflect(-lightDir, norm);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
-    vec3 specular = light.specular * (spec * material.specular);
+    vec3 specular = light.specular * spec * vec3(texture(material.specular, texCoord));
 
     // result
 // 	fragColor = mix(texture(texture1, texCoord), texture(texture2, texCoord), 0.2);

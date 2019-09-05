@@ -15,6 +15,7 @@
 
 void scroll_callback(GLFWwindow* window, double offsetX, double offsetY);
 void mouse_callback(GLFWwindow* window, double posX, double posY);
+unsigned int loadTexture(char const *path);
 
 using namespace std;
 
@@ -81,47 +82,47 @@ int main(void)
     Shader lampShader("../res/shaders/Lamp.shader");
 
     float vertices[] = {
-            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
-            0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
-            0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
-            0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
+            0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 1.0f, 0.0f,
+            0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+            0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
 
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-            0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-            0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-            0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+            0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-            -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,
-            -0.5f,  0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,
-            -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,
-            -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,
-            -0.5f, -0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,
-            -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f,  -1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  -1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
 
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
-            0.5f,  0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-            0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-            0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-            0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+            0.5f,  0.5f, -0.5f,  1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+            0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
 
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,
-            0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,
-            0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,
-            0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,
-            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,
-            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f, 1.0f, 1.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
 
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
-            0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-            0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-            -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f
+            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
+            0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
+            0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f, 0.0f, 1.0f
     };
 
     glm::vec3 cubePositions[] = {
@@ -161,14 +162,11 @@ int main(void)
 //    }
 //    stbi_image_free(data);
 
+//    int containerWidth, containerHeight, nrChannels;
 //    unsigned int texture2;
 //    glGenTextures(1, &texture2);
 //    glBindTexture(GL_TEXTURE_2D, texture2);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-//    data = stbi_load("../res/textures/awesomeface.png", &containerWidth, &containerHeight,
+//    unsigned char *data = stbi_load("../res/textures/container.png", &containerWidth, &containerHeight,
 //                     &nrChannels, 0);
 //    if (data)
 //    {
@@ -176,6 +174,10 @@ int main(void)
 //                     GL_RGBA, GL_UNSIGNED_BYTE, data);
 //        glGenerateMipmap(GL_TEXTURE_2D);
 //    }
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 //    stbi_image_free(data);
 
     unsigned int vao;
@@ -190,12 +192,15 @@ int main(void)
 //    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 //    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float),
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
             (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float),
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
                           (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
+                          (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
 //    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
 //                          (void*)(3 * sizeof(float)));
 //    glEnableVertexAttribArray(2);
@@ -207,18 +212,21 @@ int main(void)
     glGenVertexArrays(1, &lightVao);
     glBindVertexArray(lightVao);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float),
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
                          (void*)0);
     glEnableVertexAttribArray(0);
 
     // Узнем максимальное уоличество атрибутов в шейдере
-    int nrAttributes;
-    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
-    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
+//    int nrAttributes;
+//    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+//    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
 
-    /* Loop until the user closes the window */
+    unsigned int diffuseMap = loadTexture("../res/textures/container.png");
+    unsigned int specularMap = loadTexture("../res/textures/metal_for_container.png");
 
     shader.use();
+    shader.setInt("material.diffuse", 0);
+    shader.setInt("material.specular", 1);
 //    shader.setInt("texture1", 0);
 //    shader.setInt("texture2", 1);
     lampShader.use();
@@ -238,10 +246,13 @@ int main(void)
         // bind textures on corresponding texture units
 //        glActiveTexture(GL_TEXTURE0);
 //        glBindTexture(GL_TEXTURE_2D, texture1);
-//        glActiveTexture(GL_TEXTURE1);
-//        glBindTexture(GL_TEXTURE_2D, texture2);
 
         shader.use();
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, diffuseMap);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, specularMap);
 
         glm::mat4 view = camera.getViewMatrix();
         shader.setMat4("view", view);
@@ -264,10 +275,10 @@ int main(void)
 
         shader.setVec3("viewPos", camera.position.x, camera.position.y, camera.position.z);
 
-        shader.setVec3("material.ambient",  1.0f, 0.5f, 0.31f);
-        shader.setVec3("material.diffuse",  1.0f, 0.5f, 0.31f);
+//        shader.setVec3("material.ambient",  1.0f, 0.5f, 0.31f);
+//        shader.setVec3("material.diffuse",  1.0f, 0.5f, 0.31f);
         shader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
-        shader.setFloat("material.shininess", 32.0f);
+        shader.setFloat("material.shininess", 64.0f);
 
         shader.setVec3("light.position", lightPos.x, lightPos.y, lightPos.z);
         shader.setVec3("light.ambient",  0.2f, 0.2f, 0.2f);
@@ -336,3 +347,41 @@ void scroll_callback(GLFWwindow* window, double offsetX, double offsetY)
 {
     camera.processMouseScroll(offsetY);
 }
+
+unsigned int loadTexture(char const *path) {
+    unsigned int textureId;
+    glGenTextures(1, &textureId);
+
+    int width, height, nrComponents;
+    unsigned char *data = stbi_load(path, &width, &height, &nrComponents, 0);
+    if (data) {
+        GLenum format;
+        if (nrComponents == 1)
+            format = GL_RED;
+        else if (nrComponents == 3)
+            format = GL_RGB;
+        else if (nrComponents == 4)
+            format = GL_RGBA;
+
+        glBindTexture(GL_TEXTURE_2D, textureId);
+        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    }
+    else {
+       cout << "Failed to load texture" << endl;
+    }
+    stbi_image_free(data);
+    return textureId;
+}
+
+
+
+
+
+
+
+
