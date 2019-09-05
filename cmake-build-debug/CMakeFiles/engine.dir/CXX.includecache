@@ -1473,10 +1473,12 @@ tgmath.h
 /Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../dependencies/glm/gtc/type_ptr.hpp
 /Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
-shader/Shader.h
-/Users/u17776048/Documents/GameEngine/src/shader/Shader.h
 key_handler/keyHandler.h
 /Users/u17776048/Documents/GameEngine/src/key_handler/keyHandler.h
+utils/utils.h
+/Users/u17776048/Documents/GameEngine/src/utils/utils.h
+shader/Shader.h
+/Users/u17776048/Documents/GameEngine/src/shader/Shader.h
 window_manager/windowManager.h
 /Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.h
 Camera/Camera.h
@@ -1501,6 +1503,14 @@ string
 /Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/matrix_transform.hpp
 ../../dependencies/glm/gtc/type_ptr.hpp
 /Users/u17776048/Documents/GameEngine/dependencies/glm/gtc/type_ptr.hpp
+
+/Users/u17776048/Documents/GameEngine/src/utils/utils.cpp
+GL/glew.h
+-
+
+/Users/u17776048/Documents/GameEngine/src/utils/utils.h
+GL/glew.h
+-
 
 /Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.h
 GLFW/glfw3.h

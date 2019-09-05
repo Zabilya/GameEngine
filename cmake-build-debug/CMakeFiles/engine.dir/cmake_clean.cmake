@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/key_handler/keyHandler.cpp.o"
   "CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   "CMakeFiles/engine.dir/src/camera/Camera.cpp.o"
+  "CMakeFiles/engine.dir/src/utils/utils.cpp.o"
   "engine.pdb"
   "engine"
 )

@@ -584,6 +584,7 @@ CMakeFiles/engine.dir/src/main.cpp.o: ../src/Camera/Camera.h
 CMakeFiles/engine.dir/src/main.cpp.o: ../src/key_handler/keyHandler.h
 CMakeFiles/engine.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/engine.dir/src/main.cpp.o: ../src/shader/Shader.h
+CMakeFiles/engine.dir/src/main.cpp.o: ../src/utils/utils.h
 CMakeFiles/engine.dir/src/main.cpp.o: ../src/window_manager/windowManager.h
 CMakeFiles/engine.dir/src/main.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/engine.dir/src/main.cpp.o: /usr/local/include/GLFW/glfw3.h
@@ -793,6 +794,9 @@ CMakeFiles/engine.dir/src/shader/Shader.cpp.o: ../src/shader/Shader.cpp
 CMakeFiles/engine.dir/src/shader/Shader.cpp.o: ../src/shader/Shader.h
 CMakeFiles/engine.dir/src/shader/Shader.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/engine.dir/src/shader/Shader.cpp.o: /usr/local/include/GLFW/glfw3.h
+
+CMakeFiles/engine.dir/src/utils/utils.cpp.o: ../src/utils/utils.cpp
+CMakeFiles/engine.dir/src/utils/utils.cpp.o: /usr/local/include/GL/glew.h
 
 CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o: ../src/window_manager/windowManager.cpp
 CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o: ../src/window_manager/windowManager.h

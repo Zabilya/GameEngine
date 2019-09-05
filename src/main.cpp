@@ -8,8 +8,10 @@
 #include "../dependencies/glm/gtc/matrix_transform.hpp"
 #include "../dependencies/glm/gtc/type_ptr.hpp"
 
-#include "shader/Shader.h"
 #include "key_handler/keyHandler.h"
+#include "utils/utils.h"
+
+#include "shader/Shader.h"
 #include "window_manager/windowManager.h"
 #include "Camera/Camera.h"
 
@@ -143,43 +145,6 @@ int main(void)
             1, 2, 3
     };
 
-//    int containerWidth, containerHeight, nrChannels;
-//    unsigned int texture1;
-//    glGenTextures(1, &texture1);
-//    glBindTexture(GL_TEXTURE_2D, texture1);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-//    stbi_set_flip_vertically_on_load(true);
-//    unsigned char *data = stbi_load("../res/textures/container.jpg", &containerWidth,
-//                                    &containerHeight, &nrChannels, 0);
-//    if (data)
-//    {
-//        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, containerWidth, containerHeight, 0,
-//                     GL_RGB, GL_UNSIGNED_BYTE, data);
-//        glGenerateMipmap(GL_TEXTURE_2D);
-//    }
-//    stbi_image_free(data);
-
-//    int containerWidth, containerHeight, nrChannels;
-//    unsigned int texture2;
-//    glGenTextures(1, &texture2);
-//    glBindTexture(GL_TEXTURE_2D, texture2);
-//    unsigned char *data = stbi_load("../res/textures/container.png", &containerWidth, &containerHeight,
-//                     &nrChannels, 0);
-//    if (data)
-//    {
-//        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, containerWidth, containerHeight, 0,
-//                     GL_RGBA, GL_UNSIGNED_BYTE, data);
-//        glGenerateMipmap(GL_TEXTURE_2D);
-//    }
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-//    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-//    stbi_image_free(data);
-
     unsigned int vao;
     unsigned int vbo;
 //    unsigned int ebo;
@@ -216,19 +181,12 @@ int main(void)
                          (void*)0);
     glEnableVertexAttribArray(0);
 
-    // Узнем максимальное уоличество атрибутов в шейдере
-//    int nrAttributes;
-//    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
-//    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
-
     unsigned int diffuseMap = loadTexture("../res/textures/container.png");
     unsigned int specularMap = loadTexture("../res/textures/metal_for_container.png");
 
     shader.use();
     shader.setInt("material.diffuse", 0);
     shader.setInt("material.specular", 1);
-//    shader.setInt("texture1", 0);
-//    shader.setInt("texture2", 1);
     lampShader.use();
 
     while (!glfwWindowShouldClose(window))
@@ -242,10 +200,6 @@ int main(void)
         /* Render here */
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-        // bind textures on corresponding texture units
-//        glActiveTexture(GL_TEXTURE0);
-//        glBindTexture(GL_TEXTURE_2D, texture1);
 
         shader.use();
 
@@ -261,22 +215,12 @@ int main(void)
                 0.1f, 100.0f);
         shader.setMat4("projection", projection);
 
-        //rotation
-//        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
-//
-//        GLint modelLoc = glGetUniformLocation(shader.getShaderId(), "model");
-//        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-//        GLint viewLoc = glGetUniformLocation(shader.getShaderId(), "view");
-//        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::rotate(model, 0.0f, glm::vec3(1.0f, 0.3f, 0.5f));
         shader.setMat4("model", model);
 
         shader.setVec3("viewPos", camera.position.x, camera.position.y, camera.position.z);
 
-//        shader.setVec3("material.ambient",  1.0f, 0.5f, 0.31f);
-//        shader.setVec3("material.diffuse",  1.0f, 0.5f, 0.31f);
         shader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
         shader.setFloat("material.shininess", 64.0f);
 

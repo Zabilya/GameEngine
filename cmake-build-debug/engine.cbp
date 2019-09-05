@@ -111,6 +111,12 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/shader/Shader.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/utils/utils.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/utils/utils.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.cpp">
 			<Option target="engine"/>
 		</Unit>

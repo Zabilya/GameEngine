@@ -258,6 +258,33 @@ src/shader/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader/Shader.cpp.s
 .PHONY : src/shader/Shader.cpp.s
 
+src/utils/utils.o: src/utils/utils.cpp.o
+
+.PHONY : src/utils/utils.o
+
+# target to build an object file
+src/utils/utils.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/utils/utils.cpp.o
+.PHONY : src/utils/utils.cpp.o
+
+src/utils/utils.i: src/utils/utils.cpp.i
+
+.PHONY : src/utils/utils.i
+
+# target to preprocess a source file
+src/utils/utils.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/utils/utils.cpp.i
+.PHONY : src/utils/utils.cpp.i
+
+src/utils/utils.s: src/utils/utils.cpp.s
+
+.PHONY : src/utils/utils.s
+
+# target to generate assembly for a file
+src/utils/utils.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/utils/utils.cpp.s
+.PHONY : src/utils/utils.cpp.s
+
 src/window_manager/windowManager.o: src/window_manager/windowManager.cpp.o
 
 .PHONY : src/window_manager/windowManager.o
@@ -309,6 +336,9 @@ help:
 	@echo "... src/shader/Shader.o"
 	@echo "... src/shader/Shader.i"
 	@echo "... src/shader/Shader.s"
+	@echo "... src/utils/utils.o"
+	@echo "... src/utils/utils.i"
+	@echo "... src/utils/utils.s"
 	@echo "... src/window_manager/windowManager.o"
 	@echo "... src/window_manager/windowManager.i"
 	@echo "... src/window_manager/windowManager.s"
