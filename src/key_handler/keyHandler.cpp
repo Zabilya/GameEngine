@@ -15,5 +15,9 @@ void processInput(GLFWwindow *window, Camera *camera, float deltaTime) {
         camera->processKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera->processKeyboard(RIGHT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+        camera->processKeyboard(UP, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_C) == GLFW_PRESS)
+        camera->processKeyboard(DOWN, deltaTime);
 }
 
