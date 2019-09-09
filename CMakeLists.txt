@@ -34,6 +34,7 @@ set(CMAKE_PREFIX_PATH /usr/local/lib/GLFW)
 find_package (OpenGL REQUIRED)
 find_package (glfw3 REQUIRED)
 find_package(glew REQUIRED)
+find_package(assimp REQUIRED)
 include_directories(${GLFW_INCLUDE_DIRS})
 
 include_directories(/usr/local/include)
@@ -41,7 +42,7 @@ find_library(COCOA_LIBRARY Cocoa REQUIRED)
 find_library(IOKIT_LIBRARY IOKit REQUIRED)
 find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 
-set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Shader.cpp src/shader/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp src/camera/Camera.cpp src/camera/Camera.h src/utils/utils.cpp src/utils/utils.h)
+set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Shader.cpp src/shader/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp src/camera/Camera.cpp src/camera/Camera.h src/utils/utils.cpp src/utils/utils.h src/mesh/Mesh.cpp src/mesh/Mesh.h)
 add_executable(engine ${SOURCE_FILES})
 
 target_link_libraries (engine
