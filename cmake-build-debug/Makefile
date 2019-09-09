@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/u17776048/Documents/GameEngine
+CMAKE_SOURCE_DIR = /Users/zabilya/Documents/clion_projects/GameEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/u17776048/Documents/GameEngine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles /Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mesh/Mesh.o: src/mesh/Mesh.cpp.o
+
+.PHONY : src/mesh/Mesh.o
+
+# target to build an object file
+src/mesh/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/mesh/Mesh.cpp.o
+.PHONY : src/mesh/Mesh.cpp.o
+
+src/mesh/Mesh.i: src/mesh/Mesh.cpp.i
+
+.PHONY : src/mesh/Mesh.i
+
+# target to preprocess a source file
+src/mesh/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/mesh/Mesh.cpp.i
+.PHONY : src/mesh/Mesh.cpp.i
+
+src/mesh/Mesh.s: src/mesh/Mesh.cpp.s
+
+.PHONY : src/mesh/Mesh.s
+
+# target to generate assembly for a file
+src/mesh/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/mesh/Mesh.cpp.s
+.PHONY : src/mesh/Mesh.cpp.s
+
 src/shader/Shader.o: src/shader/Shader.cpp.o
 
 .PHONY : src/shader/Shader.o
@@ -333,6 +360,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mesh/Mesh.o"
+	@echo "... src/mesh/Mesh.i"
+	@echo "... src/mesh/Mesh.s"
 	@echo "... src/shader/Shader.o"
 	@echo "... src/shader/Shader.i"
 	@echo "... src/shader/Shader.s"
