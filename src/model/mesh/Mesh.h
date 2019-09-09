@@ -11,6 +11,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
+#include <assimp/types.h>
 #include "../../../dependencies/glm/glm.hpp"
 #include "../../../dependencies/glm/gtc/matrix_transform.hpp"
 #include "../../../dependencies/glm/gtc/type_ptr.hpp"
@@ -27,6 +28,7 @@ struct Vertex {
 struct Texture {
     unsigned int id;
     string type;
+    aiString path;
 };
 
 class Mesh {

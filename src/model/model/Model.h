@@ -13,6 +13,7 @@
 #include "../../../dependencies/glm/glm.hpp"
 #include "../../../dependencies/glm/gtc/matrix_transform.hpp"
 #include "../../../dependencies/glm/gtc/type_ptr.hpp"
+#include "../../../dependencies/stb_image/stb_image.h"
 
 #include <vector>
 #include <string>
@@ -26,8 +27,13 @@
 
 using namespace std;
 
+unsigned int textureFromFile(const char *path, const string &directory);
+
 class Model {
 public:
+    vector<Texture> texturesLoaded;
+    bool gammaCorrection;
+
     Model(char *path);
     void Draw(Shader shader);
 
