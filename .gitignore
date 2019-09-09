@@ -37,6 +37,9 @@
 /cmake-build-debug/*
 cmake-build-debug/
 cmake-build-debug
-
+/CMakeFiles/*
+CmakeFiles/
+/CmakeFiles
+/CmakeFiles/
 
 *~*

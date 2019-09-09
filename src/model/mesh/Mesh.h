@@ -11,10 +11,10 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
-#include "../../dependencies/glm/glm.hpp"
-#include "../../dependencies/glm/gtc/matrix_transform.hpp"
-#include "../../dependencies/glm/gtc/type_ptr.hpp"
-#include "../shader/Shader.h"
+#include "../../../dependencies/glm/glm.hpp"
+#include "../../../dependencies/glm/gtc/matrix_transform.hpp"
+#include "../../../dependencies/glm/gtc/type_ptr.hpp"
+#include "../../shader/Shader.h"
 
 using namespace std;
 
