@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sd
 
 CXX_DEFINES = -DGLFW_DLL
 
-CXX_INCLUDES = -I/usr/local/include -isystem /usr/local/Cellar/glfw/3.3/include 
+CXX_INCLUDES = -I/usr/local/include/assimp -I/usr/local/include -isystem /usr/local/Cellar/glfw/3.3/include 
 

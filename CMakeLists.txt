@@ -31,11 +31,23 @@ set(CMAKE_MODULE_PATH /usr/local/lib)
 set(CMAKE_PREFIX_PATH /usr/local/lib/GLFW)
 
 #find_package (PkgConfig REQUIRED)
+include_directories(/usr/local/include/assimp)
+link_directories(/usr/local/lib)
+
 find_package (OpenGL REQUIRED)
 find_package (glfw3 REQUIRED)
 find_package(glew REQUIRED)
-find_package(assimp REQUIRED)
+#find_package(assimp REQUIRED)
 include_directories(${GLFW_INCLUDE_DIRS})
+
+#GLFW
+#set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+#set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+#set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+#add_subdirectory(dependencies/GLFW)
+
+#assimp
+#add_subdirectory(dependencies/assimp)
 
 include_directories(/usr/local/include)
 find_library(COCOA_LIBRARY Cocoa REQUIRED)
@@ -45,13 +57,16 @@ find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Shader.cpp src/shader/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp src/camera/Camera.cpp src/camera/Camera.h src/utils/utils.cpp src/utils/utils.h src/model/mesh/Mesh.cpp src/model/mesh/Mesh.h src/model/model/Model.cpp src/model/model/Model.h)
 add_executable(engine ${SOURCE_FILES})
 
+#target_link_libraries(engine glfw)
+target_link_libraries(engine assimp)
+
 target_link_libraries (engine
         ${OPENGL_LIBRARIES}
         ${GLEW_LIBRARY}
         ${COCOA_LIBRARY}
         ${COREVID_LIBRARY}
         ${IOKIT_LIBRARY}
-        ${GLFW3_LIBRARY} glfw)
+        ${GLFW_LIBRARY} glfw)
 
 
 

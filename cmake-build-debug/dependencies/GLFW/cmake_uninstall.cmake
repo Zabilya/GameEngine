@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/install_manifest.txt\"")
+if (NOT EXISTS "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/install_manifest.txt" files)
+file(READ "/Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

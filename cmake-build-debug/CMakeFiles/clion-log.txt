@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/u17776048/Documents/GameEngine
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zabilya/Documents/clion_projects/GameEngine
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/u17776048/Documents/GameEngine/cmake-build-debug
+-- Build files have been written to: /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug

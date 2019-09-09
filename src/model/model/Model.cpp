@@ -16,7 +16,7 @@ void Model::Draw(Shader shader) {
 
 void Model::loadModel(string path) {
     Assimp::Importer import;
-    const aiScene *scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
+    const aiScene *scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
         cout << "ERROR::ASSIMP::" << import.GetErrorString() << endl;
@@ -70,6 +70,16 @@ Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene) {
         } else {
             vertex.texCoord = glm::vec2(0.0f, 0.0f);
         }
+        // tangent
+        vector.x = mesh->mTangents[i].x;
+        vector.y = mesh->mTangents[i].y;
+        vector.z = mesh->mTangents[i].z;
+        vertex.tangent = vector;
+        // bitangent
+        vector.x = mesh->mBitangents[i].x;
+        vector.y = mesh->mBitangents[i].y;
+        vector.z = mesh->mBitangents[i].z;
+        vertex.biTangent = vector;
         vertices.push_back(vertex);
     }
 
@@ -116,6 +126,7 @@ vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType type,
             texturesLoaded.push_back(texture);
         }
     }
+    return textures;
 }
 
 unsigned int textureFromFile(const char *path, const string &directory)

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/out-zabolotny-iy/CLionProjects/engine
+CMAKE_SOURCE_DIR = /Users/zabilya/Documents/clion_projects/GameEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/CMakeFiles /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/CMakeFiles/progress.marks
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/CMakeFiles 0
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/CMakeFiles/progress.marks
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/clean
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/preinstall
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/preinstall
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dependencies/GLFW/CMakeFiles/uninstall.dir/rule:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/CMakeFiles/uninstall.dir/rule
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 dependencies/GLFW/CMakeFiles/uninstall.dir/rule
 .PHONY : dependencies/GLFW/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ uninstall: dependencies/GLFW/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(MAKE) -f dependencies/GLFW/CMakeFiles/uninstall.dir/build.make dependencies/GLFW/CMakeFiles/uninstall.dir/build
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(MAKE) -f dependencies/GLFW/CMakeFiles/uninstall.dir/build.make dependencies/GLFW/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

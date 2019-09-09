@@ -13,7 +13,8 @@
 
 #include "shader/Shader.h"
 #include "window_manager/windowManager.h"
-#include "Camera/Camera.h"
+#include "camera/Camera.h"
+#include "model/model/Model.h"
 
 void scroll_callback(GLFWwindow* window, double offsetX, double offsetY);
 void mouse_callback(GLFWwindow* window, double posX, double posY);
@@ -38,8 +39,18 @@ float lastFrame = 0.0f;
 // light
 glm::vec3 lightPos = glm::vec3(1.2f, 1.0f, 2.0f);
 
+int main1();
+int main2();
+
 int main(void)
 {
+//    main1();
+    main2();
+
+    return 0;
+}
+
+int main1() {
     /* Initialize the library */
     if (!glfwInit())
         return -1;
@@ -165,7 +176,7 @@ int main(void)
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 //    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
-            (void*)0);
+                          (void*)0);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
                           (void*)(3 * sizeof(float)));
@@ -185,7 +196,7 @@ int main(void)
     glBindVertexArray(lightVao);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
-                         (void*)0);
+                          (void*)0);
     glEnableVertexAttribArray(0);
 
     unsigned int diffuseMap = loadTexture("../res/textures/container.png");
@@ -225,7 +236,7 @@ int main(void)
         shader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
         // point light 1
         shader.setVec3("pointLights[0].position", pointLightPositions[0].x, pointLightPositions[0].y,
-                pointLightPositions[0].z);
+                       pointLightPositions[0].z);
         shader.setVec3("pointLights[0].ambient", 0.05f, 0.05f, 0.05f);
         shader.setVec3("pointLights[0].diffuse", 0.8f, 0.8f, 0.8f);
         shader.setVec3("pointLights[0].specular", 1.0f, 1.0f, 1.0f);
@@ -270,11 +281,11 @@ int main(void)
         shader.setFloat("spotLight.quadratic", 0.032);
         shader.setFloat("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
         shader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(15.0f)));
-        
+
 
         glm::mat4 view = camera.getViewMatrix();
         glm::mat4 projection = glm::perspective(glm::radians(camera.zoom), screenWidth/screenHeight,
-                0.1f, 100.0f);
+                                                0.1f, 100.0f);
         shader.setMat4("view", view);
         shader.setMat4("projection", projection);
 
@@ -321,6 +332,124 @@ int main(void)
     glDeleteBuffers(1, &vbo);
 
     glfwTerminate();
+    return 0;
+}
+
+int main2() {
+    /* Initialize the library */
+    if (!glfwInit())
+        return -1;
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
+#endif
+
+    /* Create a windowed mode window and its OpenGL context */
+    GLFWwindow* window = glfwCreateWindow(screenWidth, screenHeight, "Hello World", NULL, NULL);
+    if (!window)
+    {
+        cout << "Failed to create GLFW window" << endl;
+        glfwTerminate();
+        return -1;
+    }
+
+    /* Make the window's context current */
+    glfwMakeContextCurrent(window);
+    /* for resizing window */
+    glfwSetFramebufferSizeCallback(window, frameBufferSizeCallback);
+    /* Take cursor */
+    glfwSetCursorPosCallback(window, mouse_callback);
+    /* for scrolling */
+    glfwSetScrollCallback(window, scroll_callback);
+
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+//    glewExperimental = GL_TRUE;
+
+    if (glewInit() != GLEW_OK)
+        cout << "Error!" << endl;
+
+    cout << "Version is = " << glGetString(GL_VERSION) << endl;
+
+    glm::vec3 pointLightPositions[] = {
+            glm::vec3( 0.7f,  0.2f,  2.0f),
+            glm::vec3( 2.3f, -3.3f, -4.0f),
+            glm::vec3(-4.0f,  2.0f, -12.0f),
+            glm::vec3( 0.0f,  0.0f, -3.0f)
+    };
+
+    //Включение проверки глубины для правильной отрисовки объектов
+    glEnable(GL_DEPTH_TEST);
+
+//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+    Shader ourShader("../res/shaders/Model.shader");
+    Model ourModel("../res/models/nanosuit/nanosuit.obj");
+
+    while (!glfwWindowShouldClose(window))
+    {
+        // per-frame time logic
+        // --------------------
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
+        // input
+        // -----
+        processInput(window, &camera, deltaTime);
+
+        // render
+        // ------
+        glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        // don't forget to enable shader before setting uniforms
+        ourShader.use();
+
+        ourShader.setVec3("viewPos", camera.position.x, camera.position.y, camera.position.z);
+
+        // point light 1
+        ourShader.setVec3("pointLights[0].position", pointLightPositions[0].x, pointLightPositions[0].y,
+                       pointLightPositions[0].z);
+        ourShader.setVec3("pointLights[0].ambient", 0.05f, 0.05f, 0.05f);
+        ourShader.setVec3("pointLights[0].diffuse", 0.8f, 0.8f, 0.8f);
+        ourShader.setVec3("pointLights[0].specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("pointLights[0].constant", 1.0f);
+        ourShader.setFloat("pointLights[0].linear", 0.09);
+        ourShader.setFloat("pointLights[0].quadratic", 0.032);
+        // point light 2
+        ourShader.setVec3("pointLights[1].position", pointLightPositions[1].x, pointLightPositions[1].y,
+                       pointLightPositions[1].z);
+        ourShader.setVec3("pointLights[1].ambient", 0.05f, 0.05f, 0.05f);
+        ourShader.setVec3("pointLights[1].diffuse", 0.8f, 0.8f, 0.8f);
+        ourShader.setVec3("pointLights[1].specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("pointLights[1].constant", 1.0f);
+        ourShader.setFloat("pointLights[1].linear", 0.09);
+        ourShader.setFloat("pointLights[1].quadratic", 0.032);
+
+        // view/projection transformations
+        glm::mat4 projection = glm::perspective(glm::radians(camera.zoom), (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
+        glm::mat4 view = camera.getViewMatrix();
+        ourShader.setMat4("projection", projection);
+        ourShader.setMat4("view", view);
+
+        // render the loaded model
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
+        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// it's a bit too big for our scene, so scale it down
+        ourShader.setMat4("model", model);
+        ourModel.Draw(ourShader);
+
+
+        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
+        // -------------------------------------------------------------------------------
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+    glfwTerminate();
+
     return 0;
 }
 

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/out-zabolotny-iy/CLionProjects/engine
+CMAKE_SOURCE_DIR = /Users/zabilya/Documents/clion_projects/GameEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debu
 include dependencies/GLFW/CMakeFiles/uninstall.dir/progress.make
 
 dependencies/GLFW/CMakeFiles/uninstall:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/cmake_uninstall.cmake
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/cmake_uninstall.cmake
 
 uninstall: dependencies/GLFW/CMakeFiles/uninstall
 uninstall: dependencies/GLFW/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ dependencies/GLFW/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : dependencies/GLFW/CMakeFiles/uninstall.dir/build
 
 dependencies/GLFW/CMakeFiles/uninstall.dir/clean:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : dependencies/GLFW/CMakeFiles/uninstall.dir/clean
 
 dependencies/GLFW/CMakeFiles/uninstall.dir/depend:
-	cd /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/out-zabolotny-iy/CLionProjects/engine /Users/out-zabolotny-iy/CLionProjects/engine/dependencies/GLFW /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW /Users/out-zabolotny-iy/CLionProjects/engine/cmake-build-debug/dependencies/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/zabilya/Documents/clion_projects/GameEngine /Users/zabilya/Documents/clion_projects/GameEngine/dependencies/GLFW /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW /Users/zabilya/Documents/clion_projects/GameEngine/cmake-build-debug/dependencies/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dependencies/GLFW/CMakeFiles/uninstall.dir/depend
 
