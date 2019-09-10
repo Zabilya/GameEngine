@@ -46,6 +46,7 @@ in vec3 normal;
 in vec3 fragPos;
 
 uniform sampler2D texture_diffuse1;
+uniform sampler2D texture_specular1;
 uniform vec3 viewPos;
 
 uniform PointLight pointLights[NR_POINT_LIGHTS];
@@ -79,7 +80,7 @@ vec3 calcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 
     vec3 ambient = light.ambient * vec3(texture(texture_diffuse1, texCoord));
     vec3 diffuse = light.diffuse * diff * vec3(texture(texture_diffuse1, texCoord));
-    vec3 specular = light.specular * (spec * vec3(0.2, 0.2, 0.2));
+    vec3 specular = light.specular * spec * vec3(texture(texture_specular1, texCoord));
     ambient *= attenuation;
     diffuse *= attenuation;
     specular *= attenuation;

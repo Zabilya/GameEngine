@@ -39,31 +39,14 @@ float lastFrame = 0.0f;
 // light
 glm::vec3 lightPos = glm::vec3(1.2f, 1.0f, 2.0f);
 
-int main1();
-int main2();
+int main1(GLFWwindow* window);
+int main2(GLFWwindow* window);
+
+
 
 int main(void)
 {
-//    main1();
-    main2();
-
-    return 0;
-}
-
-int main1() {
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
-
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
-#endif
-
-    /* Create a windowed mode window and its OpenGL context */
-    GLFWwindow* window = glfwCreateWindow(screenWidth, screenHeight, "Hello World", NULL, NULL);
+    GLFWwindow* window = createWindow(screenWidth, screenHeight, "screen");
     if (!window)
     {
         cout << "Failed to create GLFW window" << endl;
@@ -79,17 +62,26 @@ int main1() {
     glfwSetCursorPosCallback(window, mouse_callback);
     /* for scrolling */
     glfwSetScrollCallback(window, scroll_callback);
-
+    /* for disabling cursor */
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-//    glewExperimental = GL_TRUE;
 
+    /* Initializing GLEW (this library give us all ogl functions) */
     if (glewInit() != GLEW_OK)
-        cout << "Error!" << endl;
+        return -1;
 
-    cout << "Version is = " << glGetString(GL_VERSION) << endl;
-
-    //Включение проверки глубины для правильной отрисовки объектов
     glEnable(GL_DEPTH_TEST);
+    enablePoligonMode(false);
+
+    showOpenglVersion();
+
+
+//    main1(window);
+    main2(window);
+
+    return 0;
+}
+
+int main1(GLFWwindow* window) {
 
     Shader shader("../res/shaders/Basic.shader");
     Shader lampShader("../res/shaders/Lamp.shader");
@@ -187,9 +179,6 @@ int main1() {
 //    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
 //                          (void*)(3 * sizeof(float)));
 //    glEnableVertexAttribArray(2);
-
-//     Позволяет ренднрить только линии
-//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     unsigned int lightVao;
     glGenVertexArrays(1, &lightVao);
@@ -335,43 +324,7 @@ int main1() {
     return 0;
 }
 
-int main2() {
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
-
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-#ifdef __APPLE__
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // uncomment this statement to fix compilation on OS X
-#endif
-
-    /* Create a windowed mode window and its OpenGL context */
-    GLFWwindow* window = glfwCreateWindow(screenWidth, screenHeight, "Hello World", NULL, NULL);
-    if (!window)
-    {
-        cout << "Failed to create GLFW window" << endl;
-        glfwTerminate();
-        return -1;
-    }
-
-    /* Make the window's context current */
-    glfwMakeContextCurrent(window);
-    /* for resizing window */
-    glfwSetFramebufferSizeCallback(window, frameBufferSizeCallback);
-    /* Take cursor */
-    glfwSetCursorPosCallback(window, mouse_callback);
-    /* for scrolling */
-    glfwSetScrollCallback(window, scroll_callback);
-
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-//    glewExperimental = GL_TRUE;
-
-    if (glewInit() != GLEW_OK)
-        cout << "Error!" << endl;
-
-    cout << "Version is = " << glGetString(GL_VERSION) << endl;
+int main2(GLFWwindow* window) {
 
     glm::vec3 pointLightPositions[] = {
             glm::vec3( 0.7f,  0.2f,  2.0f),
@@ -380,13 +333,10 @@ int main2() {
             glm::vec3( 0.0f,  0.0f, -3.0f)
     };
 
-    //Включение проверки глубины для правильной отрисовки объектов
-    glEnable(GL_DEPTH_TEST);
-
-//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
     Shader ourShader("../res/shaders/Model.shader");
     Model ourModel("../res/models/nanosuit/nanosuit.obj");
+
+    bool a = false;
 
     while (!glfwWindowShouldClose(window))
     {
