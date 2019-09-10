@@ -338,6 +338,10 @@ int main2(GLFWwindow* window) {
 
     bool a = false;
 
+    int counter = 0;
+    int bigCounter = 0;
+    float fps = 0.0f;
+
     while (!glfwWindowShouldClose(window))
     {
         // per-frame time logic
@@ -345,7 +349,17 @@ int main2(GLFWwindow* window) {
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
-
+        counter++;
+        if (counter == 100) {
+            ++bigCounter;
+            fps = (fps * (bigCounter - 1) + (1 / deltaTime)) / bigCounter;
+            counter = 0;
+        }
+        if (bigCounter == 10) {
+            cout << "FPS: " << fps << "\n" << endl;
+            bigCounter = 0;
+            fps = 0.0f;
+        }
         // input
         // -----
         processInput(window, &camera, deltaTime);
