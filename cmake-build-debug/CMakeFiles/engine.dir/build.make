@@ -174,6 +174,32 @@ CMakeFiles/engine.dir/src/model/model/Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/model/model/Model.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/model/model/Model.cpp -o CMakeFiles/engine.dir/src/model/model/Model.cpp.s
 
+CMakeFiles/engine.dir/src/scenes/scenes.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/scenes/scenes.cpp.o: ../src/scenes/scenes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/src/scenes/scenes.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/scenes/scenes.cpp.o -c /Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp
+
+CMakeFiles/engine.dir/src/scenes/scenes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/scenes/scenes.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp > CMakeFiles/engine.dir/src/scenes/scenes.cpp.i
+
+CMakeFiles/engine.dir/src/scenes/scenes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/scenes/scenes.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp -o CMakeFiles/engine.dir/src/scenes/scenes.cpp.s
+
+CMakeFiles/engine.dir/src/textures/textures_util.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/textures/textures_util.cpp.o: ../src/textures/textures_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/textures/textures_util.cpp.o -c /Users/u17776048/Documents/GameEngine/src/textures/textures_util.cpp
+
+CMakeFiles/engine.dir/src/textures/textures_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/textures/textures_util.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u17776048/Documents/GameEngine/src/textures/textures_util.cpp > CMakeFiles/engine.dir/src/textures/textures_util.cpp.i
+
+CMakeFiles/engine.dir/src/textures/textures_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/textures/textures_util.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/textures/textures_util.cpp -o CMakeFiles/engine.dir/src/textures/textures_util.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/main.cpp.o" \
@@ -184,7 +210,9 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/camera/Camera.cpp.o" \
 "CMakeFiles/engine.dir/src/utils/utils.cpp.o" \
 "CMakeFiles/engine.dir/src/model/mesh/Mesh.cpp.o" \
-"CMakeFiles/engine.dir/src/model/model/Model.cpp.o"
+"CMakeFiles/engine.dir/src/model/model/Model.cpp.o" \
+"CMakeFiles/engine.dir/src/scenes/scenes.cpp.o" \
+"CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
@@ -198,11 +226,13 @@ engine: CMakeFiles/engine.dir/src/camera/Camera.cpp.o
 engine: CMakeFiles/engine.dir/src/utils/utils.cpp.o
 engine: CMakeFiles/engine.dir/src/model/mesh/Mesh.cpp.o
 engine: CMakeFiles/engine.dir/src/model/model/Model.cpp.o
+engine: CMakeFiles/engine.dir/src/scenes/scenes.cpp.o
+engine: CMakeFiles/engine.dir/src/textures/textures_util.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 engine: /usr/local/lib/libGLEW.dylib
 engine: /usr/local/lib/libglfw.3.3.dylib
 engine: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

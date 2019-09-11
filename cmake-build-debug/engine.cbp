@@ -5,7 +5,7 @@
 		<Option title="engine"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\configuration\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/u17776048/Documents/GameEngine/cmake-build-debug"/>
@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/configuration/root_directory.h.in">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/dependencies/stb_image/stb_image.cpp">
 			<Option target="engine"/>
 		</Unit>
@@ -119,10 +122,25 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/model/model/Model.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/scenes.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/shader/Shader.cpp">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/shader/Shader.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/textures/textures_util.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/textures/textures_util.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/utils/Filesystem.h">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/utils/utils.cpp">
@@ -139,6 +157,9 @@
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/configuration/root_directory.h.in">
+			<Option virtualFolder="CMake Files\configuration\"/>
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/../../../../usr/local/lib/cmake/glfw3/glfw3Config.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\glfw3\"/>

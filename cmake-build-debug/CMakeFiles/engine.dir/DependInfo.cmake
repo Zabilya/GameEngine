@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/u17776048/Documents/GameEngine/src/main.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/main.cpp.o"
   "/Users/u17776048/Documents/GameEngine/src/model/mesh/Mesh.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/model/mesh/Mesh.cpp.o"
   "/Users/u17776048/Documents/GameEngine/src/model/model/Model.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/model/model/Model.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/scenes/scenes.cpp.o"
   "/Users/u17776048/Documents/GameEngine/src/shader/Shader.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/shader/Shader.cpp.o"
+  "/Users/u17776048/Documents/GameEngine/src/textures/textures_util.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
   "/Users/u17776048/Documents/GameEngine/src/utils/utils.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/utils/utils.cpp.o"
   "/Users/u17776048/Documents/GameEngine/src/window_manager/windowManager.cpp" "/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles/engine.dir/src/window_manager/windowManager.cpp.o"
   )

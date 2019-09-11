@@ -30,6 +30,8 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_MODULE_PATH /usr/local/lib)
 set(CMAKE_PREFIX_PATH /usr/local/lib/GLFW)
 
+configure_file(configuration/root_directory.h.in configuration/root_directory.h.in)
+
 #find_package (PkgConfig REQUIRED)
 include_directories(/usr/local/include/assimp)
 link_directories(/usr/local/lib)
@@ -54,7 +56,7 @@ find_library(COCOA_LIBRARY Cocoa REQUIRED)
 find_library(IOKIT_LIBRARY IOKit REQUIRED)
 find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 
-set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Shader.cpp src/shader/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp src/camera/Camera.cpp src/camera/Camera.h src/utils/utils.cpp src/utils/utils.h src/model/mesh/Mesh.cpp src/model/mesh/Mesh.h src/model/model/Model.cpp src/model/model/Model.h)
+set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Shader.cpp src/shader/Shader.h src/key_handler/keyHandler.h src/key_handler/keyHandler.cpp src/window_manager/windowManager.h src/window_manager/windowManager.cpp src/camera/Camera.cpp src/camera/Camera.h src/utils/utils.cpp src/utils/utils.h src/model/mesh/Mesh.cpp src/model/mesh/Mesh.h src/model/model/Model.cpp src/model/model/Model.h src/scenes/scenes.cpp src/scenes/scenes.h src/textures/textures_util.cpp src/textures/textures_util.h src/utils/Filesystem.h configuration/root_directory.h.in)
 add_executable(engine ${SOURCE_FILES})
 
 #target_link_libraries(engine glfw)

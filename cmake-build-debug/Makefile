@@ -285,6 +285,33 @@ src/model/model/Model.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/model/model/Model.cpp.s
 .PHONY : src/model/model/Model.cpp.s
 
+src/scenes/scenes.o: src/scenes/scenes.cpp.o
+
+.PHONY : src/scenes/scenes.o
+
+# target to build an object file
+src/scenes/scenes.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/scenes.cpp.o
+.PHONY : src/scenes/scenes.cpp.o
+
+src/scenes/scenes.i: src/scenes/scenes.cpp.i
+
+.PHONY : src/scenes/scenes.i
+
+# target to preprocess a source file
+src/scenes/scenes.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/scenes.cpp.i
+.PHONY : src/scenes/scenes.cpp.i
+
+src/scenes/scenes.s: src/scenes/scenes.cpp.s
+
+.PHONY : src/scenes/scenes.s
+
+# target to generate assembly for a file
+src/scenes/scenes.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/scenes.cpp.s
+.PHONY : src/scenes/scenes.cpp.s
+
 src/shader/Shader.o: src/shader/Shader.cpp.o
 
 .PHONY : src/shader/Shader.o
@@ -311,6 +338,33 @@ src/shader/Shader.s: src/shader/Shader.cpp.s
 src/shader/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/shader/Shader.cpp.s
 .PHONY : src/shader/Shader.cpp.s
+
+src/textures/textures_util.o: src/textures/textures_util.cpp.o
+
+.PHONY : src/textures/textures_util.o
+
+# target to build an object file
+src/textures/textures_util.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/textures/textures_util.cpp.o
+.PHONY : src/textures/textures_util.cpp.o
+
+src/textures/textures_util.i: src/textures/textures_util.cpp.i
+
+.PHONY : src/textures/textures_util.i
+
+# target to preprocess a source file
+src/textures/textures_util.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/textures/textures_util.cpp.i
+.PHONY : src/textures/textures_util.cpp.i
+
+src/textures/textures_util.s: src/textures/textures_util.cpp.s
+
+.PHONY : src/textures/textures_util.s
+
+# target to generate assembly for a file
+src/textures/textures_util.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/textures/textures_util.cpp.s
+.PHONY : src/textures/textures_util.cpp.s
 
 src/utils/utils.o: src/utils/utils.cpp.o
 
@@ -393,9 +447,15 @@ help:
 	@echo "... src/model/model/Model.o"
 	@echo "... src/model/model/Model.i"
 	@echo "... src/model/model/Model.s"
+	@echo "... src/scenes/scenes.o"
+	@echo "... src/scenes/scenes.i"
+	@echo "... src/scenes/scenes.s"
 	@echo "... src/shader/Shader.o"
 	@echo "... src/shader/Shader.i"
 	@echo "... src/shader/Shader.s"
+	@echo "... src/textures/textures_util.o"
+	@echo "... src/textures/textures_util.i"
+	@echo "... src/textures/textures_util.s"
 	@echo "... src/utils/utils.o"
 	@echo "... src/utils/utils.i"
 	@echo "... src/utils/utils.s"
