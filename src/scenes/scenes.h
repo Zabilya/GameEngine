@@ -10,6 +10,7 @@
 #include <iostream>
 #include <string>
 #include <tgmath.h>
+#include <map>
 #include "../../dependencies/stb_image/stb_image.h"
 #include "../../dependencies/glm/glm.hpp"
 #include "../../dependencies/glm/gtc/matrix_transform.hpp"

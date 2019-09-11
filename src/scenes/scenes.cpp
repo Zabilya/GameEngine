@@ -7,6 +7,8 @@
 int sceneAdvancedOpenGL(GLFWwindow* window) {
 
     glDepthFunc(GL_LESS);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     Shader shader("../res/shaders/AdvancedOpenGL.shader");
 
@@ -85,6 +87,24 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
             5.0f, -0.5f, -5.0f, 2.0f, 2.0f
     };
 
+    float transparentVertices[] = {
+            // positions         // texture Coords (swapped y coordinates because texture is flipped upside down)
+            0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+            0.0f, -0.5f,  0.0f,  0.0f,  1.0f,
+            1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+
+            0.0f,  0.5f,  0.0f,  0.0f,  0.0f,
+            1.0f, -0.5f,  0.0f,  1.0f,  1.0f,
+            1.0f,  0.5f,  0.0f,  1.0f,  0.0f
+    };
+
+    vector<glm::vec3> vegetation;
+    vegetation.push_back(glm::vec3(-1.5f,  0.0f, -0.48f));
+    vegetation.push_back(glm::vec3( 1.5f,  0.0f,  0.51f));
+    vegetation.push_back(glm::vec3( 0.0f,  0.0f,  0.7f));
+    vegetation.push_back(glm::vec3(-0.3f,  0.0f, -2.3f));
+    vegetation.push_back(glm::vec3( 0.5f,  0.0f, -0.6f));
+
     unsigned int cubeVao, cubeVbo;
 //    unsigned int ebo;
 
@@ -116,11 +136,29 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
     glEnableVertexAttribArray(1);
     glBindVertexArray(0);
 
+    unsigned int transparentVao, transparentVbo;
+    glGenVertexArrays(1, &transparentVao);
+    glGenBuffers(1, &transparentVbo);
+    glBindVertexArray(transparentVao);
+    glBindBuffer(GL_ARRAY_BUFFER, transparentVbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(transparentVertices), &transparentVertices, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+    glBindVertexArray(0);
+
     unsigned int cubeTexture = loadTexture("../res/textures/marble.jpg");
     unsigned int floorTexture = loadTexture("../res/textures/metal.png");
+    unsigned int transparentTexture = loadTexture("../res/textures/window.png");
 
     shader.use();
     shader.setInt("texture1", 0);
+
+    int counter = 0;
+    int bigCounter = 0;
+    float fps = 0.0f;
+
 
     while (!glfwWindowShouldClose(window))
     {
@@ -128,6 +166,17 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        counter++;
+        if (counter == 100) {
+            ++bigCounter;
+            fps = (fps * (bigCounter - 1) + (1 / deltaTime)) / bigCounter;
+            counter = 0;
+        }
+        if (bigCounter == 10) {
+            cout << "FPS: " << fps << "\n" << endl;
+            bigCounter = 0;
+            fps = 0.0f;
+        }
 
         processInput(window, &camera, deltaTime);
 
@@ -160,6 +209,28 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
         shader.setMat4("model", glm::mat4(1.0f));
         glDrawArrays(GL_TRIANGLES, 0, 6);
         glBindVertexArray(0);
+        // vegetation
+        glBindVertexArray(transparentVao);
+        glBindTexture(GL_TEXTURE_2D, transparentTexture);
+//        for (GLint i = 0; i < vegetation.size(); i++) {
+//            model = glm::mat4(1.0f);
+//            model = glm::translate(model, vegetation[i]);
+//            shader.setMat4("model", model);
+//            glDrawArrays(GL_TRIANGLES, 0, 6);
+//        }
+
+        map<float, glm::vec3> sorted;
+        for (unsigned int i = 0; i < vegetation.size(); i++) {
+            float distance = glm::length(camera.position - vegetation[i]);
+            sorted[distance] = vegetation[i];
+        }
+
+        for (map<float, glm::vec3>::reverse_iterator it = sorted.rbegin(); it != sorted.rend(); ++it) {
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, it->second);
+            shader.setMat4("model", model);
+            glDrawArrays(GL_TRIANGLES, 0, 6);
+        }
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);

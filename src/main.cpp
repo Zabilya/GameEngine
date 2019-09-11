@@ -338,8 +338,6 @@ int main2(GLFWwindow* window) {
     Shader ourShader("../res/shaders/Model.shader");
     Model ourModel("../res/models/nanosuit/nanosuit.obj");
 
-    bool a = false;
-
     int counter = 0;
     int bigCounter = 0;
     float fps = 0.0f;
