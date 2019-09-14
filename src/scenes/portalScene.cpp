@@ -60,10 +60,9 @@ int scenePortal(GLFWwindow *window) {
              0.3f,  0.5f,  0.0f,  1.0f,  0.0f
     };
 
-    vector<glm::vec3> grass;
-    grass.push_back(glm::vec3(-1.5f,  0.0f, -0.48f));
+    grass.push_back(glm::vec3(-1.5f,  0.0f, -2.48f));
     grass.push_back(glm::vec3(-0.3f,  0.0f, -2.3f));
-    grass.push_back(glm::vec3( 0.5f,  0.0f, -0.6f));
+    grass.push_back(glm::vec3( 0.5f,  0.0f, -2.6f));
 
     glm::vec3 portalPosition1 = glm::vec3(-1.0f,  0.0f,  0.7f);
     glm::vec3 portalPosition2 = glm::vec3(5.3f,  0.0f,  0.51f);
@@ -138,8 +137,6 @@ int scenePortal(GLFWwindow *window) {
 //
 //        drawFloor(shader);
 //        drawGrass(shader, grass);
-//        drawPortal(portalModelSrc);
-//        drawPortal(portalModelDst);
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
@@ -233,8 +230,11 @@ void drawRecursivePortals(Shader shader, glm::mat4 view, unsigned int maxRecursi
         else {
             drawPortal(shader, portalModelDst);
         }
+
+        // Calculate view matrix as if the player was already teleported
         glm::mat4 destView = calcPortalView(view, portalModelSrc, portalModelDst);
 
+        // Base case, render inside of inner portal
         if (recursion == maxRecursion) {
             // Enable color and depth drawing
             glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
