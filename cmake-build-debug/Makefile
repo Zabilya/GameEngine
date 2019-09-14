@@ -285,6 +285,33 @@ src/model/model/Model.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/model/model/Model.cpp.s
 .PHONY : src/model/model/Model.cpp.s
 
+src/scenes/portalScene.o: src/scenes/portalScene.cpp.o
+
+.PHONY : src/scenes/portalScene.o
+
+# target to build an object file
+src/scenes/portalScene.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/portalScene.cpp.o
+.PHONY : src/scenes/portalScene.cpp.o
+
+src/scenes/portalScene.i: src/scenes/portalScene.cpp.i
+
+.PHONY : src/scenes/portalScene.i
+
+# target to preprocess a source file
+src/scenes/portalScene.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/portalScene.cpp.i
+.PHONY : src/scenes/portalScene.cpp.i
+
+src/scenes/portalScene.s: src/scenes/portalScene.cpp.s
+
+.PHONY : src/scenes/portalScene.s
+
+# target to generate assembly for a file
+src/scenes/portalScene.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/portalScene.cpp.s
+.PHONY : src/scenes/portalScene.cpp.s
+
 src/scenes/scenes.o: src/scenes/scenes.cpp.o
 
 .PHONY : src/scenes/scenes.o
@@ -447,6 +474,9 @@ help:
 	@echo "... src/model/model/Model.o"
 	@echo "... src/model/model/Model.i"
 	@echo "... src/model/model/Model.s"
+	@echo "... src/scenes/portalScene.o"
+	@echo "... src/scenes/portalScene.i"
+	@echo "... src/scenes/portalScene.s"
 	@echo "... src/scenes/scenes.o"
 	@echo "... src/scenes/scenes.i"
 	@echo "... src/scenes/scenes.s"

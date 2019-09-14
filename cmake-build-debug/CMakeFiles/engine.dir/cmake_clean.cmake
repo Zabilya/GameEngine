@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/model/mesh/Mesh.cpp.o"
   "CMakeFiles/engine.dir/src/model/model/Model.cpp.o"
   "CMakeFiles/engine.dir/src/scenes/scenes.cpp.o"
+  "CMakeFiles/engine.dir/src/scenes/portalScene.cpp.o"
   "CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
   "engine.pdb"
   "engine"

@@ -7,6 +7,7 @@
 int sceneAdvancedOpenGL(GLFWwindow* window) {
 
     glDepthFunc(GL_LESS);
+    // for transparency
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
@@ -110,12 +111,9 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
 
     glGenVertexArrays(1, &cubeVao);
     glGenBuffers(1, &cubeVbo);
-//    glGenBuffers(1, &ebo);
     glBindVertexArray(cubeVao);
     glBindBuffer(GL_ARRAY_BUFFER, cubeVbo);
-//    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), &cubeVertices, GL_STATIC_DRAW);
-//    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
                           (void*)0);
     glEnableVertexAttribArray(0);
@@ -154,6 +152,9 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
 
     shader.use();
     shader.setInt("texture1", 0);
+    glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
+                                            (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
+    shader.setMat4("projection", projection);
 
     int counter = 0;
     int bigCounter = 0;
@@ -187,10 +188,7 @@ int sceneAdvancedOpenGL(GLFWwindow* window) {
         shader.use();
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = camera.getViewMatrix();
-        glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
-                (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
         shader.setMat4("view", view);
-        shader.setMat4("projection", projection);
 
         // cubes
         glBindVertexArray(cubeVao);

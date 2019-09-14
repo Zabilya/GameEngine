@@ -78,8 +78,9 @@ int main(void)
 
 //    main1(window);
 //    main2(window);
-    sceneAdvancedOpenGL(window);
-
+//    sceneAdvancedOpenGL(window);
+    scenePortal(window);
+//    testScene(window);
     return 0;
 }
 

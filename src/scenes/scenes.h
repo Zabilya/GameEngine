@@ -30,5 +30,7 @@ extern float screenHeight;
 extern Camera camera;
 
 int sceneAdvancedOpenGL(GLFWwindow* window);
+int scenePortal(GLFWwindow *window);
+int testScene(GLFWwindow *window);
 
 #endif //ENGINE_SCENES_H
