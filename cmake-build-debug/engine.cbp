@@ -119,6 +119,12 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/model/model/Model.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/SceneObject.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/SceneObject.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/portalScene.cpp">
 			<Option target="engine"/>
 		</Unit>

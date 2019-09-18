@@ -5,7 +5,7 @@
 #include "scenes.h"
 
 float calcDeltaTime();
-glm::mat4 calcPortalView(glm::mat4 cameraView, glm::mat4 portalModelSrc, glm::mat4 portalModelDst);
+glm::mat4 calcPortalView(glm::mat4 cameraView);
 void drawFloor(Shader shader);
 void drawGrass(Shader shader, vector<glm::vec3> grass);
 void drawPortal(Shader shader, glm::mat4 view);
@@ -65,7 +65,7 @@ int scenePortal(GLFWwindow *window) {
     grass.push_back(glm::vec3( 0.5f,  0.0f, -2.6f));
 
     glm::vec3 portalPosition1 = glm::vec3(-1.0f,  0.0f,  0.7f);
-    glm::vec3 portalPosition2 = glm::vec3(5.3f,  0.0f,  0.51f);
+    glm::vec3 portalPosition2 = glm::vec3(1.3f,  0.0f,  4.0f);
 
     unsigned int planeVbo;
     glGenVertexArrays(1, &planeVao);
@@ -116,6 +116,7 @@ int scenePortal(GLFWwindow *window) {
 
     portalModelSrc = glm::translate(glm::mat4(1.0f), portalPosition1);
     portalModelDst = glm::translate(glm::mat4(1.0f), portalPosition2);
+//    portalModelDst = glm::rotate(portalModelDst, glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 
     while (!glfwWindowShouldClose(window)) {
 
@@ -158,7 +159,7 @@ float calcDeltaTime() {
     lastFrame = currentFrame;
 }
 
-glm::mat4 calcPortalView(glm::mat4 cameraView, glm::mat4 portalModelSrc, glm::mat4 portalModelDst) {
+glm::mat4 calcPortalView(glm::mat4 cameraView) {
 
     glm::mat4 mv = cameraView * portalModelSrc;
     glm::mat4 portalCam = mv * glm::rotate(glm::mat4(1.0), glm::radians(180.0f), glm::vec3(0.0, 1.0, 0.0))
@@ -232,7 +233,7 @@ void drawRecursivePortals(Shader shader, glm::mat4 view, unsigned int maxRecursi
         }
 
         // Calculate view matrix as if the player was already teleported
-        glm::mat4 destView = calcPortalView(view, portalModelSrc, portalModelDst);
+        glm::mat4 destView = calcPortalView(view);
 
         // Base case, render inside of inner portal
         if (recursion == maxRecursion) {
