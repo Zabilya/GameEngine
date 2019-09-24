@@ -339,6 +339,33 @@ src/scenes/portalScene.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/portalScene.cpp.s
 .PHONY : src/scenes/portalScene.cpp.s
 
+src/scenes/sceneFrameBuffer.o: src/scenes/sceneFrameBuffer.cpp.o
+
+.PHONY : src/scenes/sceneFrameBuffer.o
+
+# target to build an object file
+src/scenes/sceneFrameBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.o
+.PHONY : src/scenes/sceneFrameBuffer.cpp.o
+
+src/scenes/sceneFrameBuffer.i: src/scenes/sceneFrameBuffer.cpp.i
+
+.PHONY : src/scenes/sceneFrameBuffer.i
+
+# target to preprocess a source file
+src/scenes/sceneFrameBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.i
+.PHONY : src/scenes/sceneFrameBuffer.cpp.i
+
+src/scenes/sceneFrameBuffer.s: src/scenes/sceneFrameBuffer.cpp.s
+
+.PHONY : src/scenes/sceneFrameBuffer.s
+
+# target to generate assembly for a file
+src/scenes/sceneFrameBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.s
+.PHONY : src/scenes/sceneFrameBuffer.cpp.s
+
 src/scenes/scenes.o: src/scenes/scenes.cpp.o
 
 .PHONY : src/scenes/scenes.o
@@ -507,6 +534,9 @@ help:
 	@echo "... src/scenes/portalScene.o"
 	@echo "... src/scenes/portalScene.i"
 	@echo "... src/scenes/portalScene.s"
+	@echo "... src/scenes/sceneFrameBuffer.o"
+	@echo "... src/scenes/sceneFrameBuffer.i"
+	@echo "... src/scenes/sceneFrameBuffer.s"
 	@echo "... src/scenes/scenes.o"
 	@echo "... src/scenes/scenes.i"
 	@echo "... src/scenes/scenes.s"

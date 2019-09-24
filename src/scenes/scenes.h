@@ -24,13 +24,14 @@
 extern float deltaTime;
 extern float lastFrame;
 
-extern float screenWidth;
-extern float screenHeight;
+extern const float screenWidth;
+extern const float screenHeight;
 
 extern Camera camera;
 
 int sceneAdvancedOpenGL(GLFWwindow* window);
 int scenePortal(GLFWwindow *window);
 int testScene(GLFWwindow *window);
+int sceneFrameBuffer(GLFWwindow* window);
 
 #endif //ENGINE_SCENES_H

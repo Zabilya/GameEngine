@@ -24,8 +24,8 @@ void mouse_callback(GLFWwindow* window, double posX, double posY);
 using namespace std;
 
 // settings
-float screenWidth = 800.0f;
-float screenHeight = 600.0f;
+const float screenWidth = 800.0f;
+const float screenHeight = 600.0f;
 
 // camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -78,8 +78,9 @@ int main(void)
 
 //    main1(window);
 //    main2(window);
-    sceneAdvancedOpenGL(window);
+//    sceneAdvancedOpenGL(window);
 //    scenePortal(window);
+    sceneFrameBuffer(window);
     return 0;
 }
 

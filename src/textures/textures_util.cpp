@@ -36,3 +36,15 @@ unsigned int loadTexture(char const *path) {
     stbi_image_free(data);
     return textureId;
 }
+
+unsigned int createTexture(unsigned int rgbType, unsigned int width, unsigned int height,
+        unsigned int minFilter, unsigned int magFilter) {
+    unsigned int texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, rgbType, width, height, 0, rgbType, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, minFilter);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, magFilter);
+    glBindTexture(GL_TEXTURE_2D, 0);
+    return texture;
+}

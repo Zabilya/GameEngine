@@ -13,5 +13,7 @@
 using namespace std;
 
 unsigned int loadTexture(char const *path);
+unsigned int createTexture(unsigned int rgbType, unsigned int width, unsigned int height,
+                          unsigned int minFilter, unsigned int magFilter);
 
 #endif //ENGINE_TEXTURES_UTIL_H

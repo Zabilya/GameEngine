@@ -128,6 +128,9 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/portalScene.cpp">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneFrameBuffer.cpp">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp">
 			<Option target="engine"/>
 		</Unit>

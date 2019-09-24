@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/scenes/portalScene.cpp.o"
   "CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
   "CMakeFiles/engine.dir/src/sceneObject/SceneObject.cpp.o"
+  "CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.o"
   "engine.pdb"
   "engine"
 )
