@@ -33,5 +33,6 @@ int sceneAdvancedOpenGL(GLFWwindow* window);
 int scenePortal(GLFWwindow *window);
 int testScene(GLFWwindow *window);
 int sceneFrameBuffer(GLFWwindow* window);
+int sceneSkybox(GLFWwindow *window);
 
 #endif //ENGINE_SCENES_H

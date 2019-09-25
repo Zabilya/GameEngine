@@ -11,18 +11,24 @@
 #include "../../dependencies/stb_image/stb_image.h"
 
 enum objectType {
-    PORTAL, NONPORTAL
+    CUBE, PLANE
 };
 
 class SceneObject {
 public:
-    SceneObject();
-    objectType getType();
+    SceneObject(objectType type, bool isPortal);
     void Draw();
+    objectType getType();
+    bool isPortal();
+
+    glm::vec3 position;
+    glm::vec3 orientation;
+    glm::mat4 modelMat;
+    unsigned int nrVertices;
 
 private:
-    glm::vec3 position;
-    glm::mat4 modelMat;
+    bool portal;
+    objectType objectType;
 
 
 };

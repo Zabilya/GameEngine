@@ -119,6 +119,18 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/model/model/Model.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Cube.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Cube.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Scene.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Scene.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/SceneObject.cpp">
 			<Option target="engine"/>
 		</Unit>
@@ -129,6 +141,9 @@
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneFrameBuffer.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneSkyBox.cpp">
 			<Option target="engine"/>
 		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp">

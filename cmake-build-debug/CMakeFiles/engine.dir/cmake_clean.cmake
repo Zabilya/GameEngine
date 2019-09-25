@@ -13,6 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/textures/textures_util.cpp.o"
   "CMakeFiles/engine.dir/src/sceneObject/SceneObject.cpp.o"
   "CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.o"
+  "CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.o"
+  "CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.o"
+  "CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.o"
   "engine.pdb"
   "engine"
 )

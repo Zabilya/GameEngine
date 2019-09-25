@@ -3,3 +3,13 @@
 //
 
 #include "SceneObject.h"
+
+SceneObject::SceneObject(enum objectType type, bool isPortal) {
+    this->objectType = type;
+    this->portal = isPortal;
+}
+
+objectType SceneObject::getType() {
+    return objectType;
+}
+

@@ -70,7 +70,6 @@ int main(void)
     if (glewInit() != GLEW_OK)
         return -1;
 
-    glEnable(GL_DEPTH_TEST);
     enablePoligonMode(false);
 
     showOpenglVersion();
@@ -80,7 +79,8 @@ int main(void)
 //    main2(window);
 //    sceneAdvancedOpenGL(window);
 //    scenePortal(window);
-    sceneFrameBuffer(window);
+//    sceneFrameBuffer(window);
+    sceneSkybox(window);
     return 0;
 }
 

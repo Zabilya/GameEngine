@@ -285,6 +285,60 @@ src/model/model/Model.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/model/model/Model.cpp.s
 .PHONY : src/model/model/Model.cpp.s
 
+src/sceneObject/Cube.o: src/sceneObject/Cube.cpp.o
+
+.PHONY : src/sceneObject/Cube.o
+
+# target to build an object file
+src/sceneObject/Cube.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.o
+.PHONY : src/sceneObject/Cube.cpp.o
+
+src/sceneObject/Cube.i: src/sceneObject/Cube.cpp.i
+
+.PHONY : src/sceneObject/Cube.i
+
+# target to preprocess a source file
+src/sceneObject/Cube.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.i
+.PHONY : src/sceneObject/Cube.cpp.i
+
+src/sceneObject/Cube.s: src/sceneObject/Cube.cpp.s
+
+.PHONY : src/sceneObject/Cube.s
+
+# target to generate assembly for a file
+src/sceneObject/Cube.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.s
+.PHONY : src/sceneObject/Cube.cpp.s
+
+src/sceneObject/Scene.o: src/sceneObject/Scene.cpp.o
+
+.PHONY : src/sceneObject/Scene.o
+
+# target to build an object file
+src/sceneObject/Scene.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.o
+.PHONY : src/sceneObject/Scene.cpp.o
+
+src/sceneObject/Scene.i: src/sceneObject/Scene.cpp.i
+
+.PHONY : src/sceneObject/Scene.i
+
+# target to preprocess a source file
+src/sceneObject/Scene.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.i
+.PHONY : src/sceneObject/Scene.cpp.i
+
+src/sceneObject/Scene.s: src/sceneObject/Scene.cpp.s
+
+.PHONY : src/sceneObject/Scene.s
+
+# target to generate assembly for a file
+src/sceneObject/Scene.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.s
+.PHONY : src/sceneObject/Scene.cpp.s
+
 src/sceneObject/SceneObject.o: src/sceneObject/SceneObject.cpp.o
 
 .PHONY : src/sceneObject/SceneObject.o
@@ -365,6 +419,33 @@ src/scenes/sceneFrameBuffer.s: src/scenes/sceneFrameBuffer.cpp.s
 src/scenes/sceneFrameBuffer.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.s
 .PHONY : src/scenes/sceneFrameBuffer.cpp.s
+
+src/scenes/sceneSkyBox.o: src/scenes/sceneSkyBox.cpp.o
+
+.PHONY : src/scenes/sceneSkyBox.o
+
+# target to build an object file
+src/scenes/sceneSkyBox.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.o
+.PHONY : src/scenes/sceneSkyBox.cpp.o
+
+src/scenes/sceneSkyBox.i: src/scenes/sceneSkyBox.cpp.i
+
+.PHONY : src/scenes/sceneSkyBox.i
+
+# target to preprocess a source file
+src/scenes/sceneSkyBox.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.i
+.PHONY : src/scenes/sceneSkyBox.cpp.i
+
+src/scenes/sceneSkyBox.s: src/scenes/sceneSkyBox.cpp.s
+
+.PHONY : src/scenes/sceneSkyBox.s
+
+# target to generate assembly for a file
+src/scenes/sceneSkyBox.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.s
+.PHONY : src/scenes/sceneSkyBox.cpp.s
 
 src/scenes/scenes.o: src/scenes/scenes.cpp.o
 
@@ -528,6 +609,12 @@ help:
 	@echo "... src/model/model/Model.o"
 	@echo "... src/model/model/Model.i"
 	@echo "... src/model/model/Model.s"
+	@echo "... src/sceneObject/Cube.o"
+	@echo "... src/sceneObject/Cube.i"
+	@echo "... src/sceneObject/Cube.s"
+	@echo "... src/sceneObject/Scene.o"
+	@echo "... src/sceneObject/Scene.i"
+	@echo "... src/sceneObject/Scene.s"
 	@echo "... src/sceneObject/SceneObject.o"
 	@echo "... src/sceneObject/SceneObject.i"
 	@echo "... src/sceneObject/SceneObject.s"
@@ -537,6 +624,9 @@ help:
 	@echo "... src/scenes/sceneFrameBuffer.o"
 	@echo "... src/scenes/sceneFrameBuffer.i"
 	@echo "... src/scenes/sceneFrameBuffer.s"
+	@echo "... src/scenes/sceneSkyBox.o"
+	@echo "... src/scenes/sceneSkyBox.i"
+	@echo "... src/scenes/sceneSkyBox.s"
 	@echo "... src/scenes/scenes.o"
 	@echo "... src/scenes/scenes.i"
 	@echo "... src/scenes/scenes.s"
