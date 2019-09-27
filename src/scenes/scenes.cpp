@@ -6,6 +6,8 @@
 
 int sceneAdvancedOpenGL(GLFWwindow* window) {
 
+    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_MULTISAMPLE);
     glDepthFunc(GL_LESS);
     // for transparency
     glEnable(GL_BLEND);

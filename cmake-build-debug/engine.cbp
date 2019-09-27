@@ -137,6 +137,27 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/SceneObject.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/DirectLight.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/DirectLight.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/Light.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/PointLight.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/PointLight.h">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/SpotLight.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/lights/SpotLight.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/portalScene.cpp">
 			<Option target="engine"/>
 		</Unit>

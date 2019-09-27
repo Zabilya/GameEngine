@@ -1,9 +1,10 @@
 #shader vertex
 #version 330 core
 layout (location = 0) in vec3 aPos;
-layout (location = 1) in vec2 aTexCoords;
+layout (location = 1) in vec3 aNormal;
 
-out vec2 TexCoords;
+out vec3 Normal;
+out vec3 Position;
 
 uniform mat4 model;
 uniform mat4 view;
@@ -11,7 +12,8 @@ uniform mat4 projection;
 
 void main()
 {
-    TexCoords = aTexCoords;
+    Normal = mat3(transpose(inverse(model))) * aNormal;
+    Position = vec3(model * vec4(aPos, 1.0));
     gl_Position = projection * view * model * vec4(aPos, 1.0);
 }
 
@@ -20,11 +22,16 @@ void main()
 
 out vec4 FragColor;
 
-in vec2 TexCoords;
+in vec3 Normal;
+in vec3 Position;
 
-uniform sampler2D texture1;
+uniform vec3 cameraPos;
+//uniform sampler2D texture1;
+uniform samplerCube skybox;
 
 void main()
 {
-    FragColor = texture(texture1, TexCoords);
+    vec3 viewVec = normalize(Position - cameraPos);
+    vec3 reflect = reflect(viewVec, normalize(Normal));
+    FragColor = vec4(texture(skybox, reflect).rgb, 1.0);
 }

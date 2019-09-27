@@ -278,6 +278,45 @@ CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/scenes/sceneSkyBox.cpp -o CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.s
 
+CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o: ../src/sceneObject/lights/DirectLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o -c /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/DirectLight.cpp
+
+CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/DirectLight.cpp > CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.i
+
+CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/DirectLight.cpp -o CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.s
+
+CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o: ../src/sceneObject/lights/PointLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o -c /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/PointLight.cpp
+
+CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/PointLight.cpp > CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.i
+
+CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/PointLight.cpp -o CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.s
+
+CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o: ../src/sceneObject/lights/SpotLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o -c /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/SpotLight.cpp
+
+CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/SpotLight.cpp > CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.i
+
+CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u17776048/Documents/GameEngine/src/sceneObject/lights/SpotLight.cpp -o CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/main.cpp.o" \
@@ -296,7 +335,10 @@ engine_OBJECTS = \
 "CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.o" \
 "CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.o" \
 "CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.o" \
-"CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.o"
+"CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.o" \
+"CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o" \
+"CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o" \
+"CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
@@ -318,11 +360,14 @@ engine: CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.o
 engine: CMakeFiles/engine.dir/src/sceneObject/Scene.cpp.o
 engine: CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.o
 engine: CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.o
+engine: CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o
+engine: CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o
+engine: CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 engine: /usr/local/lib/libGLEW.dylib
 engine: /usr/local/lib/libglfw.3.3.dylib
 engine: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/u17776048/Documents/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

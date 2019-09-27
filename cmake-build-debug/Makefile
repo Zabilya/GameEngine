@@ -366,6 +366,87 @@ src/sceneObject/SceneObject.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/SceneObject.cpp.s
 .PHONY : src/sceneObject/SceneObject.cpp.s
 
+src/sceneObject/lights/DirectLight.o: src/sceneObject/lights/DirectLight.cpp.o
+
+.PHONY : src/sceneObject/lights/DirectLight.o
+
+# target to build an object file
+src/sceneObject/lights/DirectLight.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o
+.PHONY : src/sceneObject/lights/DirectLight.cpp.o
+
+src/sceneObject/lights/DirectLight.i: src/sceneObject/lights/DirectLight.cpp.i
+
+.PHONY : src/sceneObject/lights/DirectLight.i
+
+# target to preprocess a source file
+src/sceneObject/lights/DirectLight.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.i
+.PHONY : src/sceneObject/lights/DirectLight.cpp.i
+
+src/sceneObject/lights/DirectLight.s: src/sceneObject/lights/DirectLight.cpp.s
+
+.PHONY : src/sceneObject/lights/DirectLight.s
+
+# target to generate assembly for a file
+src/sceneObject/lights/DirectLight.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.s
+.PHONY : src/sceneObject/lights/DirectLight.cpp.s
+
+src/sceneObject/lights/PointLight.o: src/sceneObject/lights/PointLight.cpp.o
+
+.PHONY : src/sceneObject/lights/PointLight.o
+
+# target to build an object file
+src/sceneObject/lights/PointLight.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o
+.PHONY : src/sceneObject/lights/PointLight.cpp.o
+
+src/sceneObject/lights/PointLight.i: src/sceneObject/lights/PointLight.cpp.i
+
+.PHONY : src/sceneObject/lights/PointLight.i
+
+# target to preprocess a source file
+src/sceneObject/lights/PointLight.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.i
+.PHONY : src/sceneObject/lights/PointLight.cpp.i
+
+src/sceneObject/lights/PointLight.s: src/sceneObject/lights/PointLight.cpp.s
+
+.PHONY : src/sceneObject/lights/PointLight.s
+
+# target to generate assembly for a file
+src/sceneObject/lights/PointLight.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.s
+.PHONY : src/sceneObject/lights/PointLight.cpp.s
+
+src/sceneObject/lights/SpotLight.o: src/sceneObject/lights/SpotLight.cpp.o
+
+.PHONY : src/sceneObject/lights/SpotLight.o
+
+# target to build an object file
+src/sceneObject/lights/SpotLight.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o
+.PHONY : src/sceneObject/lights/SpotLight.cpp.o
+
+src/sceneObject/lights/SpotLight.i: src/sceneObject/lights/SpotLight.cpp.i
+
+.PHONY : src/sceneObject/lights/SpotLight.i
+
+# target to preprocess a source file
+src/sceneObject/lights/SpotLight.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.i
+.PHONY : src/sceneObject/lights/SpotLight.cpp.i
+
+src/sceneObject/lights/SpotLight.s: src/sceneObject/lights/SpotLight.cpp.s
+
+.PHONY : src/sceneObject/lights/SpotLight.s
+
+# target to generate assembly for a file
+src/sceneObject/lights/SpotLight.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.s
+.PHONY : src/sceneObject/lights/SpotLight.cpp.s
+
 src/scenes/portalScene.o: src/scenes/portalScene.cpp.o
 
 .PHONY : src/scenes/portalScene.o
@@ -618,6 +699,15 @@ help:
 	@echo "... src/sceneObject/SceneObject.o"
 	@echo "... src/sceneObject/SceneObject.i"
 	@echo "... src/sceneObject/SceneObject.s"
+	@echo "... src/sceneObject/lights/DirectLight.o"
+	@echo "... src/sceneObject/lights/DirectLight.i"
+	@echo "... src/sceneObject/lights/DirectLight.s"
+	@echo "... src/sceneObject/lights/PointLight.o"
+	@echo "... src/sceneObject/lights/PointLight.i"
+	@echo "... src/sceneObject/lights/PointLight.s"
+	@echo "... src/sceneObject/lights/SpotLight.o"
+	@echo "... src/sceneObject/lights/SpotLight.i"
+	@echo "... src/sceneObject/lights/SpotLight.s"
 	@echo "... src/scenes/portalScene.o"
 	@echo "... src/scenes/portalScene.i"
 	@echo "... src/scenes/portalScene.s"

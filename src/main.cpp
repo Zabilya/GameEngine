@@ -65,6 +65,8 @@ int main(void)
     glfwSetScrollCallback(window, scroll_callback);
     /* for disabling cursor */
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    /* for multisampling */
+//    glfwWindowHint(GLFW_SAMPLES, 4);
 
     /* Initializing GLEW (this library give us all ogl functions) */
     if (glewInit() != GLEW_OK)
@@ -75,62 +77,64 @@ int main(void)
     showOpenglVersion();
 
 
-//    main1(window);
+    main1(window);
 //    main2(window);
 //    sceneAdvancedOpenGL(window);
 //    scenePortal(window);
 //    sceneFrameBuffer(window);
-    sceneSkybox(window);
+//    sceneSkybox(window);
     return 0;
 }
 
 int main1(GLFWwindow* window) {
 
+    glEnable(GL_DEPTH_TEST);
     Shader shader("../res/shaders/Basic.shader");
     Shader lampShader("../res/shaders/Lamp.shader");
 
     float vertices[] = {
-            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, // Bottom-left
-            0.5f,  0.5f, -0.5f,  1.0f, 1.0f, // top-right
-            0.5f, -0.5f, -0.5f,  1.0f, 0.0f, // bottom-right
-            0.5f,  0.5f, -0.5f,  1.0f, 1.0f, // top-right
-            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, // bottom-left
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, // top-left
-            // Front face
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, // bottom-left
-            0.5f, -0.5f,  0.5f,  1.0f, 0.0f, // bottom-right
-            0.5f,  0.5f,  0.5f,  1.0f, 1.0f, // top-right
-            0.5f,  0.5f,  0.5f,  1.0f, 1.0f, // top-right
-            -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, // top-left
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, // bottom-left
-            // Left face
-            -0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // top-right
-            -0.5f,  0.5f, -0.5f,  1.0f, 1.0f, // top-left
-            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // bottom-left
-            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // bottom-left
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, // bottom-right
-            -0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // top-right
-            // Right face
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // top-left
-            0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // bottom-right
-            0.5f,  0.5f, -0.5f,  1.0f, 1.0f, // top-right
-            0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // bottom-right
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // top-left
-            0.5f, -0.5f,  0.5f,  0.0f, 0.0f, // bottom-left
-            // Bottom face
-            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // top-right
-            0.5f, -0.5f, -0.5f,  1.0f, 1.0f, // top-left
-            0.5f, -0.5f,  0.5f,  1.0f, 0.0f, // bottom-left
-            0.5f, -0.5f,  0.5f,  1.0f, 0.0f, // bottom-left
-            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, // bottom-right
-            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, // top-right
-            // Top face
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, // top-left
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // bottom-right
-            0.5f,  0.5f, -0.5f,  1.0f, 1.0f, // top-right
-            0.5f,  0.5f,  0.5f,  1.0f, 0.0f, // bottom-right
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, // top-left
-            -0.5f,  0.5f,  0.5f,  0.0f, 0.0f  // bottom-left
+            // positions          // normals           // texture coords
+            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  0.0f,
+            0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  0.0f,
+            0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  1.0f,
+            0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  1.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  0.0f,
+
+            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  0.0f,
+            0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  0.0f,
+            0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  1.0f,
+            0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  1.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  0.0f,
+
+            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+            -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  1.0f,
+            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+            -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+            -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  0.0f,
+            -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+
+            0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+            0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  1.0f,
+            0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+            0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+            0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  1.0f,
+            0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  1.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  0.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  0.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  1.0f,
+
+            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f,
+            0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  1.0f,
+            0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  0.0f,
+            0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  0.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  0.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f
     };
 
     glm::vec3 cubePositions[] = {
@@ -329,15 +333,17 @@ int main1(GLFWwindow* window) {
 
 int main2(GLFWwindow* window) {
 
+    glEnable(GL_DEPTH_TEST);
+
+    Shader ourShader("../res/shaders/Model.shader");
+    Model ourModel("../res/models/nanosuit/nanosuit.obj");
+
     glm::vec3 pointLightPositions[] = {
             glm::vec3( 0.7f,  0.2f,  2.0f),
             glm::vec3( 2.3f, -3.3f, -4.0f),
             glm::vec3(-4.0f,  2.0f, -12.0f),
             glm::vec3( 0.0f,  0.0f, -3.0f)
     };
-
-    Shader ourShader("../res/shaders/Model.shader");
-    Model ourModel("../res/models/nanosuit/nanosuit.obj");
 
     int counter = 0;
     int bigCounter = 0;
