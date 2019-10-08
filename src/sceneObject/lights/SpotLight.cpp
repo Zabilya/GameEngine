@@ -30,6 +30,6 @@ void SpotLight::render(Shader shader) {
     shader.setFloat("spotLight[" + std::to_string(number) + "].constant", constant);
     shader.setFloat("spotLight[" + std::to_string(number) + "].linear", linear);
     shader.setFloat("spotLight[" + std::to_string(number) + "].quadratic", quadratic);
-    shader.setFloat("spotLight[" + std::to_string(number) + "].cutOff", cutOff);
-    shader.setFloat("spotLight[" + std::to_string(number) + "].outerCutOff", outerCutOff);
+    shader.setFloat("spotLight[" + std::to_string(number) + "].cutOff", glm::cos(cutOff));
+    shader.setFloat("spotLight[" + std::to_string(number) + "].outerCutOff", glm::cos(outerCutOff));
 }

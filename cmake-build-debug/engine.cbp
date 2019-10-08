@@ -164,6 +164,12 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneFrameBuffer.cpp">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneLight.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneShadow.cpp">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneSkyBox.cpp">
 			<Option target="engine"/>
 		</Unit>

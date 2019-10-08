@@ -63,7 +63,7 @@ set(SOURCE_FILES src/main.cpp dependencies/stb_image/stb_image.cpp src/shader/Sh
         src/textures/textures_util.cpp src/textures/textures_util.h src/sceneObject/SceneObject.cpp
         src/sceneObject/SceneObject.h src/scenes/sceneFrameBuffer.cpp src/sceneObject/Scene.cpp
         src/sceneObject/Scene.h src/sceneObject/Cube.cpp src/sceneObject/Cube.h src/scenes/sceneSkyBox.cpp
-        src/sceneObject/lights/Light.h src/sceneObject/lights/DirectLight.cpp src/sceneObject/lights/DirectLight.h src/sceneObject/lights/PointLight.cpp src/sceneObject/lights/PointLight.h src/sceneObject/lights/SpotLight.cpp src/sceneObject/lights/SpotLight.h)
+        src/sceneObject/lights/Light.h src/sceneObject/lights/DirectLight.cpp src/sceneObject/lights/DirectLight.h src/sceneObject/lights/PointLight.cpp src/sceneObject/lights/PointLight.h src/sceneObject/lights/SpotLight.cpp src/sceneObject/lights/SpotLight.h src/scenes/sceneLight.cpp src/scenes/sceneShadow.cpp)
 add_executable(engine ${SOURCE_FILES})
 
 #target_link_libraries(engine glfw)

@@ -77,12 +77,14 @@ int main(void)
     showOpenglVersion();
 
 
-    main1(window);
+//    main1(window);
 //    main2(window);
 //    sceneAdvancedOpenGL(window);
 //    scenePortal(window);
 //    sceneFrameBuffer(window);
 //    sceneSkybox(window);
+//    sceneLight(window);
+    sceneShadow(window);
     return 0;
 }
 

@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/sceneObject/lights/DirectLight.cpp.o"
   "CMakeFiles/engine.dir/src/sceneObject/lights/PointLight.cpp.o"
   "CMakeFiles/engine.dir/src/sceneObject/lights/SpotLight.cpp.o"
+  "CMakeFiles/engine.dir/src/scenes/sceneLight.cpp.o"
+  "CMakeFiles/engine.dir/src/scenes/sceneShadow.cpp.o"
   "engine.pdb"
   "engine"
 )

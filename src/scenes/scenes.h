@@ -20,6 +20,10 @@
 #include "../textures/textures_util.h"
 #include "../camera/Camera.h"
 #include "../key_handler/keyHandler.h"
+#include "../sceneObject/lights/PointLight.h"
+#include "../sceneObject/lights/SpotLight.h"
+#include "../sceneObject/lights/DirectLight.h"
+#include "../sceneObject/Cube.h"
 
 extern float deltaTime;
 extern float lastFrame;
@@ -34,5 +38,7 @@ int scenePortal(GLFWwindow *window);
 int testScene(GLFWwindow *window);
 int sceneFrameBuffer(GLFWwindow* window);
 int sceneSkybox(GLFWwindow *window);
+int sceneLight(GLFWwindow *window);
+int sceneShadow(GLFWwindow *window);
 
 #endif //ENGINE_SCENES_H

@@ -13,6 +13,7 @@ public:
     glm::vec3 ambient;
     glm::vec3 diffuse;
     glm::vec3 specular;
+    /* number of this light in the array in glsl */
     int number;
     Type lightType;
 

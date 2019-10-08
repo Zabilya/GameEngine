@@ -501,6 +501,60 @@ src/scenes/sceneFrameBuffer.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneFrameBuffer.cpp.s
 .PHONY : src/scenes/sceneFrameBuffer.cpp.s
 
+src/scenes/sceneLight.o: src/scenes/sceneLight.cpp.o
+
+.PHONY : src/scenes/sceneLight.o
+
+# target to build an object file
+src/scenes/sceneLight.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneLight.cpp.o
+.PHONY : src/scenes/sceneLight.cpp.o
+
+src/scenes/sceneLight.i: src/scenes/sceneLight.cpp.i
+
+.PHONY : src/scenes/sceneLight.i
+
+# target to preprocess a source file
+src/scenes/sceneLight.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneLight.cpp.i
+.PHONY : src/scenes/sceneLight.cpp.i
+
+src/scenes/sceneLight.s: src/scenes/sceneLight.cpp.s
+
+.PHONY : src/scenes/sceneLight.s
+
+# target to generate assembly for a file
+src/scenes/sceneLight.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneLight.cpp.s
+.PHONY : src/scenes/sceneLight.cpp.s
+
+src/scenes/sceneShadow.o: src/scenes/sceneShadow.cpp.o
+
+.PHONY : src/scenes/sceneShadow.o
+
+# target to build an object file
+src/scenes/sceneShadow.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneShadow.cpp.o
+.PHONY : src/scenes/sceneShadow.cpp.o
+
+src/scenes/sceneShadow.i: src/scenes/sceneShadow.cpp.i
+
+.PHONY : src/scenes/sceneShadow.i
+
+# target to preprocess a source file
+src/scenes/sceneShadow.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneShadow.cpp.i
+.PHONY : src/scenes/sceneShadow.cpp.i
+
+src/scenes/sceneShadow.s: src/scenes/sceneShadow.cpp.s
+
+.PHONY : src/scenes/sceneShadow.s
+
+# target to generate assembly for a file
+src/scenes/sceneShadow.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneShadow.cpp.s
+.PHONY : src/scenes/sceneShadow.cpp.s
+
 src/scenes/sceneSkyBox.o: src/scenes/sceneSkyBox.cpp.o
 
 .PHONY : src/scenes/sceneSkyBox.o
@@ -714,6 +768,12 @@ help:
 	@echo "... src/scenes/sceneFrameBuffer.o"
 	@echo "... src/scenes/sceneFrameBuffer.i"
 	@echo "... src/scenes/sceneFrameBuffer.s"
+	@echo "... src/scenes/sceneLight.o"
+	@echo "... src/scenes/sceneLight.i"
+	@echo "... src/scenes/sceneLight.s"
+	@echo "... src/scenes/sceneShadow.o"
+	@echo "... src/scenes/sceneShadow.i"
+	@echo "... src/scenes/sceneShadow.s"
 	@echo "... src/scenes/sceneSkyBox.o"
 	@echo "... src/scenes/sceneSkyBox.i"
 	@echo "... src/scenes/sceneSkyBox.s"

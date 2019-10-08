@@ -6,11 +6,27 @@
 #define ENGINE_CUBE_H
 
 
-class Cube {
+#include "SceneObject.h"
+#include "../textures/textures_util.h"
+
+class Cube{
 public:
-    Cube();
+    glm::vec3 position;
+    unsigned int textureId;
+    unsigned int cubeVbo;
+    unsigned int cubeVao;
+    string textureNameGL;
+    glm::mat4 model;
+
+    Cube(glm::vec3 position, string texturePath);
+    void bindData();
+    void bindTexture(Shader shader, string textureName, int nrTexture);
+    void drawCube(Shader shader);
 
 private:
+    static const unsigned int nrArrayElements = 288;
+    float *vertices;
+
 
 };
 

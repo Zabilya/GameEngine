@@ -11,7 +11,16 @@
 class SpotLight : PointLight {
 public:
     glm::vec3 direction;
+
+    /*
+     * Градусы, которыми задается внутренная зона, которая будет освещена прожектором.
+     */
     float cutOff;
+
+    /*
+     * Градусы, которыми задается внушняя граница освещенного участка.
+     * Начиная с внутренней границы и до внешней границы свет будет мягко затухать.
+     */
     float outerCutOff;
 
     SpotLight(int lightNumber, glm::vec3 position, glm::vec3 direction, glm::vec3 ambient, glm::vec3 diffuse,

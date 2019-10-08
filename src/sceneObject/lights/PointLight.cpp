@@ -14,13 +14,13 @@ PointLight::PointLight(const glm::vec3 &position, const glm::vec3 &ambient, cons
 }
 
 void PointLight::render(Shader shader) {
-    shader.setVec3("pointLight[" + std::to_string(number) + "].position", position.x, position.y, position.z);
-    shader.setVec3("pointLight[" + std::to_string(number) + "].ambient", ambient.x, ambient.y, ambient.z);
-    shader.setVec3("pointLight[" + std::to_string(number) + "].diffuse", diffuse.x, diffuse.y, diffuse.z);
-    shader.setVec3("pointLight[" + std::to_string(number) + "].specular", specular.x, specular.y, specular.z);
-    shader.setFloat("pointLight[" + std::to_string(number) + "].constant", constant);
-    shader.setFloat("pointLight[" + std::to_string(number) + "].linear", linear);
-    shader.setFloat("pointLight[" + std::to_string(number) + "].quadratic", quadratic);
+    shader.setVec3("pointLights[" + std::to_string(number) + "].position", position.x, position.y, position.z);
+    shader.setVec3("pointLights[" + std::to_string(number) + "].ambient", ambient.x, ambient.y, ambient.z);
+    shader.setVec3("pointLights[" + std::to_string(number) + "].diffuse", diffuse.x, diffuse.y, diffuse.z);
+    shader.setVec3("pointLights[" + std::to_string(number) + "].specular", specular.x, specular.y, specular.z);
+    shader.setFloat("pointLights[" + std::to_string(number) + "].constant", constant);
+    shader.setFloat("pointLights[" + std::to_string(number) + "].linear", linear);
+    shader.setFloat("pointLights[" + std::to_string(number) + "].quadratic", quadratic);
 }
 
 
