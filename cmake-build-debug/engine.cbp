@@ -173,6 +173,9 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneSkyBox.cpp">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/sceneTest.cpp">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/scenes/scenes.cpp">
 			<Option target="engine"/>
 		</Unit>

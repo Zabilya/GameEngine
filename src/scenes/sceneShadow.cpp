@@ -9,14 +9,9 @@ int sceneShadow(GLFWwindow *window) {
 
     glm::vec3 cubePosition = glm::vec3 (0.0f, 0.0f, -2.0f);
 
-    Cube cube(cubePosition, "../res/textures/container.jpg");
+    Cube cube(cubePosition, "../res/textures/container.png");
     cube.bindData();
     cube.bindTexture(shader, "cubeTexture", 0);
-
-    shader.use();
-    glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
-            (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
-    shader.setMat4("projection", projection);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -29,13 +24,13 @@ int sceneShadow(GLFWwindow *window) {
         /* Render here */
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glEnable(GL_DEPTH_TEST);
-
-        glm::mat4 view = camera.getViewMatrix();
-        shader.setMat4("view", view);
 
         shader.use();
-
+        glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
+                (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
+        shader.setMat4("projection", projection);
+        glm::mat4 view = camera.getViewMatrix();
+        shader.setMat4("view", view);
 
         cube.drawCube(shader);
 

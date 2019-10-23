@@ -85,6 +85,7 @@ int main(void)
 //    sceneSkybox(window);
 //    sceneLight(window);
     sceneShadow(window);
+//    sceneTest(window);
     return 0;
 }
 

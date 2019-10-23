@@ -582,6 +582,33 @@ src/scenes/sceneSkyBox.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneSkyBox.cpp.s
 .PHONY : src/scenes/sceneSkyBox.cpp.s
 
+src/scenes/sceneTest.o: src/scenes/sceneTest.cpp.o
+
+.PHONY : src/scenes/sceneTest.o
+
+# target to build an object file
+src/scenes/sceneTest.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneTest.cpp.o
+.PHONY : src/scenes/sceneTest.cpp.o
+
+src/scenes/sceneTest.i: src/scenes/sceneTest.cpp.i
+
+.PHONY : src/scenes/sceneTest.i
+
+# target to preprocess a source file
+src/scenes/sceneTest.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneTest.cpp.i
+.PHONY : src/scenes/sceneTest.cpp.i
+
+src/scenes/sceneTest.s: src/scenes/sceneTest.cpp.s
+
+.PHONY : src/scenes/sceneTest.s
+
+# target to generate assembly for a file
+src/scenes/sceneTest.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/scenes/sceneTest.cpp.s
+.PHONY : src/scenes/sceneTest.cpp.s
+
 src/scenes/scenes.o: src/scenes/scenes.cpp.o
 
 .PHONY : src/scenes/scenes.o
@@ -777,6 +804,9 @@ help:
 	@echo "... src/scenes/sceneSkyBox.o"
 	@echo "... src/scenes/sceneSkyBox.i"
 	@echo "... src/scenes/sceneSkyBox.s"
+	@echo "... src/scenes/sceneTest.o"
+	@echo "... src/scenes/sceneTest.i"
+	@echo "... src/scenes/sceneTest.s"
 	@echo "... src/scenes/scenes.o"
 	@echo "... src/scenes/scenes.i"
 	@echo "... src/scenes/scenes.s"
