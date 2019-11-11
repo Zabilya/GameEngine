@@ -78,17 +78,17 @@ void Cube::bindData() {
 void Cube::bindTexture(Shader shader, string textureName, int nrTexture) {
     shader.use();
     shader.setInt(textureName, nrTexture);
-    textureNameGL = "GL_TEXTURE" + to_string(nrTexture);
 }
 
 void Cube::drawCube(Shader shader) {
     shader.use();
-//    glEnable(GL_CULL_FACE);
+    glEnable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
     glBindVertexArray(cubeVao);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, textureId);
     shader.setMat4("model", model);
     glDrawArrays(GL_TRIANGLES, 0, 36);
+    glDisable(GL_CULL_FACE);
 }
 

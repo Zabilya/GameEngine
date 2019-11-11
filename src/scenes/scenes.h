@@ -24,6 +24,7 @@
 #include "../sceneObject/lights/SpotLight.h"
 #include "../sceneObject/lights/DirectLight.h"
 #include "../sceneObject/Cube.h"
+#include "../sceneObject/Plane.h"
 
 extern float deltaTime;
 extern float lastFrame;

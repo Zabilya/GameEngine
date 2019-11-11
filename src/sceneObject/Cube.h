@@ -15,7 +15,6 @@ public:
     unsigned int textureId;
     unsigned int cubeVbo;
     unsigned int cubeVao;
-    string textureNameGL;
     glm::mat4 model;
 
     Cube(glm::vec3 position, string texturePath);

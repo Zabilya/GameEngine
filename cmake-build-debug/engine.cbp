@@ -125,6 +125,12 @@
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Cube.h">
 			<Option target="engine"/>
 		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Plane.cpp">
+			<Option target="engine"/>
+		</Unit>
+		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Plane.h">
+			<Option target="engine"/>
+		</Unit>
 		<Unit filename="/Users/u17776048/Documents/GameEngine/src/sceneObject/Scene.cpp">
 			<Option target="engine"/>
 		</Unit>

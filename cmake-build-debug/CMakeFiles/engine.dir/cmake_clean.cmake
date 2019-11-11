@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/scenes/sceneLight.cpp.o"
   "CMakeFiles/engine.dir/src/scenes/sceneShadow.cpp.o"
   "CMakeFiles/engine.dir/src/scenes/sceneTest.cpp.o"
+  "CMakeFiles/engine.dir/src/sceneObject/Plane.cpp.o"
   "engine.pdb"
   "engine"
 )

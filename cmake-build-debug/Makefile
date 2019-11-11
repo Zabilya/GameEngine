@@ -312,6 +312,33 @@ src/sceneObject/Cube.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Cube.cpp.s
 .PHONY : src/sceneObject/Cube.cpp.s
 
+src/sceneObject/Plane.o: src/sceneObject/Plane.cpp.o
+
+.PHONY : src/sceneObject/Plane.o
+
+# target to build an object file
+src/sceneObject/Plane.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Plane.cpp.o
+.PHONY : src/sceneObject/Plane.cpp.o
+
+src/sceneObject/Plane.i: src/sceneObject/Plane.cpp.i
+
+.PHONY : src/sceneObject/Plane.i
+
+# target to preprocess a source file
+src/sceneObject/Plane.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Plane.cpp.i
+.PHONY : src/sceneObject/Plane.cpp.i
+
+src/sceneObject/Plane.s: src/sceneObject/Plane.cpp.s
+
+.PHONY : src/sceneObject/Plane.s
+
+# target to generate assembly for a file
+src/sceneObject/Plane.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/sceneObject/Plane.cpp.s
+.PHONY : src/sceneObject/Plane.cpp.s
+
 src/sceneObject/Scene.o: src/sceneObject/Scene.cpp.o
 
 .PHONY : src/sceneObject/Scene.o
@@ -774,6 +801,9 @@ help:
 	@echo "... src/sceneObject/Cube.o"
 	@echo "... src/sceneObject/Cube.i"
 	@echo "... src/sceneObject/Cube.s"
+	@echo "... src/sceneObject/Plane.o"
+	@echo "... src/sceneObject/Plane.i"
+	@echo "... src/sceneObject/Plane.s"
 	@echo "... src/sceneObject/Scene.o"
 	@echo "... src/sceneObject/Scene.i"
 	@echo "... src/sceneObject/Scene.s"
