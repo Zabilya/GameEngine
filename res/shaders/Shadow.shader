@@ -22,9 +22,9 @@ void main()
 out vec4 color;
 
 in vec2 texCord;
-uniform sampler2D texture;
+uniform sampler2D myTexture;
 
 void main()
 {
-    color = texture(texture, texCord);
+    color = texture(myTexture, texCord);
 }

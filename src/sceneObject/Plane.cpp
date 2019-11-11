@@ -15,7 +15,7 @@ Plane::Plane(glm::vec3 position, string texturePath) {
             -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f, 0.0f, 1.0f
     };
     vertices = (float *)malloc(sizeof(float) * nrArrayElements);
-    for (int i = 0; i < 288; i++) {
+    for (int i = 0; i < nrArrayElements; i++) {
         vertices[i] = vert[i];
     }
     this->textureId = loadTexture(texturePath.c_str());

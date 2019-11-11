@@ -12,11 +12,11 @@ int sceneShadow(GLFWwindow *window) {
 
     Cube cube(cubePosition, "../res/textures/container.png");
     cube.bindData();
-    cube.bindTexture(shader, "texture", 0);
+    cube.bindTexture(shader, "myTexture", 0);
 
-//    Plane plane(planePositions, "../res/textures/metal.png");
-//    plane.bindData();
-//    plane.bindTexture(shader, "texture", 1);
+    Plane plane(planePositions, "../res/textures/metal.png");
+    plane.bindData();
+    plane.bindTexture(shader, "myTexture", 1);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -38,7 +38,7 @@ int sceneShadow(GLFWwindow *window) {
         shader.setMat4("view", view);
 
         cube.drawCube(shader);
-//        plane.drawPlane(shader);
+        plane.drawPlane(shader);
 
         /* Swap front and back buffers */
         glfwSwapBuffers(window);

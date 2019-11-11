@@ -52,7 +52,7 @@ Cube::Cube(glm::vec3 position, string texturePath) {
     };
 
     vertices = (float *)malloc(sizeof(float) * nrArrayElements);
-    for (int i = 0; i < 288; i++) {
+    for (int i = 0; i < nrArrayElements; i++) {
         vertices[i] = vert[i];
     }
     this->textureId = loadTexture(texturePath.c_str());
