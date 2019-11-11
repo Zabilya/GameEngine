@@ -13,10 +13,10 @@ int sceneShadow(GLFWwindow *window) {
     Cube cube(cubePosition, "../res/textures/container.png");
     cube.bindData();
     cube.bindTexture(shader, "myTexture", 0);
+    //TODO: вынести bindTexture в класс шейдера
 
     Plane plane(planePositions, "../res/textures/metal.png");
     plane.bindData();
-    plane.bindTexture(shader, "myTexture", 1);
 
     while (!glfwWindowShouldClose(window))
     {

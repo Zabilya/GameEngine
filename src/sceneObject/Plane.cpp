@@ -47,7 +47,7 @@ void Plane::drawPlane(Shader shader) {
     shader.use();
     glEnable(GL_DEPTH_TEST);
     glBindVertexArray(planeVao);
-    glActiveTexture(GL_TEXTURE1);
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, textureId);
     shader.setMat4("model", model);
     glDrawArrays(GL_TRIANGLES, 0, 6);
