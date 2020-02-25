@@ -54,12 +54,14 @@ int main(int argc, char *argv[])
     // TODO вынесте из мейна в game
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 //    glEnable(GL_CULL_FACE);
-    glEnable(GL_DEPTH_TEST);
 //    glEnable(GL_BLEND);
 //    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
     // Initialize game
     game.Init();
+
+    //TODO вынести opengl конфигурацию в Game или GameObject
+    glEnable(GL_DEPTH_TEST);
 
     /* Take cursor */
     glfwSetCursorPosCallback(window, mouseCallback);
@@ -79,7 +81,7 @@ int main(int argc, char *argv[])
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-        glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
+        glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         //deltaTime = 0.001f;
