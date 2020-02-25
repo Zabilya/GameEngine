@@ -17,7 +17,7 @@ set(SOURCE_FILES
         src/game/Breakout/SpriteRenderer.cpp
         src/game/Breakout/BreakoutObject.cpp
         src/game/Breakout/BreakoutLevel.cpp
-        src/game/Camera.cpp include/Breakout/Breakout.h src/game/Breakout/Breakout.cpp include/SceneTest.h src/game/SceneTest.cpp)
+        src/game/Camera.cpp include/Breakout/Breakout.h src/game/Breakout/Breakout.cpp include/SceneTest.h src/game/SceneTest.cpp include/SmartPointer.h include/GameObject.h)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 
