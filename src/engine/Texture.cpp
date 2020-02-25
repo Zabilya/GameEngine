@@ -5,7 +5,7 @@
 #include "../../include/Texture.h"
 
 Texture2D::Texture2D()
-        : width(0), height(0), format(GL_RGB), wrap_S(GL_REPEAT), wrap_T(GL_REPEAT), filter_Min(GL_LINEAR), filter_Mag(GL_LINEAR)
+        : width(0), height(0), format(GL_RGB), wrap_S(GL_REPEAT), wrap_T(GL_REPEAT), filter_Min(GL_LINEAR_MIPMAP_LINEAR), filter_Mag(GL_LINEAR)
 {
     glGenTextures(1, &this->id);
 }
@@ -17,6 +17,8 @@ void Texture2D::Generate(GLuint width, GLuint height, unsigned char* data)
     // Create Texture
     glBindTexture(GL_TEXTURE_2D, this->id);
     glTexImage2D(GL_TEXTURE_2D, 0, this->format, width, height, 0, this->format, GL_UNSIGNED_BYTE, data);
+    // создает текстуры меньшего размера
+    glGenerateMipmap(GL_TEXTURE_2D);
     // Set Texture wrap and filter modes
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, this->wrap_S);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, this->wrap_T);
