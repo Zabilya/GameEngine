@@ -11,6 +11,7 @@
 // Instantiate static variables
 std::map<std::string, Texture2D>    ResourceManager::textures;
 std::map<std::string, Shader>       ResourceManager::shaders;
+std::map<std::string, Model>        ResourceManager::models;
 
 
 Shader ResourceManager::LoadShader(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile, std::string name)
@@ -33,6 +34,15 @@ Texture2D ResourceManager::LoadTexture(const GLchar *file, std::string name)
 Texture2D ResourceManager::GetTexture(std::string name)
 {
     return textures[name];
+}
+
+Model ResourceManager::LoadModel(const GLchar *file, std::string name) {
+    models[name] = loadModelFromFile(file);
+    return models[name];
+}
+
+Model ResourceManager::GetModel(std::string name) {
+    return models[name];
 }
 
 void ResourceManager::Clear()
@@ -117,4 +127,20 @@ Texture2D ResourceManager::loadTextureFromFile(const GLchar *file)
     return texture;
 }
 
+Model ResourceManager::loadModelFromFile(const GLchar *file) {
+    return Model(file);
+}
+
 //TODO createTexture and loadCubeMap
+
+
+
+
+
+
+
+
+
+
+
+
