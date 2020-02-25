@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glew REQUIRED)
+find_library(assimp REQUIRED)
 
 set(SOURCE_FILES
         dependencies/stb_image/stb_image.cpp
@@ -14,16 +15,22 @@ set(SOURCE_FILES
         src/engine/Shader.cpp
         src/engine/Texture.cpp
         src/engine/ResourceManager.cpp
-        src/game/Breakout/SpriteRenderer.cpp
-        src/game/Breakout/BreakoutObject.cpp
-        src/game/Breakout/BreakoutLevel.cpp
+        src/engine/Model.cpp
+        src/engine/Mesh.cpp
         src/game/Camera.cpp
         src/game/Breakout/Breakout.cpp
         src/game/SceneTest.cpp
+        src/game/SceneModel.cpp
+        src/game/Breakout/SpriteRenderer.cpp
+        src/game/Breakout/BreakoutObject.cpp
+        src/game/Breakout/BreakoutLevel.cpp
         include/SmartPointer.h
-        include/GameObject.h)
+        include/GameObject.h
+        include/SceneModel.h)
 
 add_executable(Game_Engine ${SOURCE_FILES})
+
+target_link_libraries(Game_Engine assimp)
 
 target_link_libraries (Game_Engine
         ${OPENGL_LIBRARIES}

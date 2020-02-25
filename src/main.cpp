@@ -6,6 +6,7 @@
 #include "../include/ResourceManager.h"
 #include "../include/Breakout/Breakout.h"
 #include "../include/SceneTest.h"
+#include "../include/SceneModel.h"
 
 using namespace std;
 
@@ -24,7 +25,7 @@ float lastX = (float)SCREEN_WIDTH / 2.0f;
 float lastY = (float)SCREEN_HEIGHT / 2.0f;
 bool firstMouse = true; // первая ли это итерация игрового цикла или нет
 
-SceneTest game(SCREEN_WIDTH, SCREEN_HEIGHT);
+SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 int main(int argc, char *argv[])
 {
@@ -52,7 +53,7 @@ int main(int argc, char *argv[])
     // OpenGL configuration
     // TODO вынесте из мейна в game
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    glEnable(GL_CULL_FACE);
+//    glEnable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
 //    glEnable(GL_BLEND);
 //    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -78,7 +79,7 @@ int main(int argc, char *argv[])
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         //deltaTime = 0.001f;
