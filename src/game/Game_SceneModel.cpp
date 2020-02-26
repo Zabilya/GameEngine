@@ -21,6 +21,7 @@ void Game_SceneModel::Init() {
     glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
                                             (float)width/height,0.1f, 100.0f);
     shader.SetMatrix4("projection", projection, true);
+
     ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj", "nanosuit");
 }
 
