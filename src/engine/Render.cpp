@@ -9,6 +9,9 @@ void Render::Init() {
 
 }
 
-void Render::DrawScene(GameScene *scene) {
-
+void Render::DrawScene(const vector<GameObject*> *objects) {
+    for (auto object : *objects) {
+        //get all info about object
+        //Draw(info);
+    }
 }

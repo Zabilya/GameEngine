@@ -18,6 +18,7 @@
 #include "Shader.h"
 #include "Texture.h"
 #include "Model.h"
+#include "GameScene.h"
 
 // A static singleton ResourceManager class that hosts several
 // functions to load Textures and Shaders. Each loaded texture

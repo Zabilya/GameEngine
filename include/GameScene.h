@@ -21,11 +21,12 @@ public:
     void RemoveObject(GameObject* object);
     void RemoveObjectById(GLuint id);
     void RemoveObjectsByTag(string tag);
-    void EnableDefaultFlags();
     GameObject* FindObjectById(GLuint id);
     vector<GameObject*> FindObjectByTag(string tag);
+    vector<GameObject*> GetAllObjects(); //TODO: realize how to change to const
 private:
-    vector<GameObject *> _objects;
+    vector<GameObject*> _objects;
+    void EnableDefaultFlags();
 };
 
 

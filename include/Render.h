@@ -13,7 +13,7 @@ using namespace std;
 class Render {
 public:
     void Init();
-    void DrawScene(GameScene* scene);
+    void DrawScene(const vector<GameObject*> *objects);
 private:
     GLuint _width;
     GLuint _height;

@@ -7,6 +7,7 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include "GameScene.h"
 
 enum GameState {
 
@@ -23,6 +24,9 @@ public:
     virtual void ProcessInput(GLfloat deltaTime);
     virtual void Update(GLfloat deltaTime);
     virtual void Render();
+
+private:
+    GameScene currentScene;
 };
 
 

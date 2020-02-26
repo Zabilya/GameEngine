@@ -18,6 +18,7 @@ set(SOURCE_FILES
         src/engine/Mesh.cpp
         src/engine/GameScene.cpp
         src/engine/PrimitiveCube.cpp
+        src/engine/Render.cpp
         src/game/Game.cpp
         src/game/Camera.cpp
         src/game/Breakout/Breakout.cpp
