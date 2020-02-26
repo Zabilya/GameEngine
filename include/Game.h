@@ -2,8 +2,8 @@
 // Created by Azure Void on 17.02.2020.
 //
 
-#ifndef LOFI_PINGPONG_GAME_H
-#define LOFI_PINGPONG_GAME_H
+#ifndef GAME_ENGINE_GAME_H
+#define GAME_ENGINE_GAME_H
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //LOFI_PINGPONG_GAME_H
+#endif //GAME_ENGINE_GAME_H

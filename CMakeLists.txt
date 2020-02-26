@@ -16,18 +16,20 @@ set(SOURCE_FILES
         src/engine/ResourceManager.cpp
         src/engine/Model.cpp
         src/engine/Mesh.cpp
+        src/engine/GameScene.cpp
         src/engine/PrimitiveCube.cpp
         src/game/Game.cpp
         src/game/Camera.cpp
         src/game/Breakout/Breakout.cpp
-        src/game/SceneTest.cpp
-        src/game/SceneModel.cpp
+        src/game/Game_MainGame.cpp
+        src/game/Game_SceneModel.cpp
         src/game/Breakout/SpriteRenderer.cpp
         src/game/Breakout/BreakoutObject.cpp
         src/game/Breakout/BreakoutLevel.cpp
         include/SmartPointer.h
         include/GameObject.h
-        include/SceneModel.h)
+        include/Game_SceneModel.h
+)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 

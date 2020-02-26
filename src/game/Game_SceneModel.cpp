@@ -2,17 +2,18 @@
 // Created by Ilya on 25.02.2020.
 //
 
-#include "../../include/SceneModel.h"
+#include "../../include/Game_SceneModel.h"
 
-SceneModel::SceneModel(GLuint width, GLuint height) :
+Game_SceneModel::Game_SceneModel(GLuint width, GLuint height) :
         Game(width, height), camera(glm::vec3(0.0f, 0.0f, 3.0f)) {
 }
 
-SceneModel::~SceneModel() {
+Game_SceneModel::~Game_SceneModel() {
 
 }
 
-void SceneModel::Init() {
+void Game_SceneModel::Init() {
+    glEnable(GL_DEPTH_TEST);
     ResourceManager::LoadShader("../res/shaders/model.vert",
                                 "../res/shaders/model.frag", nullptr,"shader");
     Shader shader = ResourceManager::GetShader("shader");
@@ -23,15 +24,15 @@ void SceneModel::Init() {
     ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj", "nanosuit");
 }
 
-void SceneModel::ProcessInput(GLfloat deltaTime) {
+void Game_SceneModel::ProcessInput(GLfloat deltaTime) {
     Game::ProcessInput(deltaTime);
 }
 
-void SceneModel::Update(GLfloat deltaTime) {
+void Game_SceneModel::Update(GLfloat deltaTime) {
 
 }
 
-void SceneModel::Render() {
+void Game_SceneModel::Render() {
     Shader shader = ResourceManager::GetShader("shader");
     shader.Use();
 

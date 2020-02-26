@@ -2,22 +2,23 @@
 // Created by Ilya on 24.02.2020.
 //
 
-#include "../../include/SceneTest.h"
+#include "../../include/Game_MainGame.h"
 
 int createCubeStuff();
 unsigned int vbo, vao;
 int verticesSize;
 glm::vec3 cubePosition;
 
-SceneTest::SceneTest(GLuint width, GLuint height) :
+Game_MainGame::Game_MainGame(GLuint width, GLuint height) :
     Game(width, height), camera(glm::vec3(0.0f, 0.0f, 3.0f)) {
 }
 
-SceneTest::~SceneTest() {
+Game_MainGame::~Game_MainGame() {
 
 }
 
-void SceneTest::Init() {
+void Game_MainGame::Init() {
+    glEnable(GL_DEPTH_TEST);
     ResourceManager::LoadShader("../res/shaders/basic.vert",
             "../res/shaders/basic.frag", nullptr,"basic");
     Shader shader = ResourceManager::GetShader("basic");
@@ -33,15 +34,15 @@ void SceneTest::Init() {
     verticesSize = createCubeStuff();
 }
 
-void SceneTest::ProcessInput(GLfloat deltaTime) {
+void Game_MainGame::ProcessInput(GLfloat deltaTime) {
     Game::ProcessInput(deltaTime);
 }
 
-void SceneTest::Update(GLfloat deltaTime) {
+void Game_MainGame::Update(GLfloat deltaTime) {
 
 }
 
-void SceneTest::Render() {
+void Game_MainGame::Render() {
     Shader shader = ResourceManager::GetShader("basic");
     shader.Use();
 
