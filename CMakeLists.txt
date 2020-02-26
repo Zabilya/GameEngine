@@ -11,12 +11,13 @@ find_library(assimp REQUIRED)
 set(SOURCE_FILES
         dependencies/stb_image/stb_image.cpp
         src/main.cpp
-        src/game/Game.cpp
         src/engine/Shader.cpp
         src/engine/Texture.cpp
         src/engine/ResourceManager.cpp
         src/engine/Model.cpp
         src/engine/Mesh.cpp
+        src/engine/PrimitiveCube.cpp
+        src/game/Game.cpp
         src/game/Camera.cpp
         src/game/Breakout/Breakout.cpp
         src/game/SceneTest.cpp
