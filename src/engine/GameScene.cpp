@@ -71,3 +71,7 @@ GameObject *GameScene::FindObjectById(GLuint id) {
 vector<GameObject *> GameScene::FindObjectByTag(string tag) {
     return vector<GameObject *>();
 }
+
+void GameScene::EnableDefaultFlags() {
+    glEnable(GL_DEPTH_TEST);
+}

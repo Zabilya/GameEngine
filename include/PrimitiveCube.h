@@ -8,8 +8,9 @@
 
 #include <GL/glew.h>
 #include <GL/gl.h>
+#include "GameObject.h"
 
-class PrimitiveCube {
+class PrimitiveCube : public GameObject {
     GLuint Init();
 };
 

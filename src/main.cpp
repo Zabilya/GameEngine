@@ -5,8 +5,8 @@
 
 #include "../include/ResourceManager.h"
 #include "../include/Breakout/Breakout.h"
-#include "../include/SceneTest.h"
-#include "../include/SceneModel.h"
+#include "../include/Game_MainGame.h"
+#include "../include/Game_SceneModel.h"
 
 using namespace std;
 
@@ -25,88 +25,90 @@ float lastX = (float)SCREEN_WIDTH / 2.0f;
 float lastY = (float)SCREEN_HEIGHT / 2.0f;
 bool firstMouse = true; // первая ли это итерация игрового цикла или нет
 
-SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT);
+//Game_SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+Game_MainGame game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+
+GLfloat deltaTime {0.0f};
+GLfloat lastFrame {0.0f};
+
+//Game mainGame(); //TODO: add
 
 int main(int argc, char *argv[])
 {
+    //===============================WindowManager class========================================
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-//    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
     GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Breakout", nullptr, nullptr);
-    if (!window)
-    {
+    if (!window) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwSetKeyCallback(window, keyCallback);
+    glfwSetCursorPosCallback(window, mouseCallback);
+    glfwSetScrollCallback(window, scrollCallback);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    //================================================================================
 
+
+    //================================================================================
     glewInit();
     if (glewInit() != GLEW_OK)
         return -1;
+    //================================================================================
 
-    glfwSetKeyCallback(window, keyCallback);
 
-    // OpenGL configuration
-    // TODO вынесте из мейна в game
+    //================================================================================
+    // TODO zabilya -> render
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-//    glEnable(GL_CULL_FACE);
-//    glEnable(GL_BLEND);
-//    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //================================================================================
 
-    // Initialize game
+
+    //================================================================================
     game.Init();
+    //================================================================================
 
-    //TODO вынести opengl конфигурацию в Game или GameObject
-    glEnable(GL_DEPTH_TEST);
 
-    /* Take cursor */
-    glfwSetCursorPosCallback(window, mouseCallback);
-    /* for scrolling */
-    glfwSetScrollCallback(window, scrollCallback);
-    /* for disabling cursor */
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
-    // DeltaTime variables
-    GLfloat deltaTime = 0.0f;
-    GLfloat lastFrame = 0.0f;
-
+    //TODO: move to method main loop V
     while (!glfwWindowShouldClose(window))
     {
-        // Calculate delta time
+        //================================================================================
+        //TODO: move to smth like update delta time
         GLfloat currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
+        //================================================================================
 
+
+        //================================================================================
         glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        //================================================================================
 
-        //deltaTime = 0.001f;
-        // Manage user input
 
-        processInput(window, &game.camera, deltaTime);
+        //============================GAME LOOP?========================================
+        processInput(window, &game.camera, deltaTime); //TODO: checkout wtf
         game.ProcessInput(deltaTime);
-
-        // Update Game state
         game.Update(deltaTime);
-
-        // Render
         game.Render();
+        //================================================================================
 
-        /* Swap front and back buffers */
+
+        //================================================================================
         glfwSwapBuffers(window);
-
-        /* Poll for and process events */
         glfwPollEvents();
+        //================================================================================
     }
 
-    // Delete all resources as loaded using the resource manager
+    //================================================================================
     ResourceManager::Clear();
-
     glfwTerminate();
+    //================================================================================
+
     return 0;
 }
 

@@ -21,6 +21,7 @@ public:
     void RemoveObject(GameObject* object);
     void RemoveObjectById(GLuint id);
     void RemoveObjectsByTag(string tag);
+    void EnableDefaultFlags();
     GameObject* FindObjectById(GLuint id);
     vector<GameObject*> FindObjectByTag(string tag);
 private:
