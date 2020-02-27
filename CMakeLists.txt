@@ -31,7 +31,6 @@ set(SOURCE_FILES
         include/SmartPointer.h
         include/GameObject.h
         include/Game_SceneModel.h
-        include/GameScene.h
         )
 
 add_executable(Game_Engine ${SOURCE_FILES})
