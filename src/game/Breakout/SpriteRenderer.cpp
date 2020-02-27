@@ -32,7 +32,7 @@ void SpriteRenderer::DrawSprite(Texture2D &texture, glm::vec2 position, glm::vec
 
     this->shader.SetMatrix4("model", model);
 
-    // Render textured quad
+    // GameRender textured quad
     this->shader.SetVector3f("spriteColor", color);
 
     glActiveTexture(GL_TEXTURE0);

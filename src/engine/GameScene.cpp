@@ -13,14 +13,14 @@
 using namespace std;
 
 
-GameScene::GameScene(GLchar* filePath) {
+GameScene::GameScene(const GLchar* filePath) {
     try {
         ifstream fileStream;
 
         fileStream.open(filePath);
         if (!fileStream.is_open()) {
             string errorMsg {"Cannot open file: "};
-//            throw runtime_error(errorMsg.append(filePath)); TODO: CHECK LATER
+            throw runtime_error(errorMsg.append(filePath)); //TODO: CHECK LATER
         }
         /*parsing code
         ...

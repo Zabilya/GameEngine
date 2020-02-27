@@ -11,6 +11,9 @@
 #include "GameObject.h"
 
 class PrimitiveCube : public GameObject {
+public:
+    PrimitiveCube();
+    PrimitiveCube(glm::vec3 position);
     GLuint Init();
 };
 

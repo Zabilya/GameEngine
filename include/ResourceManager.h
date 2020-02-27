@@ -28,25 +28,23 @@
 class ResourceManager
 {
 public:
-    // Resource storage
-    static std::map<std::string, Shader>    shaders;
-    static std::map<std::string, Texture2D> textures;
-    static std::map<std::string, Model> models;
-    // Loads (and generates) a shader program from file loading vertex, fragment (and geometry) shader's source code. If gShaderFile is not nullptr, it also loads a geometry shader
-    static Shader   LoadShader(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile, std::string name);
-    // Retrieves a stored shader
-    static Shader   GetShader(std::string name);
-    // Loads (and generates) a texture from file
-    static Texture2D LoadTexture(const GLchar *file, std::string name);
-    // Retrieves a stored texture
-    static Texture2D GetTexture(std::string name);
+    //TODO: Default constructor may be public in purposes of multi-threading optimization availability.
+    //ResourceManager() { }
 
+    // Resource storage
+    static std::map<std::string, Texture2D> textures;
+    static std::map<std::string, Shader> shaders;
+    static std::map<std::string, Model> models;
+    static GameScene LoadScene(const GLchar *file);
+    static Texture2D LoadTexture(const GLchar *file, std::string name);
+    static Shader LoadShader(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile, std::string name);
     static Model LoadModel(const GLchar *file, std::string name);
+    static Texture2D GetTexture(std::string name);
+    static Shader GetShader(std::string name);
     static Model GetModel(std::string name);
     // Properly de-allocates all loaded resources
     static void      Clear();
 private:
-    // Private constructor, that is we do not want any actual resource manager objects. Its members and functions should be publicly available (static).
     ResourceManager() { }
     // Loads and generates a shader from file
     static Shader    loadShaderFromFile(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile = nullptr);
