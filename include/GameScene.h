@@ -15,7 +15,7 @@ using namespace std;
 
 class GameScene {
 public:
-    GameScene(GLchar* filePath);
+    GameScene(const GLchar* filePath);
     ~GameScene();
     void AddNewObject(GameObject* object);
     void RemoveObject(GameObject* object);

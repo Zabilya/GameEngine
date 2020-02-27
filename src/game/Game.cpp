@@ -5,24 +5,22 @@
 #include "../../include/Game.h"
 #include "../../include/GameScene.h"
 #include "../../include/PrimitiveCube.h"
+#include "../../include/ResourceManager.h"
 
 using namespace std;
 
 
 Game::Game(GLuint width, GLuint height) :
-    keys(), width(width), height(height), currentScene(nullptr){}
+        keys(), width(width), height(height), _currentScene(nullptr), _render(nullptr){}
 
 Game::~Game() = default;
 
 void Game::Init() {
-    //TODO: ResourceManager manager{...};
-    //TODO: currentScene = manager.LoadScene(pathToScene);
-
-    //GameScene scene {""};
-    //scene.AddNewObject(new PrimitiveCube());
-    //TODO: ^upper code^ is what it should be like when we are working with "Game_SceneModel" etc.
-
-    //init render
+    GameScene scene{ResourceManager::LoadScene("scenes/test.lvl")};
+    _currentScene = &scene;
+    _currentScene->AddNewObject(new PrimitiveCube{glm::vec3{0.0f, 0.0f, 0.0f}});
+    _render = new GameRender;
+    _render->Init();
 }
 
 void Game::Update(GLfloat dt) {
@@ -34,5 +32,6 @@ void Game::ProcessInput(GLfloat dt) {
 }
 
 void Game::Render() {
-    //call render's method "drawscene" and put current scene as argument
+    vector<GameObject*> objects{_currentScene->GetAllObjects()}; //TODO: remove when const
+    _render->DrawObjects(&objects);
 }

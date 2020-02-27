@@ -23,7 +23,7 @@ public:
     GLfloat     Rotation;
     GLboolean   IsSolid;
     GLboolean   Destroyed;
-    // Render state
+    // GameRender state
     Texture2D   Sprite;
     // Constructor(s)
     BreakoutObject();

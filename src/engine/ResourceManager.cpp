@@ -131,6 +131,10 @@ Model ResourceManager::loadModelFromFile(const GLchar *file) {
     return Model(file);
 }
 
+GameScene ResourceManager::LoadScene(const GLchar *file) {
+    return GameScene(file);
+}
+
 //TODO createTexture and loadCubeMap
 
 

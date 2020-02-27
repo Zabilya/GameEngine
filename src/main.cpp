@@ -7,6 +7,7 @@
 #include "../include/Breakout/Breakout.h"
 #include "../include/Game_MainGame.h"
 #include "../include/Game_SceneModel.h"
+#include "../include/WindowManager.h"
 
 using namespace std;
 
@@ -16,11 +17,8 @@ void scrollCallback(GLFWwindow* window, double offsetX, double offsetY);
 void mouseCallback(GLFWwindow* window, double posX, double posY);
 void processInput(GLFWwindow *window, Camera *camera, float deltaTime);
 
-// The Width of the screen
 const GLuint SCREEN_WIDTH = 800;
-// The height of the screen
 const GLuint SCREEN_HEIGHT = 600;
-
 float lastX = (float)SCREEN_WIDTH / 2.0f;
 float lastY = (float)SCREEN_HEIGHT / 2.0f;
 bool firstMouse = true; // первая ли это итерация игрового цикла или нет
@@ -35,23 +33,14 @@ GLfloat lastFrame {0.0f};
 
 int main(int argc, char *argv[])
 {
-    //===============================WindowManager class========================================
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    //===============================WindowManager class==============================
+    WindowManager winManager{};
 
-    GLFWwindow* window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Breakout", nullptr, nullptr);
-    if (!window) {
-        cout << "Failed to create GLFW window" << endl;
-        glfwTerminate();
+    if (!winManager.Init(SCREEN_WIDTH, SCREEN_HEIGHT, "DemoScene")) {
+        cout << "Failed to init window manager" << endl;
         return -1;
     }
-    glfwMakeContextCurrent(window);
-    glfwSetKeyCallback(window, keyCallback);
-    glfwSetCursorPosCallback(window, mouseCallback);
-    glfwSetScrollCallback(window, scrollCallback);
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    winManager.SetCallbacks(scrollCallback, mouseCallback, keyCallback);
     //================================================================================
 
 
@@ -63,7 +52,7 @@ int main(int argc, char *argv[])
 
 
     //================================================================================
-    // TODO zabilya -> render
+    // TODO zabilya -> _render
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     //================================================================================
 
@@ -74,7 +63,7 @@ int main(int argc, char *argv[])
 
 
     //TODO: move to method main loop V
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(winManager.GetWindow()))
     {
         //================================================================================
         //TODO: move to smth like update delta time
@@ -85,13 +74,14 @@ int main(int argc, char *argv[])
 
 
         //================================================================================
+        //TODO: move it to _render?
         glClearColor(0.15f, 0.15f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         //================================================================================
 
 
         //============================GAME LOOP?========================================
-        processInput(window, &game.camera, deltaTime); //TODO: checkout wtf
+        processInput(winManager.GetWindow(), &game.camera, deltaTime); //TODO: checkout wtf
         game.ProcessInput(deltaTime);
         game.Update(deltaTime);
         game.Render();
@@ -99,7 +89,7 @@ int main(int argc, char *argv[])
 
 
         //================================================================================
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(winManager.GetWindow());
         glfwPollEvents();
         //================================================================================
     }

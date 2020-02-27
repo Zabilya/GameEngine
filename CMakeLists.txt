@@ -13,12 +13,13 @@ set(SOURCE_FILES
         src/main.cpp
         src/engine/Shader.cpp
         src/engine/Texture.cpp
+        src/engine/GameScene.cpp
         src/engine/ResourceManager.cpp
         src/engine/Model.cpp
         src/engine/Mesh.cpp
-        src/engine/GameScene.cpp
         src/engine/PrimitiveCube.cpp
-        src/engine/Render.cpp
+        src/engine/GameRender.cpp
+        src/engine/WindowManager.cpp
         src/game/Game.cpp
         src/game/Camera.cpp
         src/game/Breakout/Breakout.cpp
@@ -30,7 +31,8 @@ set(SOURCE_FILES
         include/SmartPointer.h
         include/GameObject.h
         include/Game_SceneModel.h
-)
+        include/GameScene.h
+        )
 
 add_executable(Game_Engine ${SOURCE_FILES})
 

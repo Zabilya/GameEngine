@@ -15,7 +15,7 @@
 #include "../ResourceManager.h"
 
 /// BreakoutLevel holds all Tiles as part of a Breakout level and
-/// hosts functionality to Load/render breakout_levels from the harddisk.
+/// hosts functionality to Load/_render breakout_levels from the harddisk.
 class BreakoutLevel
 {
 public:
@@ -25,7 +25,7 @@ public:
     BreakoutLevel() { }
     // Loads level from file
     void      Load(const GLchar *file, GLuint levelWidth, GLuint levelHeight);
-    // Render level
+    // GameRender level
     void      Draw(SpriteRenderer &renderer);
     // Check if the level is completed (all non-solid tiles are destroyed)
     GLboolean IsCompleted();

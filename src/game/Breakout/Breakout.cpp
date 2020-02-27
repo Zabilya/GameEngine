@@ -33,7 +33,7 @@ void Breakout::Init() {
     ResourceManager::GetShader("sprite").SetInteger("image", 0, true);
     ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
-    // Set render-specific controls
+    // Set _render-specific controls
     Shader shad{ResourceManager::GetShader("sprite")};
     Renderer = new SpriteRenderer(shad);
 

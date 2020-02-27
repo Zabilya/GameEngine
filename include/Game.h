@@ -8,6 +8,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "GameScene.h"
+#include "GameRender.h"
 
 enum GameState {
 
@@ -26,7 +27,8 @@ public:
     virtual void Render();
 
 private:
-    GameScene currentScene;
+    GameScene* _currentScene;
+    GameRender* _render;
 };
 
 

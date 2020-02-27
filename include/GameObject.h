@@ -12,6 +12,13 @@
 
 class GameObject {
 public:
+    GameObject() {};
+
+    GameObject(glm::vec3 position) {
+        //TODO: if pos !ok do smth
+        SetPosition(position);
+    }
+
     glm::vec3 GetPosition() {
         return _position;
     }
@@ -21,7 +28,7 @@ public:
         _position = position;
         return 0;
     }
-private:
+protected:
     glm::vec3 _position;
     virtual GLuint Init() = 0;
 };
