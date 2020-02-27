@@ -23,8 +23,8 @@ float lastX = (float)SCREEN_WIDTH / 2.0f;
 float lastY = (float)SCREEN_HEIGHT / 2.0f;
 bool firstMouse = true; // первая ли это итерация игрового цикла или нет
 
-//Game_SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
-Game_MainGame game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+Game_SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+//Game_MainGame game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
 
 GLfloat deltaTime {0.0f};
 GLfloat lastFrame {0.0f};

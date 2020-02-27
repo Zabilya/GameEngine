@@ -20,12 +20,12 @@ GameScene::GameScene(const GLchar* filePath) {
         fileStream.open(filePath);
         if (!fileStream.is_open()) {
             string errorMsg {"Cannot open file: "};
-            throw runtime_error(errorMsg.append(filePath)); //TODO: CHECK LATER
+//            throw runtime_error(errorMsg.append(filePath)); //TODO: CHECK LATER
         }
         /*parsing code
         ...
         */
-        AddNewObject(new PrimitiveCube()); //TODO: change for real reading
+//        AddNewObject(new PrimitiveCube()); //TODO: change for real reading
         EnableDefaultFlags();
     }
     catch (runtime_error &ex) {

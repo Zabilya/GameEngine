@@ -18,6 +18,8 @@ class Game {
 public:
     GLboolean keys[1024];
     GLuint width, height;
+    GameScene _currentScene;
+    GameRender _render;
 
     Game(GLuint width, GLuint height);
     ~Game();
@@ -25,10 +27,6 @@ public:
     virtual void ProcessInput(GLfloat deltaTime);
     virtual void Update(GLfloat deltaTime);
     virtual void Render();
-
-private:
-    GameScene* _currentScene;
-    GameRender* _render;
 };
 
 

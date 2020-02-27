@@ -17,7 +17,7 @@ set(SOURCE_FILES
         src/engine/ResourceManager.cpp
         src/engine/Model.cpp
         src/engine/Mesh.cpp
-        src/engine/PrimitiveCube.cpp
+#        src/engine/PrimitiveCube.cpp
         src/engine/GameRender.cpp
         src/engine/WindowManager.cpp
         src/game/Game.cpp
@@ -31,7 +31,7 @@ set(SOURCE_FILES
         include/SmartPointer.h
         include/GameObject.h
         include/Game_SceneModel.h
-        )
+        src/engine/GameObject.cpp)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 

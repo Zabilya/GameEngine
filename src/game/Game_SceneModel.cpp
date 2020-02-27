@@ -35,15 +35,14 @@ void Game_SceneModel::Update(GLfloat deltaTime) {
 
 void Game_SceneModel::Render() {
     Shader shader = ResourceManager::GetShader("shader");
-    shader.Use();
+    Model nanosuit = ResourceManager::GetModel("nanosuit");
 
+    vector<GameObject*> objects;
     glm::mat4 view = camera.GetViewMatrix();
-    shader.SetMatrix4("view", view);
+    GameObject ourObject(glm::vec3(0.0f, -1.75f, 0.0f), glm::vec3(0.2f, 0.2f, 0.2f),
+                        &shader, &nanosuit);
 
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
-    model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// it's a bit too big for our scene, so scale it down
-    shader.SetMatrix4("model", model);
-    ResourceManager::GetModel("nanosuit").Draw(shader);
+    objects.push_back(&ourObject);
+    _render.DrawObjects(&objects, view);
 }
 
