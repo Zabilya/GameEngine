@@ -5,7 +5,7 @@
 #include "../../include/GameObject.h"
 
 GameObject::GameObject(glm::vec3 position, glm::vec3 scale, Shader *shader, Model *model) :
-    _position(glm::vec3(1.0f)), _scale(glm::vec3(1.0f)), _shader(*shader), _model(*model) {\
+    _position(glm::vec3(1.0f)), _scale(glm::vec3(1.0f)), _shader(*shader), _model(*model) {
     SetPosition(position);
     SetScale(scale);
 }
@@ -38,6 +38,5 @@ Shader GameObject::GetShader() {
 Model GameObject::GetModel() {
     return _model;
 }
-
 
 

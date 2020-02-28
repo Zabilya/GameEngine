@@ -9,9 +9,9 @@
 
 #include "../../include/GameScene.h"
 #include "../../include/PrimitiveCube.h"
+#include "../../include/ResourceManager.h"
 
 using namespace std;
-
 
 GameScene::GameScene(const GLchar* filePath) {
     try {
@@ -40,21 +40,19 @@ GameScene::~GameScene() {
     _objects.clear();
 }
 
-void GameScene::AddNewObject(GameObject *object) {
-    if (object != nullptr) {
+void GameScene::AddNewObject(shared_ptr<GameObject> object) {
         _objects.push_back(object);
-    }
 }
 
-void GameScene::RemoveObject(GameObject *object) {
-    if (object != nullptr) {
-        for (auto i = _objects.begin(); i < _objects.end(); ++i) {
-            if (i.operator*() == object) { //TODO: CHECK
-                _objects.erase(i);
-                break;
-            }
-        }
-    }
+void GameScene::RemoveObject(shared_ptr<GameObject> object) {
+//    if (object != nullptr) {
+//        for (auto i = _objects.begin(); i < _objects.end(); ++i) {
+//            if (i.operator*() == object) { //TODO: CHECK
+//                _objects.erase(i);
+//                break;
+//            }
+//        }
+//    }
 }
 
 void GameScene::RemoveObjectById(GLuint id) {
@@ -65,18 +63,18 @@ void GameScene::RemoveObjectsByTag(string tag) {
 
 }
 
-GameObject *GameScene::FindObjectById(GLuint id) {
-    return nullptr;
+shared_ptr<GameObject> GameScene::FindObjectById(GLuint id) {
+//    return nullptr;
 }
 
-vector<GameObject *> GameScene::FindObjectByTag(string tag) {
-    return vector<GameObject *>();
+vector<shared_ptr<GameObject>> GameScene::FindObjectByTag(string tag) {
+//    return vector<GameObject *>();
 }
 
 void GameScene::EnableDefaultFlags() {
     glEnable(GL_DEPTH_TEST);
 }
 
-vector<GameObject *> GameScene::GetAllObjects() {
+vector<shared_ptr<GameObject>> GameScene::GetAllObjects() {
     return this->_objects; //TODO: realize how to change to const
 }

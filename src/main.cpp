@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "../include/ResourceManager.h"
-#include "../include/Breakout/Breakout.h"
 #include "../include/Game_MainGame.h"
 #include "../include/Game_SceneModel.h"
 #include "../include/WindowManager.h"

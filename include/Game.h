@@ -7,6 +7,7 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <memory>
 #include "GameScene.h"
 #include "GameRender.h"
 
@@ -18,8 +19,8 @@ class Game {
 public:
     GLboolean keys[1024];
     GLuint width, height;
-    GameScene _currentScene;
-    GameRender _render;
+    GameScene currentScene;
+    GameRender render;
 
     Game(GLuint width, GLuint height);
     ~Game();

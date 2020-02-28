@@ -14,15 +14,21 @@ Game_SceneModel::~Game_SceneModel() {
 
 void Game_SceneModel::Init() {
     glEnable(GL_DEPTH_TEST);
-    ResourceManager::LoadShader("../res/shaders/model.vert",
+    Shader shader = ResourceManager::LoadShader("../res/shaders/model.vert",
                                 "../res/shaders/model.frag", nullptr,"shader");
-    Shader shader = ResourceManager::GetShader("shader");
-
+    Model ourModel = ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj");
+//    GameScene scene = ResourceManager::LoadScene("scenes/test.lvl");
+    // TODO: currentScene = new GameScene();
+    GameScene scene("scenes/test.lvl");
+    currentScene = scene;
+    // TODO: устанавливать матрицу V во все шейдеры
     glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
                                             (float)width/height,0.1f, 100.0f);
     shader.SetMatrix4("projection", projection, true);
 
-    ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj", "nanosuit");
+    shared_ptr<GameObject> ourObject (new GameObject(glm::vec3(0.0f, -1.75f, 0.0f),
+            glm::vec3(0.2f, 0.2f, 0.2f), &shader, &ourModel));
+    currentScene.AddNewObject(ourObject);
 }
 
 void Game_SceneModel::ProcessInput(GLfloat deltaTime) {
@@ -34,15 +40,17 @@ void Game_SceneModel::Update(GLfloat deltaTime) {
 }
 
 void Game_SceneModel::Render() {
-    Shader shader = ResourceManager::GetShader("shader");
-    Model nanosuit = ResourceManager::GetModel("nanosuit");
-
-    vector<GameObject*> objects;
+//    Shader shader = ResourceManager::GetShader("shader");
+//    Model nanosuit = ResourceManager::GetModel("nanosuit");
+//
+//    vector<GameObject*> objects;
+//    glm::mat4 view = camera.GetViewMatrix();
+//    GameObject ourObject(glm::vec3(0.0f, -1.75f, 0.0f), glm::vec3(0.2f, 0.2f, 0.2f),
+//                        &shader, &nanosuit);
+//
+//    objects.push_back(&ourObject);
     glm::mat4 view = camera.GetViewMatrix();
-    GameObject ourObject(glm::vec3(0.0f, -1.75f, 0.0f), glm::vec3(0.2f, 0.2f, 0.2f),
-                        &shader, &nanosuit);
-
-    objects.push_back(&ourObject);
-    _render.DrawObjects(&objects, view);
+    vector<shared_ptr<GameObject>> objects = currentScene.GetAllObjects();
+    render.DrawObjects(objects, view);
 }
 

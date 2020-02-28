@@ -13,7 +13,7 @@ using namespace std;
 class GameRender {
 public:
     void Init();
-    void DrawObjects(vector<GameObject*> *objects, glm::mat4 view); //TODO: should be const
+    void DrawObjects(vector<shared_ptr<GameObject>> objects, glm::mat4 view); //TODO: should be const
 private:
     GLuint _width;
     GLuint _height;
