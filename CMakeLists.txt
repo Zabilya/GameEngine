@@ -24,7 +24,7 @@ set(SOURCE_FILES
         src/game/Camera.cpp
         src/game/Game_MainGame.cpp
         src/game/Game_SceneModel.cpp
-        )
+        src/engine/DebugHelper.cpp include/DebugHelper.h)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 
