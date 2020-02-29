@@ -122,6 +122,7 @@ Texture2D ResourceManager::loadTextureFromFile(const GLchar *file)
 }
 
 Model ResourceManager::loadModelFromFile(const GLchar *file) {
+    // TODO перенести код загрузки модели из класса Model
     return Model(file);
 }
 

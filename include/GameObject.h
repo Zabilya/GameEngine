@@ -18,9 +18,9 @@ public:
     GameObject(glm::vec3 position, glm::vec3 scale, Shader *shader, Model *model);
     glm::vec3 GetPosition();
     glm::vec3 GetScale();
-    GLuint SetScale(glm::vec3 scale);
+    void SetScale(glm::vec3 scale);
     Shader GetShader();
-    GLuint SetPosition(glm::vec3 position);
+    void SetPosition(glm::vec3 position);
     Model GetModel();
 
 private:

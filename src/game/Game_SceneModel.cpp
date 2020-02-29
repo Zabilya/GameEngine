@@ -53,7 +53,8 @@ void Game_SceneModel::Render() {
 //
 //    objects.push_back(&ourObject);
     glm::mat4 view = camera.GetViewMatrix();
-    vector<shared_ptr<GameObject>> objects = currentScene.GetAllObjects();
-    render.DrawObjects(objects, view);
+    vector<shared_ptr<GameObject>> *objects = currentScene.GetAllObjects();
+    //TODO а мы точно правильно передаем objects?
+    render.DrawObjects(vector<shared_ptr<GameObject>>(*objects), view);
 }
 

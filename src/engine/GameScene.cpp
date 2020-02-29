@@ -67,7 +67,7 @@ shared_ptr<GameObject> GameScene::FindObjectById(GLuint id) {
 //    return nullptr;
 }
 
-vector<shared_ptr<GameObject>> GameScene::FindObjectByTag(string tag) {
+vector<shared_ptr<GameObject>> *GameScene::FindObjectByTag(string tag) {
 //    return vector<GameObject *>();
 }
 
@@ -75,6 +75,7 @@ void GameScene::EnableDefaultFlags() {
     glEnable(GL_DEPTH_TEST);
 }
 
-vector<shared_ptr<GameObject>> GameScene::GetAllObjects() {
-    return this->_objects; //TODO: realize how to change to const
+vector<shared_ptr<GameObject>> *GameScene::GetAllObjects() {
+//    return shared_ptr<vector<shared_ptr<GameObject>>>(_objects); //TODO: realize how to change to const
+    return &_objects;
 }

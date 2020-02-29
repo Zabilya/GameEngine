@@ -21,8 +21,9 @@ public:
     void RemoveObjectById(GLuint id);
     void RemoveObjectsByTag(string tag);
     shared_ptr<GameObject> FindObjectById(GLuint id);
-    vector<shared_ptr<GameObject>> FindObjectByTag(string tag);
-    vector<shared_ptr<GameObject>> GetAllObjects(); //TODO: realize how to change to const
+    //TODO подумать, как возвращать shared_ptr вместо обычного указателя
+    vector<shared_ptr<GameObject>> *FindObjectByTag(string tag);
+    vector<shared_ptr<GameObject>> *GetAllObjects(); //TODO: realize how to change to const
 private:
     vector<shared_ptr<GameObject>> _objects;
     void EnableDefaultFlags();
