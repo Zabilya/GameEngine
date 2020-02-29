@@ -2,11 +2,13 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <activdbg.h>
 
 #include "../include/ResourceManager.h"
 #include "../include/Game_MainGame.h"
 #include "../include/Game_SceneModel.h"
 #include "../include/WindowManager.h"
+#include "../include/DebugHelper.h"
 
 using namespace std;
 
@@ -47,6 +49,7 @@ int main(int argc, char *argv[])
     glewInit();
     if (glewInit() != GLEW_OK)
         return -1;
+    DebugHelper::Init(); //can only be inited after glew init, otherwise SEGFAULT will be thrown
     //================================================================================
 
 
@@ -57,7 +60,12 @@ int main(int argc, char *argv[])
 
 
     //================================================================================
-    game.Init();
+    try {
+        game.Init();
+    }
+    catch (exception &ex) {
+        DebugHelper::Log(new string(ex.what()), new string(__FILE__), __LINE__);
+    }
     //================================================================================
 
 
