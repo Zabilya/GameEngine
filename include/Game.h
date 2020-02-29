@@ -7,6 +7,7 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <memory>
 #include "GameScene.h"
 #include "GameRender.h"
 
@@ -26,9 +27,9 @@ public:
     virtual void Update(GLfloat deltaTime);
     virtual void Render();
 
-private:
-    GameScene* _currentScene;
-    GameRender* _render;
+protected:
+    GameScene currentScene;
+    GameRender render;
 };
 
 

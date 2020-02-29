@@ -14,24 +14,17 @@ set(SOURCE_FILES
         src/engine/Shader.cpp
         src/engine/Texture.cpp
         src/engine/GameScene.cpp
+        src/engine/GameRender.cpp
+        src/engine/GameObject.cpp
         src/engine/ResourceManager.cpp
         src/engine/Model.cpp
         src/engine/Mesh.cpp
-        src/engine/PrimitiveCube.cpp
-        src/engine/GameRender.cpp
         src/engine/WindowManager.cpp
         src/game/Game.cpp
         src/game/Camera.cpp
-        src/game/Breakout/Breakout.cpp
         src/game/Game_MainGame.cpp
         src/game/Game_SceneModel.cpp
-        src/game/Breakout/SpriteRenderer.cpp
-        src/game/Breakout/BreakoutObject.cpp
-        src/game/Breakout/BreakoutLevel.cpp
-        include/SmartPointer.h
-        include/GameObject.h
-        include/Game_SceneModel.h
-        )
+        src/engine/DebugHelper.cpp include/DebugHelper.h)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 

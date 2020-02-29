@@ -14,15 +14,24 @@ Game_SceneModel::~Game_SceneModel() {
 
 void Game_SceneModel::Init() {
     glEnable(GL_DEPTH_TEST);
-    ResourceManager::LoadShader("../res/shaders/model.vert",
+    Shader shader = ResourceManager::LoadShader("../res/shaders/model.vert",
                                 "../res/shaders/model.frag", nullptr,"shader");
-    Shader shader = ResourceManager::GetShader("shader");
-
+    Model ourModel = ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj");
+//    GameScene scene = ResourceManager::LoadScene("scenes/test.lvl");
+    // TODO: currentScene = new GameScene();
+    GameScene scene("scenes/test.lvl");
+    currentScene = scene;
+    // TODO: устанавливать матрицу V во все шейдеры
     glm::mat4 projection = glm::perspective(glm::radians(camera.zoom),
                                             (float)width/height,0.1f, 100.0f);
     shader.SetMatrix4("projection", projection, true);
 
-    ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj", "nanosuit");
+    shared_ptr<GameObject> ourObject (new GameObject(glm::vec3(0.0f, -1.75f, 0.0f),
+            glm::vec3(0.2f, 0.2f, 0.2f), &shader, &ourModel));
+    currentScene.AddNewObject(ourObject);
+
+    throw exception(); //TODO REMOVE: test exception that handles in main.
+    //it may be necessary to write own exception implementation to have damned constructor which will take actual message lol
 }
 
 void Game_SceneModel::ProcessInput(GLfloat deltaTime) {
@@ -34,16 +43,18 @@ void Game_SceneModel::Update(GLfloat deltaTime) {
 }
 
 void Game_SceneModel::Render() {
-    Shader shader = ResourceManager::GetShader("shader");
-    shader.Use();
-
+//    Shader shader = ResourceManager::GetShader("shader");
+//    Model nanosuit = ResourceManager::GetModel("nanosuit");
+//
+//    vector<GameObject*> objects;
+//    glm::mat4 view = camera.GetViewMatrix();
+//    GameObject ourObject(glm::vec3(0.0f, -1.75f, 0.0f), glm::vec3(0.2f, 0.2f, 0.2f),
+//                        &shader, &nanosuit);
+//
+//    objects.push_back(&ourObject);
     glm::mat4 view = camera.GetViewMatrix();
-    shader.SetMatrix4("view", view);
-
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
-    model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));	// it's a bit too big for our scene, so scale it down
-    shader.SetMatrix4("model", model);
-    ResourceManager::GetModel("nanosuit").Draw(shader);
+    vector<shared_ptr<GameObject>> *objects = currentScene.GetAllObjects();
+    //TODO а мы точно правильно передаем objects?
+    render.DrawObjects(vector<shared_ptr<GameObject>>(*objects), view);
 }
 

@@ -11,16 +11,16 @@ using namespace std;
 
 
 Game::Game(GLuint width, GLuint height) :
-        keys(), width(width), height(height), _currentScene(nullptr), _render(nullptr){}
+        keys(), width(width), height(height), currentScene("scenes/test.lvl"), render(){}
 
 Game::~Game() = default;
 
 void Game::Init() {
-    GameScene scene{ResourceManager::LoadScene("scenes/test.lvl")};
-    _currentScene = &scene;
-    _currentScene->AddNewObject(new PrimitiveCube{glm::vec3{0.0f, 0.0f, 0.0f}});
-    _render = new GameRender;
-    _render->Init();
+//    GameScene scene{ResourceManager::LoadScene("scenes/test.lvl")};
+//    currentScene = &scene;
+//    _currentScene.AddNewObject(new PrimitiveCube{glm::vec3{0.0f, 0.0f, 0.0f}});
+//    render = GameRender();
+//    render.Init();
 }
 
 void Game::Update(GLfloat dt) {
@@ -32,6 +32,6 @@ void Game::ProcessInput(GLfloat dt) {
 }
 
 void Game::Render() {
-    vector<GameObject*> objects{_currentScene->GetAllObjects()}; //TODO: remove when const
-    _render->DrawObjects(&objects);
+//    vector<GameObject*> objects{currentScene->GetAllObjects()}; //TODO: remove when const
+//    render.DrawObjects(&objects, glm::mat4(1.0f));
 }

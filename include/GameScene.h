@@ -12,20 +12,20 @@
 
 using namespace std;
 
-
 class GameScene {
 public:
     GameScene(const GLchar* filePath);
     ~GameScene();
-    void AddNewObject(GameObject* object);
-    void RemoveObject(GameObject* object);
+    void AddNewObject(shared_ptr<GameObject> object);
+    void RemoveObject(shared_ptr<GameObject> object);
     void RemoveObjectById(GLuint id);
     void RemoveObjectsByTag(string tag);
-    GameObject* FindObjectById(GLuint id);
-    vector<GameObject*> FindObjectByTag(string tag);
-    vector<GameObject*> GetAllObjects(); //TODO: realize how to change to const
+    shared_ptr<GameObject> FindObjectById(GLuint id);
+    //TODO подумать, как возвращать shared_ptr вместо обычного указателя
+    vector<shared_ptr<GameObject>> *FindObjectByTag(string tag);
+    vector<shared_ptr<GameObject>> *GetAllObjects(); //TODO: realize how to change to const
 private:
-    vector<GameObject*> _objects;
+    vector<shared_ptr<GameObject>> _objects;
     void EnableDefaultFlags();
 };
 

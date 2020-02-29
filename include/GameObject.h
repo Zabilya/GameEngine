@@ -9,28 +9,25 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
+#include <memory>
+#include "Shader.h"
+#include "Model.h"
 
 class GameObject {
 public:
-    GameObject() {};
+    GameObject(glm::vec3 position, glm::vec3 scale, Shader *shader, Model *model);
+    glm::vec3 GetPosition();
+    glm::vec3 GetScale();
+    void SetScale(glm::vec3 scale);
+    Shader GetShader();
+    void SetPosition(glm::vec3 position);
+    Model GetModel();
 
-    GameObject(glm::vec3 position) {
-        //TODO: if pos !ok do smth
-        SetPosition(position);
-    }
-
-    glm::vec3 GetPosition() {
-        return _position;
-    }
-
-    GLuint SetPosition(glm::vec3 position) {
-        //TODO: if position is valid replace pos, otherwise return error code
-        _position = position;
-        return 0;
-    }
-protected:
+private:
     glm::vec3 _position;
-    virtual GLuint Init() = 0;
+    glm::vec3 _scale;
+    Shader _shader;
+    Model _model;
 };
 
 

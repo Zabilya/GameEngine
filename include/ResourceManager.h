@@ -34,14 +34,12 @@ public:
     // Resource storage
     static std::map<std::string, Texture2D> textures;
     static std::map<std::string, Shader> shaders;
-    static std::map<std::string, Model> models;
     static GameScene LoadScene(const GLchar *file);
     static Texture2D LoadTexture(const GLchar *file, std::string name);
     static Shader LoadShader(const GLchar *vShaderFile, const GLchar *fShaderFile, const GLchar *gShaderFile, std::string name);
-    static Model LoadModel(const GLchar *file, std::string name);
+    static Model LoadModel(const GLchar *file);
     static Texture2D GetTexture(std::string name);
     static Shader GetShader(std::string name);
-    static Model GetModel(std::string name);
     // Properly de-allocates all loaded resources
     static void      Clear();
 private:
