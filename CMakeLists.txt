@@ -13,6 +13,7 @@ set(SOURCE_FILES
         src/main.cpp
         src/engine/Shader.cpp
         src/engine/Texture.cpp
+        src/engine/DebugHelper.cpp
         src/engine/GameScene.cpp
         src/engine/GameRender.cpp
         src/engine/GameObject.cpp
@@ -24,7 +25,7 @@ set(SOURCE_FILES
         src/game/Camera.cpp
         src/game/Game_MainGame.cpp
         src/game/Game_SceneModel.cpp
-        src/engine/DebugHelper.cpp include/DebugHelper.h)
+        src/game/Game_SceneLight.cpp)
 
 add_executable(Game_Engine ${SOURCE_FILES})
 
