@@ -10,10 +10,15 @@ void GameRender::Init() {
 }
 
 //TODO а мы точно правильно принимаем objects?
-void GameRender::DrawObjects(const vector<shared_ptr<GameObject>>& objects, glm::mat4 view) { //TODO: should be const idk how
+void GameRender::DrawObjects(const vector<shared_ptr<GameObject>>& objects, glm::mat4 view, glm::vec3 cameraPosition) { //TODO: should be const idk how
     glm::mat4 model;
+
     for (shared_ptr<GameObject> object : objects) {
         Shader shader = object->GetShader();
+        shader.Use();
+        /* light */
+        shader.SetVector3f("viewPos", cameraPosition);
+        /* end of light */
         shader.SetMatrix4("view", view);
         model = glm::mat4(1.0f);
         model = glm::translate(model, object->GetPosition());
