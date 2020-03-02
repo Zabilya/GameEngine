@@ -7,6 +7,7 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(glew REQUIRED)
 find_library(assimp REQUIRED)
+find_package(bullet REQUIRED)
 
 set(SOURCE_FILES
         dependencies/stb_image/stb_image.cpp
@@ -29,6 +30,7 @@ set(SOURCE_FILES
 add_executable(Game_Engine ${SOURCE_FILES})
 
 target_link_libraries(Game_Engine assimp)
+target_link_libraries(Game_Engine bullet)
 
 target_link_libraries (Game_Engine
         ${OPENGL_LIBRARIES}

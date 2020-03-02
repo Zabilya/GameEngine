@@ -8,6 +8,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <memory>
+#include <bullet/btBulletDynamicsCommon.h>
+#include <bullet/LinearMath/btVector3.h>
 #include "GameScene.h"
 #include "GameRender.h"
 

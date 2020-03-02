@@ -12,6 +12,11 @@
 class Game_SceneModel : public virtual Game {
 public:
     Camera camera;
+    btDefaultCollisionConfiguration *collisionConfiguration;
+    btCollisionDispatcher *dispatcher;
+    btBroadphaseInterface *overlappingPairCache;
+    btSequentialImpulseConstraintSolver *solver;
+    btDiscreteDynamicsWorld *dynamicsWorld;
 
     Game_SceneModel(GLuint width, GLuint height);
     ~Game_SceneModel();
