@@ -13,7 +13,6 @@ Game_SceneModel::~Game_SceneModel() {
 }
 
 void Game_SceneModel::Init() {
-    glEnable(GL_DEPTH_TEST);
     Shader shader = ResourceManager::LoadShader("../res/shaders/model.vert",
                                 "../res/shaders/model.frag", nullptr,"shader");
     Model ourModel = ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj");
@@ -36,7 +35,7 @@ void Game_SceneModel::ProcessInput(GLfloat deltaTime) {
 }
 
 void Game_SceneModel::Update(GLfloat deltaTime) {
-
+    Game::Update(deltaTime);
 }
 
 void Game_SceneModel::Render() {
@@ -52,6 +51,6 @@ void Game_SceneModel::Render() {
     glm::mat4 view = camera.GetViewMatrix();
     vector<shared_ptr<GameObject>> *objects = currentScene.GetAllObjects();
     //TODO а мы точно правильно передаем objects?
-    render.DrawObjects(vector<shared_ptr<GameObject>>(*objects), view);
+    render.DrawObjects(vector<shared_ptr<GameObject>>(*objects), view, camera.position);
 }
 

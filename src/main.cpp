@@ -8,6 +8,7 @@
 #include "../include/ResourceManager.h"
 #include "../include/Game_MainGame.h"
 #include "../include/Game_SceneModel.h"
+#include "../include/Game_SceneLight.h"
 #include "../include/WindowManager.h"
 
 using namespace std;
@@ -24,7 +25,8 @@ float lastX = (float)SCREEN_WIDTH / 2.0f;
 float lastY = (float)SCREEN_HEIGHT / 2.0f;
 bool firstMouse = true; // первая ли это итерация игрового цикла или нет
 
-Game_SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+//Game_SceneModel game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
+Game_SceneLight game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
 //Game_MainGame game(SCREEN_WIDTH, SCREEN_HEIGHT); //TODO: remove
 
 GLfloat deltaTime {0.0f};
