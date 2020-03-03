@@ -29,9 +29,6 @@ void Game_SceneModel::Init() {
     shared_ptr<GameObject> ourObject (new GameObject(glm::vec3(0.0f, -1.75f, 0.0f),
             glm::vec3(0.2f, 0.2f, 0.2f), &shader, &ourModel));
     currentScene.AddNewObject(ourObject);
-
-    throw exception(); //TODO REMOVE: test exception that handles in main.
-    //it may be necessary to write own exception implementation to have damned constructor which will take actual message lol
 }
 
 void Game_SceneModel::ProcessInput(GLfloat deltaTime) {

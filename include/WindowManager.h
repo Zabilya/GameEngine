@@ -6,8 +6,10 @@
 #define GAME_ENGINE_WINDOWMANAGER_H
 
 
-#include <string>
+#include <GL/glew.h>
 #include <GLFW/glfw3.h>
+
+#include <string>
 
 #define DEFAULT_MAJOR_GL_VERSION 4
 #define DEFAULT_MINOR_GL_VERSION 3

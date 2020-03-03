@@ -2,6 +2,7 @@
 // Created by 17776048 on 2019-09-09.
 //
 
+#include "../../include/DebugHelper.h"
 #include "../../include/Model.h"
 
 Model::Model(){};
@@ -21,7 +22,10 @@ void Model::loadModel(string path) {
     const aiScene *scene = import.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
-        cout << "ERROR::ASSIMP::" << import.GetErrorString() << endl;
+        string *err{new string("ERROR::ASSIMP::")};
+
+        err->append(import.GetErrorString());
+        DebugHelper::Log(DebugHelper::CreateLogMessage(err, new string(__FILE__), __LINE__));
         return;
     }
     directory = path.substr(0, path.find_last_of('/'));

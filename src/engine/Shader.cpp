@@ -2,6 +2,7 @@
 // Created by Azure Void on 17.02.2020.
 //
 
+#include "../../include/DebugHelper.h"
 #include "../../include/Shader.h"
 
 #include <iostream>
@@ -46,6 +47,7 @@ void Shader::Compile(const GLchar* vertexSource, const GLchar* fragmentSource, c
     glDeleteShader(sFragment);
     if (geometrySource != nullptr)
         glDeleteShader(gShader);
+    DebugHelper::Log(new string("Shader compiled.")); //TODO: seems like there's no options to NOT compile shader smh?
 }
 
 void Shader::SetFloat(const GLchar *name, GLfloat value, GLboolean useShader)

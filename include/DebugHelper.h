@@ -15,7 +15,9 @@ using namespace std;
 class DebugHelper {
 public:
     static void Init();
-    static void Log(const string* message, const string* fileName, const int line);
+    static void Log(const string *message);
+    static const string *CreateLogMessage(const string *message, const string *fileName, const int line);
+    static const string *GetTimeString();
     static void APIENTRY GLErrorCallback(GLenum source,
                                          GLenum type,
                                          GLuint id,

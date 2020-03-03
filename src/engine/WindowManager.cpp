@@ -2,6 +2,7 @@
 // Created by Azure Void on 27.02.2020.
 //
 
+#include "../../include/DebugHelper.h"
 #include "../../include/WindowManager.h"
 
 bool WindowManager::Init(GLuint width, GLuint height, const char* title) {
@@ -18,6 +19,7 @@ bool WindowManager::Init(GLuint width, GLuint height, const char* title) {
     }
     glfwMakeContextCurrent(_window);
 
+    DebugHelper::Log(new string("Window inited."));
     return true;
 }
 

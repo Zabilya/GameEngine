@@ -2,6 +2,7 @@
 // Created by Илья Заболотний on 30/08/2019.
 //
 
+#include "../../include/DebugHelper.h"
 #include "../../include/Camera.h"
 
 Camera::Camera(glm::vec3 position) {
@@ -14,6 +15,7 @@ Camera::Camera(glm::vec3 position) {
     mouseSensitivity = SENSITIVITY;
     zoom = ZOOM;
     updateCameraVectors();
+    DebugHelper::Log(new string("Camera created."));
 }
 
 glm::mat4 Camera::GetViewMatrix() {
