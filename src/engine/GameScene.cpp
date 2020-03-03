@@ -21,8 +21,8 @@ GameScene::GameScene(const GLchar* filePath) {
         ifstream fileStream;
         fileStream.exceptions(ifstream::badbit | ifstream::failbit);
 
-        fileStream.open(filePath);
         /*parsing code
+        fileStream.open(filePath);
         ...
         */
         EnableDefaultFlags();
