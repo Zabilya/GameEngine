@@ -4,12 +4,12 @@
 #include <iostream>
 #include <activdbg.h>
 
+#include "../include/DebugHelper.h"
 #include "../include/ResourceManager.h"
 #include "../include/Game_MainGame.h"
 #include "../include/Game_SceneModel.h"
 #include "../include/Game_SceneLight.h"
 #include "../include/WindowManager.h"
-#include "../include/DebugHelper.h"
 
 using namespace std;
 
@@ -38,12 +38,11 @@ int main(int argc, char *argv[])
 {
     //===============================WindowManager class==============================
     WindowManager winManager{};
-
     if (!winManager.Init(SCREEN_WIDTH, SCREEN_HEIGHT, "DemoScene")) {
         cout << "Failed to init window manager" << endl;
         return -1;
     }
-    winManager.SetCallbacks(scrollCallback, mouseCallback, keyCallback);
+    winManager.SetCallbacks(scrollCallback, mouseCallback, keyCallback); //TODO: it should be moved to WindowManager or other .h
     //================================================================================
 
 
@@ -64,9 +63,10 @@ int main(int argc, char *argv[])
     //================================================================================
     try {
         game.Init();
+        DebugHelper::Log(new string("Game inited."));
     }
     catch (exception &ex) {
-        DebugHelper::Log(new string(ex.what()), new string(__FILE__), __LINE__);
+        DebugHelper::Log(DebugHelper::CreateLogMessage(new string(ex.what()), new string(__FILE__), __LINE__));
     }
     //================================================================================
 

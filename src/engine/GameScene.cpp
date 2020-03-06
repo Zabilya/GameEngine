@@ -7,6 +7,7 @@
 #include <iostream> //TODO: remove
 #include <string> //TODO: remove
 
+#include "../../include/DebugHelper.h"
 #include "../../include/GameScene.h"
 #include "../../include/PrimitiveCube.h"
 #include "../../include/ResourceManager.h"
@@ -15,24 +16,20 @@ using namespace std;
 
 GameScene::GameScene(const GLchar* filePath) {
     try {
+        if (!filePath)
+            return;
         ifstream fileStream;
+        fileStream.exceptions(ifstream::badbit | ifstream::failbit);
 
-        fileStream.open(filePath);
-        if (!fileStream.is_open()) {
-            string errorMsg {"Cannot open file: "};
-//            throw runtime_error(errorMsg.append(filePath)); //TODO: CHECK LATER
-        }
         /*parsing code
+        fileStream.open(filePath);
         ...
         */
-//        AddNewObject(new PrimitiveCube()); //TODO: change for real reading
         EnableDefaultFlags();
+        DebugHelper::Log(new string("Game scene created."));
     }
-    catch (runtime_error &ex) {
-        cout << ex.what() << endl; //TODO: replace to error logger
-    }
-    catch (exception &ex) {
-        cout << ex.what() << endl; //TODO: replace to error logger
+    catch (ifstream::failure &ex) {
+        DebugHelper::Log(DebugHelper::CreateLogMessage(new string(ex.what()), new string(__FILE__), __LINE__));
     }
 }
 
