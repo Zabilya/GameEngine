@@ -16,7 +16,7 @@ void Game_SceneModel::Init() {
     glEnable(GL_DEPTH_TEST);
     Shader shader = ResourceManager::LoadShader("../res/shaders/model.vert",
                                 "../res/shaders/model.frag", nullptr,"shader");
-    Model ourModel = ResourceManager::LoadModel("../res/models/nanosuit/nanosuit.obj");
+    Model ourModel = ResourceManager::LoadModel("../res/models/cube/untitled.obj");
 //    GameScene scene = ResourceManager::LoadScene("scenes/test.lvl");
     // TODO: currentScene = new GameScene();
     GameScene scene("scenes/test.lvl");
@@ -26,8 +26,8 @@ void Game_SceneModel::Init() {
                                             (float)width/height,0.1f, 100.0f);
     shader.SetMatrix4("projection", projection, true);
 
-    shared_ptr<GameObject> ourObject (new GameObject(glm::vec3(0.0f, -1.75f, 0.0f),
-            glm::vec3(0.2f, 0.2f, 0.2f), &shader, &ourModel));
+    shared_ptr<GameObject> ourObject (new GameObject(glm::vec3(0.0f, -1.25f, -1.0f),
+            glm::vec3(0.7f, 0.7f, 0.7f), &shader, &ourModel));
     currentScene.AddNewObject(ourObject);
 
     throw exception(); //TODO REMOVE: test exception that handles in main.
