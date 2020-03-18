@@ -1,4 +1,5 @@
 //
+//
 // Created by Ilya on 02.03.2020.
 //
 
@@ -44,8 +45,8 @@ void Game_SceneLight::Init() {
     shader.SetFloat("pointLights[0].linear", 0.09);
     shader.SetFloat("pointLights[0].quadratic", 0.032);
     // point light 2
-    shader.SetVector3f("pointLights[1].position", pointLightPositions[1].x, pointLightPositions[1].y,
-                      pointLightPositions[1].z);
+    shader.SetVector3f("pointLights[1].position", pointLightPositions[3].x, pointLightPositions[3].y,
+                      pointLightPositions[3].z);
     shader.SetVector3f("pointLights[1].ambient", 0.05f, 0.05f, 0.05f);
     shader.SetVector3f("pointLights[1].diffuse", 0.8f, 0.8f, 0.8f);
     shader.SetVector3f("pointLights[1].specular", 1.0f, 1.0f, 1.0f);

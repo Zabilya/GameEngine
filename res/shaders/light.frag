@@ -60,9 +60,15 @@ void main()
 vec3 calcDirLight(DirectLight light, vec3 normal, vec3 viewDir)
 {
     vec3 lightDir = normalize(-light.direction);
-    float diff = max(dot(normal, lightDir), 0.0);
+    float diff = max(dot(lightDir, normal), 0.0);
+
+    /* phong model */
     vec3 reflectDir = reflect(-lightDir, normal);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
+
+    /* blinn model */
+//    vec3 halfwayDir = normalize(lightDir + viewDir);
+//    float spec = pow(max(dot(normal, halfwayDir), 0.0), 8.0);
 
     vec3 ambient = light.ambient * vec3(texture(texture_diffuse1, texCoord));
     vec3 diffuse = light.diffuse * diff * vec3(texture(texture_diffuse1, texCoord));
@@ -75,8 +81,14 @@ vec3 calcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
 {
     vec3 lightDir = normalize(light.position - fragPos);
     float diff = max(dot(normal, lightDir), 0.0);
-    vec3 reflectDir = reflect(-lightDir, normal);
-    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
+
+    /* phong model */
+//    vec3 reflectDir = reflect(-lightDir, normal);
+//    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
+
+    /* blinn model */
+    vec3 halfwayDir = normalize(lightDir + viewDir);
+    float spec = pow(max(dot(normal, halfwayDir), 0.0), 32);
 
     float distance = length(light.position - fragPos);
     float attenuation = 1.0 / (light.constant + light.linear * distance +
